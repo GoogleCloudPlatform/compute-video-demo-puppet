@@ -60,18 +60,17 @@ gcutil addinstance master --image=debian-7 --zone=us-central1-b --machine_type=n
 
 ## Software
 
-1. SSH to your Puppet master and then become root
+1. SSH to your Puppet master
     ```
     gcutil ssh master
-    sudo -i
     ```
 
 2. Update packages and install puppet and gce_compute
     ```
     wget https://apt.puppetlabs.com/puppetlabs-release-wheezy.deb
     dpkg -i puppetlabs-release-wheezy.deb
-    apt-get update
-    apt-get install puppetmaster
+    sudo apt-get update
+    sudo apt-get install puppetmaster
     puppet module install puppetlabs-gce_compute
     ```
 
