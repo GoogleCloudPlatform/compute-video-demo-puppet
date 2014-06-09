@@ -1,4 +1,4 @@
-compute-video-demo-puppet
+compute-demo-puppet
 ========================
 
 This is the supporting documentation for **Using Puppet with Google
@@ -12,7 +12,6 @@ of the required details so you can easily see the "Good Stuff".
 At the end of the demo, you will have used Puppet to automate:
 * Creating 4 Compute Engine instances
 * Install the Apache web server on each
-* Enable Apache's `mod_headers` module
 * Allow HTTP traffic to the instances with a custom firewall rule
 * Create a Compute Engine Load-balancer to distribute traffic over the 4 instances
 * Do a live test of the full configuration
@@ -51,12 +50,12 @@ You can create the master in the
 *Compute Engine -&gt; VM Instances* section and then click the *NEW INSTANCE*
 button.
 
-Or, you can create the Puppet master either with the `gcutil` command-line
+Or, you can create the Puppet master with the `gcutil` command-line
 utility (part of the Cloud SDK) with the following command:
 
 ```
 # Make sure to use a Debian-7-wheezy image for this demo
-gcutil addinstance salt --image=debian-7 --zone=us-central1-b --machine_type=n1-standard-1
+gcutil addinstance master --image=debian-7 --zone=us-central1-b --machine_type=n1-standard-1
 ```
 
 ## Software
@@ -240,12 +239,12 @@ gcutil addinstance salt --image=debian-7 --zone=us-central1-b --machine_type=n1-
   }
   ```
   * Firewall rule is created in this file with the `gce_firewall` hash.
-  * Each of the four instances are created in the `gce_instance` hashes with the instance names as the key. A disc is created for each instance in `gce-disk` hashes.
+  * Each of the four instances are created in the `gce_instance` hashes with the instance names as the key. A disc is created for each instance in `gce_disk` hashes.
   * The load balancer is created with the `gce_targetpool`, `gce_httphealthcheck`, and `gce_forwardingrule` hashes.
 5. Apply the `gce_www_up.pp` manifest file.
 `puppet apply --certname=my_project gce_www_up.pp`
 6. To modify any instance or resource, change the manifest file and apply it again.
-7. Now, if you like, you can put the public IP address of one of your instances
+7. Now, if you like, you can put the public IP address of the load balancer
 into your browser and you should start to see a flicker of pages that will randomly bounce across each of your
 instances.
 
