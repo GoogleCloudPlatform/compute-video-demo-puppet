@@ -39,7 +39,7 @@ before you can create any virtual machines with Compute Engine. Look for the
 and make sure you've successfully authenticated and set your default project
 as instructed.
 
-## Create the Puppet master Compute Engine instance
+## Create the Puppet Master Compute Engine Instance
 
 Next you will create a Virtual Machine for your Puppet master named `master` so
 that your managed nodes (or agents) will be able to automatcially find the
@@ -68,36 +68,28 @@ gcutil addinstance master --image=debian-7 --zone=us-central1-b --machine_type=n
 2. Update packages and install puppet and gce_compute
     ```
     wget https://apt.puppetlabs.com/puppetlabs-release-wheezy.deb
-    dpkg -i puppetlabs-release-wheezy.deb
+    sudo dpkg -i puppetlabs-release-wheezy.deb
     sudo apt-get update
     sudo apt-get install puppetmaster
-    puppet module install puppetlabs-gce_compute
+    sudo puppet module install puppetlabs-gce_compute
+    sudo puppet module install puppetlabs-apache
+    ```
+3. Authenticate with root: `sudo gcloud auth login`
+4. Check out this repository so that you can use pre-canned configuration
+and demo files.
+    ```
+    cd $HOME
+    git clone https://github.com/GoogleCloudPlatform/compute-video-demo-puppet
     ```
 
-
-## Puppet-Cloud setup
+## Puppet-Cloud Setup
 
 1. Configure the Puppet Master service for autosigning
   `echo "*.$(hostname --domain)" | sudo tee /etc/puppet/autosign.conf`
 2. Create a site manifest file to specify instance software and services(`/etc/puppet/manifests/site.pp`). 
   ```
-  class apache ($version = "latest") {
-  	package {"apache2":
-		  ensure => $version,
-	  }
-	  file {"/var/www/index.html":
-		  ensure	=> present,
-		  content	=> "<html>\n<body>\n\t<h2>Hi, this is $hostname.</h2>\n</body>\n</html>\n",
-		  require	=> Package["apache2"],
-	  }
-	  service {"apache2":
-		  ensure => running,
-		  enable => true,
-		  require => File["/var/www/index.html"],
-	  }
-  }
 
-  node /^demo-puppet-child-\d+\.c.upbeat-airway-600\.internal/ {
+  node /^puppet-agent-\d+/ { #regex match for hostname
 	  include apache
   }
   ```
@@ -105,158 +97,45 @@ gcutil addinstance master --image=debian-7 --zone=us-central1-b --machine_type=n
   ```
   PROJECT=$(/usr/share/google/get_metadata_value project-id)
 
-  cat > ~/.puppet/device.conf << EOF
+  cat > /etc/puppet/device.conf << EOF
   [my_project]
   type gce
   url [/dev/null]:${PROJECT}
   EOF
   ```
   'my_project' can be substituted with a name of your choice as long as it is used consistently.
-4. Create a manifest file in the same directory as the `site.pp` file (`/etc/puppet/manifests/gce_www_up.pp`) to create the 4 Compute Engine instatnces, firewall, and load balancer.
+4. Create a manifest file in the same directory as the `site.pp` file (`/etc/puppet/manifests/puppet_up.pp`) to create the 4 Compute Engine instatnces, firewall, and load balancer.
   ```
-  $master = $fqdn
-  $zonea = 'us-central1-a'
-  $zoneb = 'us-central1-b'
-
-  gce_firewall { 'allow-http':
-	  ensure			=> present,
-	  description		=> 'Allow HTTP',
-	  network			=> 'default',
-	  allowed			=> 'tcp:80',
-	  allowed_ip_sources	=> '0.0.0.0/0',
-  }
-  
-  gce_httphealthcheck { 'basic-http':
-	  ensure		=> present,
-	  require		=> Gce_instance['demo-puppet-child-1', 'demo-puppet-child-2', 'demo-puppet-child-3', 'demo-puppet-child-3'],
-	  description	=> 'basic http health check',
-  }
-
-  gce_targetpool { 'www-pool':
-	  ensure		=> present,
-	  require		=> Gce_httphealthcheck['basic-http'],
-	  health_checks	=> 'basic-http',
-	  instances	=> "$zonea/demo-puppet-child-1,$zonea/demo-puppet-child-2,$zoneb/demo-puppet-child-3,$zoneb/demo-puppet-child-4",
-	  region		=> 'us-central1',
-  }
-
-  gce_forwardingrule { 'www-rule':
-	  ensure		=> present,
-	  require		=> Gce_targetpool['www-pool'],
-	  description	=> 'Forward HTTP to web instances',
-	  port_range	=> '80',
-	  region		=> 'us-central1',
-	  target		=> 'www-pool',
-  }
-
-  gce_disk { 'demo-puppet-child-1':
-	  ensure		=> present,
-	  description	=> 'Boot disk for puppet-child-www',
-	  size_gb		=> 10,
-	  zone		=> "$zonea",
-	  source_image	=> 'debian-7',
-  }
-
-  gce_instance { 'demo-puppet-child-1':
-	  ensure		=> present,
-	  description	=> 'Basic web node',
-	  machine_type	=> 'n1-standard-1',
-  	zone		=> "$zonea",
-	  disk		=> 'demo-puppet-child-1,boot',
-	  network		=> 'default',
-
-  	require		=> Gce_disk['demo-puppet-child-1'],
-  
-	  puppet_master 	=> "$master",
-	  puppet_service	=> present,
-  }
-
-  gce_disk { 'demo-puppet-child-2':
-	  ensure		=> present,
-  	description	=> 'Boot disk for puppet-child-www',
-	  size_gb		=> 10,
-  	zone		=> "$zonea",
-	  source_image	=> 'debian-7',
-  }
-
-  gce_instance { 'demo-puppet-child-2':
-	  ensure		=> present,
-	  description	=> 'Basic web node',
-	  machine_type	=> 'n1-standard-1',
-	  zone		=> "$zonea",
-	  disk		=> 'demo-puppet-child-2,boot',
-	  network		=> 'default',
-  
-	  require		=> Gce_disk['demo-puppet-child-2'],
-  
-	  puppet_master 	=> "$master",
-  	puppet_service	=> present,
-  }
-
-  gce_disk { 'demo-puppet-child-3':
-	  ensure		=> present,
-	  description	=> 'Boot disk for puppet-child-www',
-	  size_gb		=> 10,
-	  zone		=> "$zoneb",
-	  source_image	=> 'debian-7',
-  }
-
-  gce_instance { 'demo-puppet-child-3':
-	  ensure		=> present,
-	  description	=> 'Basic web node',
-	  machine_type	=> 'n1-standard-1',
-	  zone		=> "$zoneb",
-	  disk		=> 'demo-puppet-child-3,boot',
-	  network		=> 'default',
-
-	  require		=> Gce_disk['demo-puppet-child-3'],
-
-	  puppet_master 	=> "$master",
-	  puppet_service	=> present,
-  }
-
-  gce_disk { 'demo-puppet-child-4':
-	  ensure		=> present,
-	  description	=> 'Boot disk for puppet-child-www',
-	  size_gb		=> 10,
-	  zone		=> "$zoneb",
-	  source_image	=> 'debian-7',
-  }
-
-  gce_instance { 'demo-puppet-child-4':
-	  ensure		=> present,
-	  description	=> 'Basic web node',
-	  machine_type	=> 'n1-standard-1',
-	  zone		=> "$zoneb",
-	  disk		=> 'demo-puppet-child-4,boot',
-	  network		=> 'default',
-
-	  require		=> Gce_disk['demo-puppet-child-4'],
-
-	  puppet_master 	=> "$master",
-	  puppet_service	=> present,
-  }
+ insert puppet_up.pp here
   ```
   * Firewall rule is created in this file with the `gce_firewall` hash.
   * Each of the four instances are created in the `gce_instance` hashes with the instance names as the key. A disc is created for each instance in `gce_disk` hashes.
   * The load balancer is created with the `gce_targetpool`, `gce_httphealthcheck`, and `gce_forwardingrule` hashes.
-5. Apply the `gce_www_up.pp` manifest file.
-`puppet apply --certname=my_project gce_www_up.pp`
-6. To modify any instance or resource, change the manifest file and apply it again.
-7. Now, if you like, you can put the public IP address of the load balancer
+5. Place the index.html.erb file found in this repository into the apache module template directory located at: `/etc/puppet/modules/apache/templates`
+6. Apply the `puppet_up.pp` manifest file.
+`puppet apply --certname=my_project /etc/puppet/manifests/puppet_up.pp`
+7. To modify any instance or resource, change the manifest file and apply it again.
+8. Now, if you like, you can put the public IP address of the load balancer
 into your browser and you should start to see a flicker of pages that will randomly bounce across each of your
 instances.
 
 
-## Cleaning up
+## Cleaning Up
 
 When you're done with the demo, make sure to tear down all of your
 instances and clean-up. You will get charged for this usage and you will
 accumulate additional charges if you do not remove these resources.
 
-To delete a resource, open the manifest file used to create them and change the `ensure` key of the resource you would like to delete to point to `absent`. To delete and instance, the `ensure` key of the corresponding disc must also be changed. 
+To teardown your setup, apply the following manifest:
+```
+manifest
+```
 
 ## Troubleshooting
+
+* Ensure the module path is correct with `sudo puppet config print modulepath`
+  Path should be: `/etc/puppet/modules`
+* Ensure that puppet modules are installed as root.
 
 
 ## Contributing
