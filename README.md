@@ -65,7 +65,7 @@ gcutil addinstance master --image=debian-7 --zone=us-central1-b --machine_type=n
     gcutil ssh master
     ```
 
-2. Update packages and install puppet and gce_compute
+2. Update packages and install puppet, gce_compute, and apache. It is important to install as root.
     ```
     wget https://apt.puppetlabs.com/puppetlabs-release-wheezy.deb
     sudo dpkg -i puppetlabs-release-wheezy.deb
@@ -74,7 +74,7 @@ gcutil addinstance master --image=debian-7 --zone=us-central1-b --machine_type=n
     sudo puppet module install puppetlabs-gce_compute
     sudo puppet module install puppetlabs-apache
     ```
-3. Authenticate with root: `sudo gcloud auth login`
+3. Authenticate the root user of your puppet master with Compute Engine: `sudo gcloud auth login`
 4. Check out this repository so that you can use pre-canned configuration
 and demo files.
     ```
@@ -82,7 +82,7 @@ and demo files.
     git clone https://github.com/GoogleCloudPlatform/compute-video-demo-puppet
     ```
 
-## Puppet-Cloud Setup
+## Puppet Setup
 
 1. Configure the Puppet Master service for autosigning
   `echo "*.$(hostname --domain)" | sudo tee /etc/puppet/autosign.conf`
@@ -109,11 +109,11 @@ and demo files.
  insert puppet_up.pp here
   ```
   * Firewall rule is created in this file with the `gce_firewall` hash.
-  * Each of the four instances are created in the `gce_instance` hashes with the instance names as the key. A disc is created for each instance in `gce_disk` hashes.
+  * Each of the four instances are created in the `gce_instance` hashes with the instance names as the key. A disk is created for each instance in `gce_disk` hashes.
   * The load balancer is created with the `gce_targetpool`, `gce_httphealthcheck`, and `gce_forwardingrule` hashes.
 5. Place the index.html.erb file found in this repository into the apache module template directory located at: `/etc/puppet/modules/apache/templates`
 6. Apply the `puppet_up.pp` manifest file.
-`puppet apply --certname=my_project /etc/puppet/manifests/puppet_up.pp`
+`sudo puppet apply --certname=my_project /etc/puppet/manifests/puppet_up.pp`
 7. To modify any instance or resource, change the manifest file and apply it again.
 8. Now, if you like, you can put the public IP address of the load balancer
 into your browser and you should start to see a flicker of pages that will randomly bounce across each of your
