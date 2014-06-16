@@ -50,18 +50,20 @@ You can create the master in the
 *Compute Engine -&gt; VM Instances* section and then click the *NEW INSTANCE*
 button.
 
-Or, you can create the Puppet master with the `gcutil` command-line
+Or, you can create the Puppet master with the `gcloud compute` command-line
 utility (part of the Cloud SDK) with the following command:
 
 ```
 # Make sure to use a Debian-7-wheezy image for this demo
-gcutil addinstance master --image=debian-7 --zone=us-central1-b --machine_type=n1-standard-1
+# TODO(snyquist2): check syntax for gcloud compute 
+gcloud compute instances create master --image=..... --zone=us-central1-b --machine_type=n1-standard-1
 ```
 
 ## Software
 
 1. SSH to your Puppet master
     ```
+    # TODO(snyquist2): gcloud compute ssh
     gcutil ssh master
     ```
 
@@ -75,20 +77,24 @@ gcutil addinstance master --image=debian-7 --zone=us-central1-b --machine_type=n
     sudo puppet module install puppetlabs-apache
     ```
 3. Authenticate the root user on your puppet master with Compute Engine: `sudo gcloud auth login`
+
 4. Check out this repository so that you can use pre-canned configuration
 and demo files.
-```
-cd $HOME
-git clone https://github.com/GoogleCloudPlatform/compute-video-demo-puppet
-```
+    ```
+    cd $HOME
+    git clone https://github.com/GoogleCloudPlatform/compute-video-demo-puppet
+    ```
 
 ## Puppet Setup
 
 1. Configure the Puppet Master service for autosigning
-  `echo "*.$(hostname --domain)" | sudo tee /etc/puppet/autosign.conf`
+    ```
+    echo "*.$(hostname --domain)" | sudo tee /etc/puppet/autosign.conf
+    ```
+
 2. Create a site manifest file to specify instance software and services (`/etc/puppet/manifests/site.pp`). 
   ```
-  node /^puppet-agent-\d+/ {	# Regex expression to match any node with a name like puppet-agent-X
+  node /^puppet-agent-\d+/ {	# Regex expression to match any node with a name like puppet-agent-N
     class { 'apache': }		# Installs apache web server
 
     include apache::mod::headers
@@ -102,14 +108,15 @@ git clone https://github.com/GoogleCloudPlatform/compute-video-demo-puppet
   ```
   * This example uses the puppetlabs-apache module to install and manage the apache service. More information about this module
  can be found at https://github.com/puppetlabs/puppetlabs-apache.
-3. Set up `/etc/puppet/device.conf` where the project ID can either be found on the Developer's Console or by using the command `/user/shate/google/get_metadata_value project-id`.
 
+3. Set up `/etc/puppet/device.conf` where the project ID can either be found on the Developer's Console or by using the command `/user/shate/google/get_metadata_value project-id`.
   ```
   [my_project]
     type gce
     url [/dev/null]:<project ID>
   ```
-  * 'my_project' can be substituted with a name of your choice as long as it is used consistently.
+  * 'my_project' can be substituted with a name of your choice as long as it is used consistently with the `--certname` flag.
+
 4. Create a manifest file in the same directory as the `site.pp` file (`/etc/puppet/manifests/puppet_up.pp`) to create the 4 Compute Engine instatnces, firewall, and load balancer.
   ```
   $zonea = 'us-central1-a'
@@ -149,6 +156,8 @@ git clone https://github.com/GoogleCloudPlatform/compute-video-demo-puppet
   }
 
   # Create 4 nodes in 2 different zones
+  # TODO(snyquist2): perhaps let 'gce_instance'  for us?
+  # https://github.com/puppetlabs/puppetlabs-gce_compute/blob/master/lib/puppet/provider/gce_instance/gcutil.rb#L108
   gce_disk { 'puppet-agent-1':
     ensure		=> present,
     description		=> 'Boot disk for puppet-agent-1',
@@ -238,12 +247,16 @@ git clone https://github.com/GoogleCloudPlatform/compute-video-demo-puppet
   }
   ```
   * Firewall rule is created in this file with the `gce_firewall` hash.
-  * Each of the four instances are created in the `gce_instance` hashes with the instance names as the key. A disk is created for each instance in `gce_disk` hashes.
+  * Each of the four instances are created in the `gce_instance` hashes with the instance names as the key. A disk is created for each instance in `gce_disk` hashes. [TODO(snyquist2): let user know that disk is auto-created]
   * The load balancer is created with the `gce_targetpool`, `gce_httphealthcheck`, and `gce_forwardingrule` hashes.
+
 5. Place the `index.html.erb` file found in this repository into the apache module template directory located at: `/etc/puppet/modules/apache/templates`
+
 6. Apply the `puppet_up.pp` manifest file.
 `sudo puppet apply --certname=my_project /etc/puppet/manifests/puppet_up.pp`
-7. To modify any instance or resource, change the manifest file and apply it again.
+
+7. To modify any instance or resource, change the manifest file and apply it again. [TODO(snyquist2): not sure this is accurate. For instance, if I change the 'machine-type' between runs, will the instance be re-sized?]
+
 8. Now, if you like, you can put the public IP address of the load balancer
 into your browser and you should start to see a flicker of pages that will randomly bounce across each of your
 instances.
@@ -341,7 +354,6 @@ Have a patch that will benefit this project? Awesome! Follow these steps to have
 
 1. Please sign our [Contributor License Agreement](CONTRIB.md).
 1. Fork this Git repository and make your changes.
-1. Run the unit tests. (gcimagebundle only)
 1. Create a Pull Request
 1. Incorporate review feedback to your changes.
 1. Accepted!
