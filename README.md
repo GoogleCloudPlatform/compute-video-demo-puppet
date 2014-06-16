@@ -103,12 +103,13 @@ git clone https://github.com/GoogleCloudPlatform/compute-video-demo-puppet
   * This example uses the puppetlabs-apache module to install and manage the apache service. More information about this module
  can be found at [https://github.com/puppetlabs/puppetlabs-apache].
 3. Set up `/etc/puppet/device.conf` where the project ID can either be found on the Developer's Console or by using the command `/user/shate/google/get_metadata_value project-id`.
+
   ```
   [my_project]
-  type gce
-  url [/dev/null]:<project ID>
+    type gce
+    url [/dev/null]:<project ID>
   ```
-  'my_project' can be substituted with a name of your choice as long as it is used consistently.
+  * 'my_project' can be substituted with a name of your choice as long as it is used consistently.
 4. Create a manifest file in the same directory as the `site.pp` file (`/etc/puppet/manifests/puppet_up.pp`) to create the 4 Compute Engine instatnces, firewall, and load balancer.
   ```
   $zonea = 'us-central1-a'
