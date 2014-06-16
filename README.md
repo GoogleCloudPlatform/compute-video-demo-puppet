@@ -65,7 +65,7 @@ gcutil addinstance master --image=debian-7 --zone=us-central1-b --machine_type=n
     gcutil ssh master
     ```
 
-2. Update packages and install puppet, gce_compute, and apache. It is important to install as root.
+2. Update packages and install puppet, gce_compute, and apache. It is important to install these packages and modules as root.
     ```
     wget https://apt.puppetlabs.com/puppetlabs-release-wheezy.deb
     sudo dpkg -i puppetlabs-release-wheezy.deb
@@ -74,44 +74,172 @@ gcutil addinstance master --image=debian-7 --zone=us-central1-b --machine_type=n
     sudo puppet module install puppetlabs-gce_compute
     sudo puppet module install puppetlabs-apache
     ```
-3. Authenticate the root user of your puppet master with Compute Engine: `sudo gcloud auth login`
+3. Authenticate the root user on your puppet master with Compute Engine: `sudo gcloud auth login`
 4. Check out this repository so that you can use pre-canned configuration
 and demo files.
-    ```
-    cd $HOME
-    git clone https://github.com/GoogleCloudPlatform/compute-video-demo-puppet
-    ```
+```
+cd $HOME
+git clone https://github.com/GoogleCloudPlatform/compute-video-demo-puppet
+```
 
 ## Puppet Setup
 
 1. Configure the Puppet Master service for autosigning
   `echo "*.$(hostname --domain)" | sudo tee /etc/puppet/autosign.conf`
-2. Create a site manifest file to specify instance software and services(`/etc/puppet/manifests/site.pp`). 
+2. Create a site manifest file to specify instance software and services (`/etc/puppet/manifests/site.pp`). 
   ```
+  node /^puppet-agent-\d+/ {	# Regex expression to match any node with a name like puppet-agent-X
+    class { 'apache': }		# Installs apache web server
 
-  node /^puppet-agent-\d+/ { #regex match for hostname
-	  include apache
+    include apache::mod::headers
+
+    file {"/var/www/index.html":	# Include a custom index.html
+      ensure	=> present,
+      content	=> template("apache/index.html.erb"),
+      require	=> Class["apache"],
+    }
   }
   ```
-3. Set up `device.conf`.
+  * This example uses the puppetlabs-apache module to install and manage the apache service. More information about this module
+ can be found at [https://github.com/puppetlabs/puppetlabs-apache].
+3. Set up `/etc/puppet/device.conf` where the project ID can either be found on the Developer's Console or by using the command `/user/shate/google/get_metadata_value project-id`.
   ```
-  PROJECT=$(/usr/share/google/get_metadata_value project-id)
-
-  cat > /etc/puppet/device.conf << EOF
   [my_project]
   type gce
-  url [/dev/null]:${PROJECT}
-  EOF
+  url [/dev/null]:<project ID>
   ```
   'my_project' can be substituted with a name of your choice as long as it is used consistently.
 4. Create a manifest file in the same directory as the `site.pp` file (`/etc/puppet/manifests/puppet_up.pp`) to create the 4 Compute Engine instatnces, firewall, and load balancer.
   ```
- insert puppet_up.pp here
+  $zonea = 'us-central1-a'
+  $zoneb = 'us-central1-b'
+  $region = 'us-central1'
+
+  gce_firewall { 'puppet-firewall':
+    ensure		=> present,
+    description		=> 'Allow HTTP',
+    network		=> 'default',
+    allowed		=> 'tcp:80',
+    allowed_ip_sources	=> '0.0.0.0/0',
+  }
+
+  # Declare load balancer and other resources required by the load balancer
+  gce_httphealthcheck { 'puppet-http':
+    ensure	=> present,
+    require	=> Gce_instance['puppet-agent-1', 'puppet-agent-2', 'puppet-agent-3', 'puppet-agent-3'],
+    description	=> 'basic http health check',
+  }
+
+  gce_targetpool { 'puppet-pool':
+    ensure		=> present,
+    require		=> Gce_httphealthcheck['puppet-http'],
+    health_checks	=> 'puppet-http',
+    instances		=> "$zonea/puppet-agent-1,$zonea/puppet-agent-2,$zoneb/puppet-agent-3,$zoneb/puppet-agent-4",
+    region		=> "$region",
+  }
+
+  gce_forwardingrule { 'puppet-rule':
+    ensure	=> present,
+    require	=> Gce_targetpool['puppet-pool'],
+    description	=> 'Forward HTTP to web instances',
+    port_range	=> '80',
+    region	=> "$region",
+    target	=> 'puppet-pool',
+  }
+
+  # Create 4 nodes in 2 different zones
+  gce_disk { 'puppet-agent-1':
+    ensure		=> present,
+    description		=> 'Boot disk for puppet-agent-1',
+    size_gb		=> 10,
+    zone		=> "$zonea",
+    source_image	=> 'debian-7',
+  }
+
+  gce_instance { 'puppet-agent-1':
+    ensure		=> present,
+    description		=> 'Basic web node',
+    machine_type	=> 'n1-standard-1',
+    zone		=> "$zonea",
+    disk		=> 'puppet-agent-1,boot',
+    network		=> 'default',
+
+    require		=> Gce_disk['puppet-agent-1'],
+
+    puppet_master 	=> "$fqdn",
+    puppet_service	=> present,
+  }
+
+  gce_disk { 'puppet-agent-2':
+    ensure		=> present,
+    description		=> 'Boot disk for puppet-agent-2',
+    size_gb		=> 10,
+    zone		=> "$zonea",
+    source_image	=> 'debian-7',
+  }
+
+  gce_instance { 'puppet-agent-2':
+    ensure		=> present,
+    description		=> 'Basic web node',
+    machine_type	=> 'n1-standard-1',
+    zone		=> "$zonea",
+    disk		=> 'puppet-agent-2,boot',
+    network		=> 'default',
+
+    require		=> Gce_disk['puppet-agent-2'],
+
+    puppet_master 	=> "$fqdn",
+    puppet_service	=> present,
+  }
+
+  gce_disk { 'puppet-agent-3':
+    ensure		=> present,
+    description		=> 'Boot disk for puppet-agent-3',
+    size_gb		=> 10,
+    zone		=> "$zoneb",
+    source_image	=> 'debian-7',
+  }
+
+  gce_instance { 'puppet-agent-3':
+    ensure		=> present,
+    description		=> 'Basic web node',
+    machine_type	=> 'n1-standard-1',
+    zone		=> "$zoneb",
+    disk		=> 'puppet-agent-3,boot',
+    network		=> 'default',
+
+    require		=> Gce_disk['puppet-agent-3'],
+
+    puppet_master 	=> "$fqdn",
+    puppet_service	=> present,
+  }
+
+  gce_disk { 'puppet-agent-4':
+    ensure		=> present,
+    description		=> 'Boot disk for puppet-agent-4',
+    size_gb		=> 10,
+    zone		=> "$zoneb",
+    source_image	=> 'debian-7',
+  }
+
+  gce_instance { 'puppet-agent-4':
+    ensure		=> present,
+    description		=> 'Basic web node',
+    machine_type	=> 'n1-standard-1',
+    zone		=> "$zoneb",
+    disk		=> 'puppet-agent-4,boot',
+    network		=> 'default',
+	
+    require		=> Gce_disk['puppet-agent-4'],
+
+    puppet_master 	=> "$fqdn",
+    puppet_service	=> present,
+  }
   ```
   * Firewall rule is created in this file with the `gce_firewall` hash.
   * Each of the four instances are created in the `gce_instance` hashes with the instance names as the key. A disk is created for each instance in `gce_disk` hashes.
   * The load balancer is created with the `gce_targetpool`, `gce_httphealthcheck`, and `gce_forwardingrule` hashes.
-5. Place the index.html.erb file found in this repository into the apache module template directory located at: `/etc/puppet/modules/apache/templates`
+5. Place the `index.html.erb` file found in this repository into the apache module template directory located at: `/etc/puppet/modules/apache/templates`
 6. Apply the `puppet_up.pp` manifest file.
 `sudo puppet apply --certname=my_project /etc/puppet/manifests/puppet_up.pp`
 7. To modify any instance or resource, change the manifest file and apply it again.
@@ -128,7 +256,74 @@ accumulate additional charges if you do not remove these resources.
 
 To teardown your setup, apply the following manifest:
 ```
-manifest
+  $zonea = 'us-central1-a'
+  $zoneb = 'us-central1-b'
+  $region = 'us-central1'
+
+  # Destroy the 4 compute nodes and their persistent disks
+  gce_disk { 'puppet-agent-1':
+    ensure	=> absent,
+    zone	=> "$zonea",
+  }
+
+  gce_instance { 'puppet-agent-1':
+    ensure	=> absent,
+    zone	=> "$zonea",
+  }
+  
+  gce_disk { 'puppet-agent-2':
+    ensure	=> absent,
+    zone	=> "$zonea",
+  }
+
+  gce_instance { 'puppet-agent-2':
+    ensure	=> absent,
+    zone	=> "$zonea",
+  }
+
+  gce_disk { 'puppet-agent-3':
+    ensure	=> absent,
+    zone	=> "$zoneb",
+  }
+
+  gce_instance { 'puppet-agent-3':
+    ensure	=> absent,
+    zone	=> "$zoneb",
+  }
+
+  gce_disk { 'puppet-agent-4':
+    ensure	=> absent,
+    zone	=> "$zoneb",
+  }
+
+  gce_instance { 'puppet-agent-4':
+    ensure	=> absent,
+    zone	=> "$zoneb",
+  }
+
+  gce_firewall { 'puppet-http':
+    ensure	=> absent,
+  }
+
+  # Destroy load balancer and other resources required by the load balancer
+  gce_httphealthcheck { 'puppet-http':
+    ensure	=> absent,
+  }
+
+  gce_targetpool { 'puppet-pool':
+    ensure	=> absent,
+    region	=> "$region",
+  }
+
+  gce_forwardingrule { 'puppet-rule':
+    ensure	=> absent,
+    region	=> "$region",
+  }
+  
+  # Dependency chaining to make sure that resources are deleted in the correct order
+  Gce_instance['puppet-agent-1', 'puppet-agent-2', 'puppet-agent-3', 'puppet-agent-4'] -> Gce_disk['puppet-agent-1', 'puppet-agent-2', 'puppet-agent-3', 'puppet-agent-4']
+  Gce_forwardingrule['puppet-rule'] -> Gce_targetpool['puppet-pool']
+  Gce_targetpool['puppet-pool'] -> Gce_httphealthcheck['puppet-http']
 ```
 
 ## Troubleshooting
@@ -136,6 +331,7 @@ manifest
 * Ensure the module path is correct with `sudo puppet config print modulepath`
   Path should be: `/etc/puppet/modules`
 * Ensure that puppet modules are installed as root.
+* Ensure that you are running puppet apply as root by including `sudo` in the command
 
 
 ## Contributing
