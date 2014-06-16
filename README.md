@@ -101,7 +101,7 @@ git clone https://github.com/GoogleCloudPlatform/compute-video-demo-puppet
   }
   ```
   * This example uses the puppetlabs-apache module to install and manage the apache service. More information about this module
- can be found at [https://github.com/puppetlabs/puppetlabs-apache].
+ can be found at https://github.com/puppetlabs/puppetlabs-apache.
 3. Set up `/etc/puppet/device.conf` where the project ID can either be found on the Developer's Console or by using the command `/user/shate/google/get_metadata_value project-id`.
 
   ```
