@@ -94,11 +94,12 @@ and demo files.
     echo "*.$(hostname --domain)" | sudo tee /etc/puppet/autosign.conf`
     ```
 
-1. Create a site manifest file to specify instance software and services
-(`/etc/puppet/manifests/site.pp`). 
+1. Create a site manifest file to specify instance software and services. For
+this demo, a simple Apache site manifest is being defined.  The below contents
+should be used to create `/etc/puppet/manifests/site.pp`. 
     ```
-    node /^puppet-agent-\d+/ {    # Regex expression to match any node with a name like puppet-agent-N
-      class { 'apache': }        # Installs apache web server
+    node /^puppet-agent-\d+/ { # Regex to match node names like puppet-agent-N
+      class { 'apache': }      # Installs apache web server
 
       include apache::mod::headers
 
@@ -109,23 +110,30 @@ and demo files.
       }
     }
     ```
+  Or, you can use the site.pp included in the repo and copy it with,
+    ```
+    sudo cp manifests/site.pp /etc/puppet/manifests/site.pp
+    ```
   * This example uses the puppetlabs-apache module to install and manage the
     apache service. More information about this module can be found at
     https://github.com/puppetlabs/puppetlabs-apache.
 
 1. Set up `/etc/puppet/device.conf` where the project ID can either be found
-on the Developer's Console or by using the command
-`/user/shate/google/get_metadata_value project-id`.
+on the Developer's Console or by using these commands,
     ```
+    PROJECT=$(/usr/share/google/get_metadata_value project-id)
+    sudo bash -c "cat > /etc/puppet/device.conf" <<EOF
     [my_project]
       type gce
-      url [/dev/null]:<project ID>
+      url [/dev/null]:$PROJECT
+    EOF
     ```
   * 'my_project' can be substituted with a name of your choice as long as it
     is used consistently and matches the `--certname` flag used with the
     puppet command.
 
-1. Create a manifest file in the same directory as the `site.pp` file (`/etc/puppet/manifests/puppet_up.pp`) to create the 4 Compute Engine instatnces, firewall, and load balancer.
+1. Create another manifest file (`/etc/puppet/manifests/puppet_up.pp`) used to
+create the 4 Compute Engine instatnces, firewall, and load balancer.
     ```
     $zonea = 'us-central1-a'
     $zoneb = 'us-central1-b'
@@ -244,6 +252,10 @@ on the Developer's Console or by using the command
       puppet_service => present,
     }
     ```
+  This file can also be copied from the included manifest file with,
+    ```
+    sudo cp manifests/puppet_up.pp /etc/puppet/manifests/puppet_up.pp
+    ```
   * Firewall rule is created in this file with the `gce_firewall` block.
   * Each of the four instances are created in the `gce_instance` blocks with
     the instance names as the key. A matching disk is created for each
@@ -251,8 +263,11 @@ on the Developer's Console or by using the command
   * The load balancer is created with the `gce_targetpool`,
     `gce_httphealthcheck`, and `gce_forwardingrule` blocks.
 
-1. Place the `index.html.erb` file found in this repository into the apache
-module template directory located at: `/etc/puppet/modules/apache/templates`
+1. Place the `index.html.erb` file included in this repository into the apache
+module template directory,
+    ```
+    sudo cp index.html.erb /etc/puppet/modules/apache/templates
+    ```
 
 1. Apply the `puppet_up.pp` manifest file.
     ```
@@ -262,7 +277,6 @@ module template directory located at: `/etc/puppet/modules/apache/templates`
 1. Now, you can put the public IP address of the load balancer into your
 browser and you should start to see a flicker of pages that will bounce across
 each of your instances.
-
 
 ## Cleaning Up
 
