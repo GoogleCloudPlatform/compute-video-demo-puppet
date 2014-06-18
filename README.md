@@ -276,7 +276,11 @@ module template directory,
 
 1. Now, you can put the public IP address of the load balancer into your
 browser and you should start to see a flicker of pages that will bounce across
-each of your instances.
+each of your instances. You can find your load-balancer IP in the Developers
+Console or with,
+    ```
+    gcutil getforwardingrule puppet-rule --region us-central1
+    ```
 
 ## Cleaning Up
 
