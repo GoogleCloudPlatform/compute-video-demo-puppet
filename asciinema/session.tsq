@@ -1,0 +1,10766 @@
+  Copyright 2014 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+    
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+
+	|Script started on Wed Jun 18 18:58:37 2014|.
+@ 0.003201
+|$ |
+@ 0.698021
+|#|
+@ 0.189162
+| |
+@ 0.243254
+|T|
+@ 0.235645
+|h|
+@ 0.092921
+|i|
+@ 0.045232
+|s|
+@ 0.171324
+| |
+@ 0.210471
+|s|
+@ 0.145385
+|c|
+@ 0.197085
+|r|
+@ 0.126354
+|e|
+@ 0.134296
+|e|
+@ 0.141889
+|n|
+@ 0.235035
+|c|
+@ 0.158844
+|a|
+@ 0.083908
+|s|
+@ 0.118685
+|t|
+@ 0.097651
+| |
+@ 0.118645
+|d|
+@ 0.152673
+|e|
+@ 0.061920
+|m|
+@ 0.137358
+|o|
+@ 0.078874
+|n|
+@ 0.053086
+|s|
+@ 0.137157
+|t|
+@ 0.187666
+|r|
+@ 0.108412
+|a|
+@ 0.100822
+|t|
+@ 0.072993
+|e|
+@ 0.178453
+|s|
+@ 0.169351
+| |
+@ 0.156693
+|h|
+@ 0.077643
+|o|
+@ 0.105329
+|w|
+@ 0.086061
+| |
+@ 0.138098
+|t|
+@ 0.076613
+|o|
+@ 0.118866
+| |
+@ 0.148323
+|u|
+@ 0.385919
+|s|
+@ 0.107491
+|e|
+@ 0.124915
+| |
+@ 0.086141
+|t|
+@ 0.064103
+|h|
+@ 0.078184
+|e|
+@ 0.073700
+| |
+@ 0.188753
+|P|
+@ 0.151389
+|u|
+@ 0.162596
+|p|
+@ 0.152920
+|p|
+@ 0.050212
+|e|
+@ 0.074875
+|t|
+@ 0.189920
+| |
+@ 0.184986
+|'|
+@ 0.076144
+|g|
+@ 0.166970
+|c|
+@ 0.337978
+|e|
+@ 0.628431
+|_|
+@ 0.167901
+|c|
+@ 0.102632
+|o|
+@ 0.003492
+|m|
+@ 0.076644
+|p|
+@ 0.235882
+|u|
+@ 0.085244
+|t|
+@ 0.070882
+|e|
+@ 0.693669
+|'|
+@ 0.201739
+| |
+@ 0.630537
+|m|
+@ 0.164963
+|o|
+@ 0.538711
+|d|
+@ 0.132218
+|u|
+@ 0.078983
+|l|
+@ 0.110951
+|e|
+@ 0.648371
+| |
+@ 0.144395
+|t|
+@ 0.092785
+|o|
+@ 0.662441
+. CR/^M LF/^J
+|$ |
+@ 0.358194
+|#|
+@ 0.153630
+| |
+@ 0.193828
+|m|
+@ 0.079285
+|a|
+@ 0.098714
+|n|
+@ 0.100166
+|a|
+@ 0.117534
+|g|
+@ 0.095314
+|e|
+@ 0.094108
+| |
+@ 0.673246
+|G|
+@ 0.155710
+|o|
+@ 0.176415
+|o|
+@ 0.151974
+|g|
+@ 0.064043
+|l|
+@ 0.127942
+|e|
+@ 0.061953
+| |
+@ 0.214514
+|C|
+@ 0.168836
+|o|
+@ 0.035027
+|m|
+@ 0.070151
+|p|
+@ 0.219193
+|u|
+@ 0.080950
+|t|
+@ 0.055002
+|e|
+@ 0.052285
+| |
+@ 0.258664
+|E|
+@ 0.150115
+|n|
+@ 0.100513
+|g|
+@ 0.053298
+|i|
+@ 0.053013
+|n|
+@ 0.072902
+|e|
+@ 0.139551
+| |
+@ 0.090110
+|r|
+@ 0.065634
+|e|
+@ 0.144108
+|s|
+@ 0.112990
+|o|
+@ 0.055023
+|u|
+@ 0.044359
+|r|
+@ 0.172991
+|c|
+@ 0.238650
+|e|
+@ 0.204070
+|s|
+@ 0.172465
+|.|
+@ 0.364998
+| |
+@ 0.290540
+|E|
+@ 0.225119
+|v|
+@ 0.146477
+|e|
+@ 0.069757
+|r|
+@ 0.136454
+|y|
+@ 0.077512
+|t|
+@ 0.069876
+|h|
+@ 0.135142
+|i|
+@ 0.089386
+|n|
+@ 0.077746
+|g|
+@ 0.138204
+| |
+@ 0.174479
+|y|
+@ 0.102285
+|o|
+@ 0.090559
+|u|
+@ 0.107657
+| |
+@ 0.238646
+|n|
+@ 0.136810
+|e|
+@ 0.143458
+|e|
+@ 0.163936
+|d|
+@ 0.094766
+| |
+@ 0.088982
+|t|
+@ 0.040470
+|o|
+@ 0.104487
+| |
+@ 0.081688
+|r|
+@ 0.076696
+|e|
+@ 0.143903
+|p|
+@ 0.181560
+|l|
+@ 0.072082
+|i|
+@ 0.077449
+|c|
+@ 0.125131
+|a|
+@ 0.074749
+|t|
+@ 0.086761
+|e|
+@ 0.112634
+| |
+@ 0.142394
+|t|
+@ 0.054811
+|h|
+@ 0.100833
+|e |
+. CR/^M
+@ 0.151221
+: Esc [ A
+& CUU: CURSOR UP
+" Move the cursor up 1 line.
+|$ # manage Google Compute Engine resources. Everything you need to replicat|-
+-|e th|
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+|e|
+. CR/^M LF/^J
+|$ |
+@ 0.454411
+|#|
+@ 0.603804
+| |
+@ 1.283591
+|d|
+@ 0.155318
+|e|
+@ 0.078620
+|m|
+@ 0.072440
+|o|
+@ 0.106024
+| |
+@ 0.124398
+|c|
+@ 0.140498
+|a|
+@ 0.134953
+|n|
+@ 0.250309
+| |
+@ 0.112986
+|b|
+@ 0.141858
+|e|
+@ 0.120782
+| |
+@ 0.130600
+|f|
+@ 0.088672
+|o|
+@ 0.052520
+|u|
+@ 0.174149
+|n|
+@ 0.078444
+|d|
+@ 0.118062
+| |
+@ 0.141360
+|a|
+@ 0.172387
+|t|
+@ 0.147030
+|,|
+@ 0.860427
+. CR/^M LF/^J
+|$ |
+@ 0.529085
+|#|
+@ 0.279224
+| |
+@ 0.794695
+|https://github.com/GoogleCloudPlatform/compute-video-demo-puppet|
+@ 0.804437
+. CR/^M LF/^J
+|$ |
+@ 2.068184
+. CR/^M LF/^J
+|$ |
+@ 0.288964
+|#|
+@ 0.196623
+| |
+@ 0.299519
+|W|
+@ 0.266669
+|e|
+@ 0.304080
+|'|
+@ 0.294911
+|l|
+@ 0.150206
+|l|
+@ 0.109595
+| |
+@ 0.256213
+|u|
+@ 0.083243
+|s|
+@ 0.067883
+|e|
+@ 0.060993
+| |
+@ 0.113305
+|t|
+@ 0.068148
+|h|
+@ 0.056171
+|e|
+@ 0.127012
+| |
+@ 0.220627
+|'|
+@ 0.031366
+|g|
+@ 0.184148
+|c|
+@ 0.174077
+|e|
+@ 0.306074
+|_|
+@ 0.188207
+|c|
+@ 0.101963
+|o|
+@ 0.007303
+|m|
+@ 0.105630
+|p|
+@ 0.205844
+|u|
+@ 0.053761
+|t|
+@ 0.084993
+|e|
+@ 0.629842
+|'|
+@ 0.281135
+| |
+@ 0.316125
+|m|
+@ 0.120034
+|o|
+@ 0.603465
+|d|
+@ 0.260108
+|u|
+@ 0.103784
+|l|
+@ 0.060571
+|e|
+@ 0.095087
+| |
+@ 0.116538
+|t|
+@ 0.064484
+|o|
+@ 0.073795
+| |
+@ 0.135185
+|c|
+@ 0.198322
+|r|
+@ 0.115862
+|e|
+@ 0.048814
+|a|
+@ 0.107608
+|t|
+@ 0.072404
+|e|
+@ 0.087717
+| |
+@ 0.094660
+|a|
+@ 0.128651
+|n|
+@ 0.088537
+|d|
+@ 0.107887
+| |
+@ 0.113662
+|b|
+@ 0.095053
+|o|
+@ 0.118364
+|o|
+@ 0.135389
+|t|
+@ 0.200495
+|s|
+@ 0.155132
+|t|
+@ 0.168924
+|r|
+@ 0.152101
+|a|
+@ 0.033996
+|p|
+@ 0.263670
+| |
+@ 0.586662
+|f|
+@ 0.163462
+|o|
+@ 0.063915
+|u|
+@ 0.164030
+|r|
+@ 0.183784
+| |
+@ 0.162850
+|i|
+@ 0.073120
+|n|
+@ 0.064474
+|s|
+@ 0.082787
+|t|
+@ 0.108521
+|a|
+@ 0.101412
+|n|
+@ 0.096279
+|c|
+@ 0.174608
+|e|
+@ 0.163910
+|s|
+@ 0.638838
+. CR/^M LF/^J
+|$ |
+@ 0.405925
+|3|
+@ 1.010760
+. BS/^H
+| |
+. BS/^H
+@ 0.529551
+|# |
+@ 0.826788
+|i|
+@ 0.066088
+|n|
+@ 0.140866
+| |
+@ 0.217590
+|t|
+@ 0.151060
+|o|
+@ 0.517426
+. BS/^H
+| |
+. BS/^H
+@ 0.149901
+|w|
+@ 0.133962
+|o|
+@ 0.097296
+| |
+@ 0.126656
+|d|
+@ 0.105178
+|i|
+@ 0.123442
+|f|
+@ 0.154296
+|f|
+@ 0.127860
+|e|
+@ 0.076981
+|r|
+@ 0.108138
+|e|
+@ 0.087380
+|n|
+@ 0.116629
+|t|
+@ 0.410002
+| |
+@ 0.146067
+|z|
+@ 0.103147
+|o|
+@ 0.047581
+|n|
+@ 0.073054
+|e|
+@ 0.153758
+|s|
+@ 0.366378
+|,|
+@ 0.104217
+| |
+@ 0.126253
+|c|
+@ 0.152587
+|r|
+@ 0.109699
+|e|
+@ 0.266195
+|t|
+@ 0.565742
+. BS/^H
+| |
+. BS/^H
+@ 0.127599
+|a|
+@ 0.101783
+|t|
+@ 0.037490
+|e|
+@ 0.218565
+| |
+@ 0.115045
+|a|
+@ 0.130352
+| |
+@ 0.097675
+|f|
+@ 0.117747
+|i|
+@ 0.108839
+|r|
+@ 0.059002
+|e|
+@ 0.155611
+|w|
+@ 0.211197
+|a|
+@ 0.086096
+|l|
+@ 0.120975
+|l|
+@ 0.084737
+| |
+@ 0.125964
+|r|
+@ 0.089018
+|u|
+@ 0.065933
+|l|
+@ 0.107744
+|e|
+@ 0.164767
+| |
+@ 0.124261
+|t|
+@ 0.078173
+|o|
+@ 0.080689
+| |
+@ 0.096022
+|a|
+@ 0.092596
+|l|
+@ 0.153395
+|l|
+@ 0.304246
+|o|
+@ 0.141563
+|w|
+@ 0.110293
+| |
+@ 0.391174
+|H|
+@ 0.175677
+|T|
+@ 0.586482
+|T|
+@ 0.300235
+|P|
+@ 0.271368
+| |
+@ 0.190506
+|t|
+@ 0.195692
+|r|
+@ 0.092520
+|a|
+@ 0.142705
+|f|
+@ 0.126957
+|f|
+@ 0.170545
+|i|
+@ 0.191179
+|c|
+@ 0.760779
+|,|
+@ 0.410882
+| |
+@ 0.092501
+|a|
+@ 0.067008
+|n|
+@ 0.091233
+|d|
+@ 0.119086
+. CR/^M LF/^J
+|$ |
+@ 0.404350
+|#|
+@ 0.170625
+| |
+@ 0.114216
+|a|
+@ 0.139407
+|l|
+@ 0.124488
+|s|
+@ 0.105510
+|o|
+@ 0.192812
+| |
+@ 0.649896
+|c|
+@ 0.197877
+|r|
+@ 0.086483
+|e|
+@ 0.121864
+|a|
+@ 0.099372
+|t|
+@ 0.039882
+|e|
+@ 0.163219
+| |
+@ 0.072511
+|a|
+@ 0.123950
+| |
+@ 0.366314
+|C|
+@ 0.152676
+|o|
+@ 0.035722
+|m|
+@ 0.089595
+|p|
+@ 0.185143
+|u|
+@ 0.062435
+|t|
+@ 0.083739
+|e|
+@ 0.048996
+| |
+@ 0.274788
+|E|
+@ 0.156470
+|n|
+@ 0.093198
+|g|
+@ 0.081183
+|i|
+@ 0.043933
+|n|
+@ 0.069729
+|e|
+@ 0.070427
+| |
+@ 0.169178
+|l|
+@ 0.147698
+|o|
+@ 0.067395
+|a|
+@ 0.106968
+|d|
+@ 0.102556
+|-|
+@ 0.160398
+|b|
+@ 0.106011
+|a|
+@ 0.415217
+|l|
+@ 0.403307
+|a|
+@ 0.125216
+|n|
+@ 0.099664
+|c|
+@ 0.208510
+|e|
+@ 0.094367
+|r|
+@ 0.427608
+|.|
+@ 0.250104
+| |
+@ 0.265888
+|T|
+@ 0.102518
+|h|
+@ 0.089934
+|e|
+@ 0.066812
+| |
+@ 0.438783
+|A|
+@ 0.293553
+|p|
+@ 0.102713
+|a|
+@ 0.136692
+|c|
+@ 0.098324
+|h|
+@ 0.123522
+|e|
+@ 0.150158
+| |
+@ 0.097849
+|w|
+@ 0.077862
+|e|
+@ 0.221759
+|b|
+@ 0.372242
+| |
+@ 0.177217
+|s|
+@ 0.085211
+|e|
+@ 0.073422
+|r|
+@ 0.219279
+|v|
+@ 0.136076
+|e|
+@ 0.067039
+|r|
+@ 0.108799
+| |
+@ 0.094831
+|a|
+@ 0.090819
+|n|
+@ 0.089613
+|d|
+@ 0.094124
+| |
+@ 0.096883
+|a|
+@ 0.623033
+. CR/^M LF/^J
+|$ |
+@ 0.304973
+|#|
+@ 0.193526
+| |
+@ 0.296046
+|c|
+@ 0.098153
+|u|
+@ 0.119627
+|s|
+@ 0.090984
+|t|
+@ 0.069944
+|o|
+@ 0.046266
+|m|
+@ 0.159019
+| |
+@ 1.151741
+|s|
+@ 0.126541
+|i|
+@ 0.056974
+|t|
+@ 0.065441
+|e|
+@ 0.090002
+| |
+@ 0.116623
+|p|
+@ 0.079385
+|a|
+@ 0.077683
+|g|
+@ 0.057985
+|e|
+@ 0.112802
+| |
+@ 0.097124
+|w|
+@ 0.097513
+|i|
+@ 0.157040
+|l|
+@ 0.145499
+|l|
+@ 0.078689
+| |
+@ 0.056292
+|b|
+@ 0.138384
+|e|
+@ 0.285333
+| |
+@ 0.229878
+|i|
+@ 0.063041
+|n|
+@ 0.079691
+|s|
+@ 0.080836
+|t|
+@ 0.120472
+|a|
+@ 0.186725
+|l|
+@ 0.039931
+|l|
+@ 0.096043
+|e|
+@ 0.194988
+|d|
+@ 0.028126
+| |
+@ 0.106049
+|o|
+@ 0.073416
+|n|
+@ 0.069066
+| |
+@ 0.122037
+|e|
+@ 0.120468
+|a|
+@ 0.181600
+|c|
+@ 0.072778
+|h|
+@ 0.151905
+| |
+@ 0.314829
+|i|
+@ 0.058130
+|n|
+@ 0.087811
+|s|
+@ 0.107747
+|t|
+@ 0.126795
+|a|
+@ 0.096456
+|n|
+@ 0.108689
+|c|
+@ 0.177743
+|e|
+@ 0.270458
+|.|
+@ 0.648141
+. CR/^M LF/^J
+|$ |
+@ 0.636485
+. CR/^M LF/^J
+|$ |
+@ 0.282741
+|#|
+@ 0.155578
+| |
+@ 1.266152
+|I|
+@ 0.160443
+|n|
+@ 0.124065
+| |
+@ 0.097309
+|t|
+@ 0.090539
+|h|
+@ 0.322374
+|i|
+@ 0.165896
+|s|
+@ 0.087320
+| |
+@ 0.312076
+|s|
+@ 0.162372
+|c|
+@ 0.213854
+|r|
+@ 0.095982
+|e|
+@ 0.160643
+|e|
+@ 0.077360
+|n|
+@ 0.186756
+|c|
+@ 0.153981
+|a|
+@ 0.077705
+|s|
+@ 0.135821
+|t|
+@ 0.124056
+|,|
+@ 0.097186
+| |
+@ 0.063510
+|w|
+@ 0.093678
+|e|
+@ 0.132580
+| |
+@ 0.331802
+|h|
+@ 0.087551
+|a|
+@ 0.074541
+|v|
+@ 0.071659
+|e|
+@ 0.105500
+| |
+@ 0.093621
+|a|
+@ 0.133505
+|l|
+@ 0.167135
+|r|
+@ 0.071762
+|e|
+@ 0.148359
+|a|
+@ 0.115609
+|d|
+@ 0.071424
+|y|
+@ 0.085060
+| |
+@ 0.223039
+|c|
+@ 0.247342
+|r|
+@ 0.075382
+|e|
+@ 0.116152
+|a|
+@ 0.115384
+|t|
+@ 0.043364
+|e|
+@ 0.212963
+|d|
+@ 0.070148
+| |
+@ 0.104371
+|a|
+@ 0.104775
+| |
+@ 0.234442
+|D|
+@ 0.137992
+|e|
+@ 0.447086
+|b|
+@ 0.130224
+|i|
+@ 0.098550
+|a|
+@ 0.138934
+|n|
+@ 0.420005
+| |
+@ 0.546059
+|C|
+@ 0.245290
+|o|
+@ 0.089859
+|m|
+@ 0.138263
+|p|
+@ 0.129973
+|u|
+@ 0.096766
+|t|
+@ 0.087357
+|e|
+@ 0.135831
+| |
+@ 0.246600
+|E|
+@ 0.150005
+|n|
+@ 0.113484
+|g|
+@ 0.075842
+|i|
+@ 0.063313
+|n|
+@ 0.087845
+|e|
+@ 0.485273
+| |
+	@ 0.112981
+	|i|
+	@ 0.079621
+	|n|
+	@ 0.037126
+	|s|
+	@ 0.099690
+	|t|
+	@ 0.088519
+	|a|
+	@ 0.138127
+	|n|
+	@ 0.415781
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.176935
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.191079
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.167246
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.148882
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.223545
+	. BS/^H
+	| |
+	. BS/^H
+@ 0.523515
+|m|
+@ 0.088930
+|a|
+@ 0.146593
+|c|
+@ 0.078609
+|h|
+@ 0.160692
+|i|
+@ 0.054577
+|n|
+@ 0.077241
+|e|
+@ 0.328321
+|. |
+. CR/^M
+@ 1.111890
+: Esc [ A
+& CUU: CURSOR UP
+" Move the cursor up 1 line.
+|$ # In this screencast, we have already created a Debian Compute Engine mac|-
+-|hine|
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+|.|
+. CR/^M LF/^J
+|$ |
+@ 0.369311
+|#|
+@ 1.000692
+| |
+@ 0.612181
+|W|
+@ 0.145457
+|e|
+@ 0.126468
+|'|
+@ 0.201471
+|l|
+@ 0.114955
+|l|
+@ 0.119928
+| |
+@ 0.092368
+|b|
+@ 0.119065
+|e|
+@ 0.219715
+|g|
+@ 0.097764
+|i|
+@ 0.047513
+|n|
+@ 0.141274
+| |
+@ 0.163759
+|b|
+@ 0.143223
+|y|
+@ 0.205963
+| |
+@ 0.092575
+|i|
+@ 0.072148
+|n|
+@ 0.095478
+|s|
+@ 0.077339
+|t|
+@ 0.150841
+|a|
+@ 0.069775
+|l|
+@ 0.123309
+|l|
+@ 0.204400
+|i|
+@ 0.058111
+|n|
+@ 0.087165
+|g|
+@ 0.099347
+| |
+@ 0.269283
+|P|
+@ 0.131341
+|u|
+@ 0.196047
+|p|
+@ 0.130597
+|p|
+@ 0.040032
+|e|
+@ 0.084878
+|t|
+@ 0.106555
+| |
+@ 0.082237
+|a|
+@ 0.100735
+|n|
+@ 0.063248
+|d|
+@ 0.124166
+| |
+@ 0.099512
+|t|
+@ 0.090336
+|h|
+@ 0.116940
+|e|
+@ 0.116880
+|n|
+@ 0.139654
+| |
+@ 0.153913
+|f|
+@ 0.073344
+|o|
+@ 0.327559
+. BS/^H
+| |
+. BS/^H
+@ 0.411088
+. BS/^H
+| |
+. BS/^H
+@ 0.207312
+|p|
+@ 0.051328
+|e|
+@ 0.064420
+|r|
+@ 0.226041
+|f|
+@ 0.093707
+|o|
+@ 0.094744
+|r|
+@ 0.104640
+|m|
+@ 0.193902
+| |
+@ 0.100976
+|t|
+@ 0.092832
+|h|
+@ 0.065714
+|e|
+@ 0.045119
+| |
+@ 0.196128
+|d|
+@ 0.132380
+|e|
+@ 0.070408
+|m|
+@ 0.093529
+|o|
+@ 0.519033
+|.|
+@ 0.269111
+| |
+@ 0.271401
+|W|
+@ 0.219116
+|e|
+@ 0.145337
+|'|
+@ 0.085599
+|r|
+@ 0.065710
+|e|
+@ 0.098650
+| |
+@ 0.139053
+|f|
+@ 0.066639
+|o|
+@ 0.327769
+|l|
+@ 0.622805
+|o|
+@ 0.182183
+|w|
+@ 0.543010
+. BS/^H
+| |
+. BS/^H
+@ 0.138386
+. BS/^H
+| |
+. BS/^H
+@ 0.203213
+|l|
+@ 0.078091
+|w|
+@ 0.088165
+|o|
+@ 0.161357
+|i|
+@ 0.042821
+|n|
+@ 0.064036
+|g|
+@ 0.425426
+. CR/^M LF/^J
+|$ |
+@ 0.454238
+|#|
+@ 0.236296
+| |
+@ 0.186916
+|t|
+@ 0.051827
+|h|
+@ 0.713179
+|e|
+@ 0.150641
+| |
+@ 0.179122
+|i|
+@ 0.076916
+|n|
+@ 0.081142
+|s|
+@ 0.157734
+|t|
+@ 0.179740
+|r|
+@ 0.120928
+|u|
+@ 0.165699
+|c|
+@ 0.174319
+|t|
+@ 0.082630
+|i|
+@ 0.087499
+|o|
+@ 0.046819
+|n|
+@ 0.052997
+|s|
+@ 0.268701
+| |
+@ 0.151948
+|a|
+@ 0.113177
+|t|
+@ 0.144397
+|,|
+@ 0.571274
+. CR/^M LF/^J
+|$ |
+@ 0.373347
+|#|
+@ 0.185208
+| |
+@ 4.965028
+|http://docs.puppetlabs.com/guides/install_puppet/install_debian_ubuntu.html|
+@ 0.583225
+. CR/^M LF/^J
+|$ |
+@ 2.155139
+|w|
+@ 0.504821
+|g|
+@ 0.117505
+|e|
+@ 0.084574
+|t|
+@ 0.486295
+| |
+@ 0.622009
+|h|
+@ 0.088284
+|t|
+@ 0.148586
+|t|
+@ 0.185526
+|p|
+@ 0.156460
+|s|
+@ 0.290101
+|:|
+@ 0.232025
+|/|
+@ 0.132863
+|/|
+@ 0.616357
+|a|
+@ 0.132475
+|p|
+@ 0.119498
+|t|
+@ 0.268863
+|.|
+@ 0.343828
+|p|
+@ 0.100810
+|u|
+@ 0.159037
+|p|
+@ 0.119446
+|p|
+@ 0.092394
+|e|
+@ 0.070388
+|t|
+@ 0.383924
+|l|
+@ 0.142982
+|a|
+@ 0.129131
+|b|
+@ 0.148570
+|s|
+@ 0.173329
+|.|
+@ 0.167411
+|c|
+@ 0.094901
+|o|
+@ 0.051155
+|m|
+@ 0.210038
+|/|
+@ 0.271478
+|p|
+@ 0.067145
+|u|
+@ 0.209449
+|p|
+@ 0.149085
+|p|
+@ 0.118959
+|e|
+@ 0.103827
+|t|
+@ 0.588825
+|l|
+@ 0.122002
+|a|
+@ 0.115006
+|b|
+@ 0.125117
+|s|
+@ 0.223602
+|-|
+@ 0.098261
+|r|
+@ 0.049863
+|e|
+@ 0.163195
+|l|
+@ 0.058949
+|e|
+@ 0.140825
+|a|
+@ 0.088633
+|s|
+@ 0.118174
+|e|
+@ 0.213884
+|-|
+@ 0.133202
+|w|
+@ 0.139994
+|h|
+@ 0.118065
+|e|
+@ 0.138797
+|e|
+@ 0.276524
+|z|
+@ 0.132949
+|y|
+@ 0.814614
+|.|
+@ 0.173184
+|d|
+@ 0.164096
+|e|
+@ 0.173446
+|b|
+@ 0.117735
+. CR/^M LF/^J
+@ 0.122535
+|--2014-06-18 19:00:58--  https://apt.puppetlabs.com/puppetlabs-release-whee|-
+-|zy.deb|
+@ 0.000096
+. CR/^M LF/^J
+@ 2.741245
+|Resolving apt.puppetlabs.com (apt.puppetlabs.com)... |
+@ 0.005135
+|198.58.114.168|
+@ 0.000062
+|, |
+@ 0.000037
+|2600:3c00::f03c:91ff:fe69:6bf0|
+@ 0.000023
+. CR/^M LF/^J
+@ 0.000048
+|Connecting to apt.puppetlabs.com (apt.puppetlabs.com)|198.58.114.168|:443..|-
+-|. |
+@ 0.041367
+|connected.|
+@ 0.000057
+. CR/^M LF/^J
+@ 0.221644
+|HTTP request sent, awaiting response... |
+@ 0.042877
+|200 OK|
+@ 0.000065
+. CR/^M LF/^J
+@ 0.000065
+|Length: |
+@ 0.000035
+|3428|
+@ 0.000033
+| (3.3K)|
+@ 0.000033
+| [application/x-debian-package]|
+@ 0.000022
+. CR/^M LF/^J
+@ 0.000083
+|Saving to: `puppetlabs-release-wheezy.deb'|
+@ 0.000026
+. CR/^M LF/^J
+@ 0.000030
+. CR/^M LF/^J
+@ 0.000037
+. CR/^M
+@ 0.000023
+| 0% [                                       ] 0           --.-K/s          |-
+-|    |
+@ 0.000127
+. CR/^M
+@ 0.000024
+|100%[======================================>] 3,428       --.-K/s   in 0s  |-
+-|    |
+@ 0.000018
+. CR/^M LF/^J
+@ 0.000016
+. CR/^M LF/^J
+@ 0.000078
+|2014-06-18 19:01:01 (50.9 MB/s) - `puppetlabs-release-wheezy.deb' saved [34|-
+-|28/3428]|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000016
+. CR/^M LF/^J
+@ 0.000900
+|$ |
+@ 1.680945
+|s|
+@ 0.075203
+|u|
+@ 0.077325
+|d|
+@ 0.111123
+|o|
+@ 0.077714
+| |
+@ 0.193548
+|d|
+@ 0.132469
+|p|
+@ 0.092350
+|k|
+@ 0.132590
+. BEL/^G
+@ 0.721164
+|g|
+@ 0.225594
+| |
+@ 0.193413
+|-|
+@ 0.174231
+|i|
+@ 0.225994
+| |
+@ 2.684772
+|p|
+@ 0.067583
+|u|
+@ 0.217847
+|ppetlabs-release-wheezy.deb |
+@ 0.711604
+. CR/^M LF/^J
+@ 0.072477
+|Selecting previously unselected package puppetlabs-release.|
+. CR/^M LF/^J
+|(Reading database ... |
+. CR/^M
+|(Reading database ... 5%|
+. CR/^M
+|(Reading database ... 10%|
+. CR/^M
+|(Reading database ... 15%|
+. CR/^M
+|(Reading database ... 20%|
+. CR/^M
+|(Reading database ... 25%|
+. CR/^M
+|(Reading database ... 30%|
+. CR/^M
+|(Reading database ... 35%|
+. CR/^M
+|(Reading database ... 40%|
+. CR/^M
+|(Reading database ... 45%|
+. CR/^M
+|(Reading database ... 50%|
+. CR/^M
+|(Reading database ... 55%|
+. CR/^M
+|(Reading database ... 60%|
+. CR/^M
+|(Reading database ... 65%|
+. CR/^M
+|(Reading database ... 70%|
+. CR/^M
+|(Reading database ... 75%|
+. CR/^M
+|(Reading database ... 80%|
+. CR/^M
+|(Reading database ... 85%|
+. CR/^M
+|(Reading database ... 90%|
+. CR/^M
+@ 0.000524
+|(Reading database ... 95%|
+. CR/^M
+@ 0.001151
+|(Reading database ... 100%|
+. CR/^M
+@ 0.000063
+|(Reading database ... |
+@ 0.000035
+|19556 files and directories currently installed.)|
+@ 0.000029
+. CR/^M LF/^J
+@ 0.000501
+|Unpacking puppetlabs-release (from puppetlabs-release-wheezy.deb) ...|
+@ 0.000034
+. CR/^M LF/^J
+@ 0.026065
+|Setting up puppetlabs-release (1.0-7) ...|
+. CR/^M LF/^J
+@ 0.374894
+|$ |
+@ 1.748520
+|s|
+@ 0.060640
+|u|
+@ 0.139882
+|d|
+@ 0.066697
+|o|
+@ 0.566103
+| |
+@ 0.152616
+|a|
+@ 0.073205
+|p|
+@ 0.101944
+|t|
+@ 0.106597
+|-|
+@ 0.122797
+|g|
+@ 0.098701
+|e|
+@ 0.101465
+|t|
+@ 0.090910
+| |
+@ 0.119459
+|u|
+@ 0.094292
+|p|
+@ 0.072573
+|d|
+@ 0.131212
+|a|
+@ 0.089418
+|t|
+@ 0.049890
+|e|
+@ 0.146536
+. CR/^M LF/^J
+@ 0.015697
+. CR/^M CR/^M
+|0% [Working]|
+@ 0.017219
+. CR/^M
+|            |
+. CR/^M
+|Hit http://gce_debian_mirror.storage.googleapis.com wheezy Release.gpg|
+. CR/^M LF/^J CR/^M
+|            |
+. CR/^M
+|17% [Connecting to http.debian.net] [Connecting to security.debian.org (128|-
+-|.101|
+@ 0.016381
+. CR/^M
+|                                                                           |-
+-|    |
+. CR/^M
+|Hit http://gce_debian_mirror.storage.googleapis.com wheezy Release|
+. CR/^M LF/^J CR/^M
+|17% [Connecting to http.debian.net] [Waiting for headers] [Connecting to ap|-
+-|t.pu|
+@ 0.000335
+. CR/^M
+|17% [Release gpgv 168 kB] [Connecting to http.debian.net] [Waiting for head|-
+-|ers]|
+@ 0.005757
+. CR/^M
+|22% [Connecting to http.debian.net] [Waiting for headers] [Connecting to ap|-
+-|t.pu|
+@ 0.009585
+. CR/^M
+|                                                                           |-
+-|    |
+. CR/^M
+|Hit http://gce_debian_mirror.storage.googleapis.com wheezy/main Sources|
+@ 0.000074
+. CR/^M LF/^J
+@ 0.000038
+. CR/^M
+|33% [Connecting to http.debian.net (46.4.205.44)] [Waiting for headers] [Wa|-
+-|itin|
+@ 0.002472
+. CR/^M
+|                                                                           |-
+-|    |
+. CR/^M
+|Hit http://security.debian.org wheezy/updates Release.gpg|
+@ 0.000032
+. CR/^M LF/^J
+@ 0.000039
+. CR/^M
+|40% [Waiting for headers] [Connecting to http.debian.net (46.4.205.44)] [Wa|-
+-|itin|
+@ 0.022952
+. CR/^M
+|                                                                           |-
+-|    |
+. CR/^M
+|Hit http://gce_debian_mirror.storage.googleapis.com wheezy/main amd64 Packa|-
+-|ges|
+@ 0.000052
+. CR/^M LF/^J
+@ 0.000062
+. CR/^M
+|50% [Waiting for headers] [Connecting to http.debian.net (46.4.205.44)] [Wa|-
+-|itin|
+@ 0.000337
+. CR/^M
+|                                                                           |-
+-|    |
+. CR/^M
+|Hit http://security.debian.org wheezy/updates Release|
+@ 0.000027
+. CR/^M LF/^J
+@ 0.000027
+. CR/^M
+|50% [Waiting for headers] [Connecting to http.debian.net (46.4.205.44)] [Wa|-
+-|itin|
+@ 0.000272
+. CR/^M
+|50% [Release gpgv 102 kB] [Waiting for headers] [Connecting to http.debian.|-
+-|net |
+@ 0.003807
+. CR/^M
+|46% [Waiting for headers] [Connecting to http.debian.net (46.4.205.44)] [Wa|-
+-|itin|
+@ 0.005566
+. CR/^M
+|                                                                           |-
+-|    |
+. CR/^M
+|Get:1 http://apt.puppetlabs.com wheezy Release.gpg [876 B]|
+. CR/^M LF/^J CR/^M
+|99% [Waiting for headers] [Connecting to http.debian.net (46.4.205.44)] [Wa|-
+-|itin|
+@ 0.001934
+. CR/^M
+|                                                                           |-
+-|    |
+. CR/^M
+|Hit http://gce_debian_mirror.storage.googleapis.com wheezy/main Translation|-
+-|-en|
+. CR/^M LF/^J CR/^M
+|99% [Connecting to http.debian.net (46.4.205.44)] [Waiting for headers] [Wa|-
+-|itin|
+@ 0.016455
+. CR/^M
+|                                                                           |-
+-|    |
+. CR/^M
+|Hit http://security.debian.org wheezy/updates/main Sources|
+. CR/^M LF/^J CR/^M
+|                                                                           |-
+-|    |
+. CR/^M
+|100% [Connecting to http.debian.net (46.4.205.44)] [Waiting for headers]|
+@ 0.023327
+. CR/^M
+|                                                                        |
+. CR/^M
+|Get:2 http://apt.puppetlabs.com wheezy Release [22.4 kB]|
+. CR/^M LF/^J CR/^M
+|                                                                        |
+. CR/^M
+|21% [Connecting to http.debian.net (46.4.205.44)] [Waiting for headers] [2 |-
+-|Rele|
+@ 0.000617
+. CR/^M
+|                                                                           |-
+-|    |
+. CR/^M
+|Hit http://security.debian.org wheezy/updates/main amd64 Packages|
+. CR/^M LF/^J CR/^M
+|63% [Connecting to http.debian.net (46.4.205.44)] [Waiting for headers] [2 |-
+-|Rele|
+@ 0.024099
+. CR/^M
+|                                                                           |-
+-|    |
+. CR/^M
+|Hit http://security.debian.org wheezy/updates/main Translation-en|
+. CR/^M LF/^J CR/^M
+|63% [Connecting to http.debian.net (46.4.205.44)] [2 Release 13.8 kB/22.4 k|-
+-|B 62|
+@ 0.017114
+. CR/^M
+|                                                                           |-
+-|    |
+. CR/^M
+|100% [Waiting for headers]|
+@ 0.000246
+. CR/^M
+|                          |
+. CR/^M
+|100% [2 Release gpgv 22.4 kB] [Waiting for headers]|
+@ 0.002530
+. CR/^M
+|                                                   |
+. CR/^M
+|100% [Waiting for headers]|
+@ 0.041741
+. CR/^M
+|                          |
+. CR/^M
+|Get:3 http://apt.puppetlabs.com wheezy/main Sources [69.7 kB]|
+. CR/^M LF/^J CR/^M
+|                          |
+. CR/^M
+|31% [Waiting for headers] [3 Sources 5315 B/69.7 kB 8%]|
+@ 0.075951
+. CR/^M
+|                                                       |
+. CR/^M
+|97% [3 Sources 67.3 kB/69.7 kB 97%]|
+@ 0.009583
+. CR/^M
+|                                   |
+. CR/^M
+|100% [Connecting to cloudfront.debian.net]|
+@ 0.000275
+. CR/^M
+|                                          |
+. CR/^M
+|100% [3 Sources gzip 0 B] [Connecting to cloudfront.debian.net] [Waiting fo|-
+-|r he|
+@ 0.007148
+. CR/^M
+|                                                                           |-
+-|    |
+. CR/^M
+|100% [Connecting to cloudfront.debian.net] [Waiting for headers]|
+@ 0.039691
+. CR/^M
+|                                                                |
+. CR/^M
+|Get:4 http://apt.puppetlabs.com wheezy/dependencies Sources [8548 B]|
+. CR/^M LF/^J CR/^M
+|                                                                |
+. CR/^M
+|94% [Connecting to cloudfront.debian.net] [4 Sources 2501 B/8548 B 29%]|
+@ 0.000564
+. CR/^M
+|                                                                       |
+. CR/^M
+|100% [Connecting to cloudfront.debian.net] [Waiting for headers]|
+@ 0.000102
+. CR/^M
+|                                                                |
+. CR/^M
+|100% [4 Sources gzip 0 B] [Connecting to cloudfront.debian.net] [Waiting fo|-
+-|r he|
+@ 0.001150
+. CR/^M
+|                                                                           |-
+-|    |
+. CR/^M
+|100% [Connecting to cloudfront.debian.net] [Waiting for headers]|
+@ 0.041805
+. CR/^M
+|                                                                |
+. CR/^M
+|Get:5 http://apt.puppetlabs.com wheezy/main amd64 Packages [77.4 kB]|
+. CR/^M LF/^J CR/^M
+|                                                                |
+. CR/^M
+|61% [Waiting for headers] [5 Packages 8131 B/77.4 kB 11%]|
+@ 0.042812
+. CR/^M
+|                                                         |
+. CR/^M
+|100% [Waiting for headers]|
+@ 0.000217
+. CR/^M
+|                          |
+. CR/^M
+|100% [5 Packages gzip 0 B] [Waiting for headers] [Waiting for headers]|
+@ 0.014627
+. CR/^M
+|                                                                      |
+. CR/^M
+|100% [Waiting for headers] [Waiting for headers]|
+@ 0.031886
+. CR/^M
+|                                                |
+. CR/^M
+|Get:6 http://apt.puppetlabs.com wheezy/dependencies amd64 Packages [6178 B]|
+. CR/^M LF/^J CR/^M
+|                                                |
+. CR/^M
+|98% [Waiting for headers] [6 Packages 2501 B/6178 B 40%]|
+@ 0.000461
+. CR/^M
+|                                                        |
+. CR/^M
+|100% [Waiting for headers] [Waiting for headers]|
+@ 0.000094
+. CR/^M
+|                                                |
+. CR/^M
+|100% [6 Packages gzip 0 B] [Waiting for headers] [Waiting for headers]|
+@ 0.000861
+. CR/^M
+|                                                                      |
+. CR/^M
+|100% [Waiting for headers] [Waiting for headers]|
+@ 0.035006
+. CR/^M
+|                                                |
+. CR/^M
+|Hit http://http.debian.net wheezy Release.gpg|
+. CR/^M LF/^J CR/^M
+|                                                |
+. CR/^M
+|100% [Waiting for headers]|
+@ 0.123828
+. CR/^M
+|100% [Waiting for headers]|
+@ 0.149141
+. CR/^M
+|                          |
+. CR/^M
+|Hit http://http.debian.net wheezy Release|
+. CR/^M LF/^J CR/^M
+|100% [Waiting for headers]|
+@ 0.000089
+. CR/^M
+|                          |
+. CR/^M
+|100% [Release gpgv 168 kB] [Waiting for headers]|
+@ 0.005682
+. CR/^M
+|                                                |
+. CR/^M
+|100% [Waiting for headers]|
+@ 0.060575
+. CR/^M
+|                          |
+. CR/^M
+|Ign http://apt.puppetlabs.com wheezy/dependencies Translation-en|
+@ 0.000109
+. CR/^M LF/^J
+@ 0.000041
+. CR/^M
+|100% [Waiting for headers]|
+@ 0.041550
+. CR/^M
+|                          |
+. CR/^M
+|Ign http://apt.puppetlabs.com wheezy/main Translation-en|
+@ 0.000101
+. CR/^M LF/^J
+@ 0.000040
+. CR/^M
+|100% [Waiting for headers]|
+@ 0.021197
+. CR/^M
+|                          |
+. CR/^M
+|100% [Working]|
+@ 0.124062
+. CR/^M
+|              |
+. CR/^M
+|100% [Waiting for headers] [Waiting for headers]|
+@ 0.020593
+. CR/^M
+|                                                |
+. CR/^M
+|Hit http://http.debian.net wheezy/main Sources|
+@ 0.000056
+. CR/^M LF/^J
+@ 0.000037
+. CR/^M
+|                                                |
+. CR/^M
+|100% [Waiting for headers]|
+@ 0.102817
+. CR/^M
+|100% [Waiting for headers]|
+@ 0.140305
+. CR/^M
+|                          |
+. CR/^M
+|Hit http://http.debian.net wheezy/main amd64 Packages|
+@ 0.000089
+. CR/^M LF/^J
+@ 0.000040
+. CR/^M
+|                          |
+. CR/^M
+|100% [Working]|
+@ 0.020137
+. CR/^M
+|              |
+. CR/^M
+|Hit http://http.debian.net wheezy/main Translation-en|
+@ 0.000056
+. CR/^M LF/^J
+@ 0.000037
+. CR/^M
+|100% [Working]|
+@ 0.000030
+. CR/^M
+|              |
+. CR/^M
+@ 0.000047
+|Fetched 185 kB in 1s (139 kB/s)|
+@ 0.000024
+. CR/^M LF/^J
+@ 0.007895
+. CR/^M
+|Reading package lists... 0%|
+. CR/^M
+@ 0.029628
+. CR/^M
+|Reading package lists... 0%|
+. CR/^M
+@ 0.013048
+. CR/^M
+|Reading package lists... 1%|
+. CR/^M
+@ 0.561457
+. CR/^M
+|Reading package lists... 29%|
+. CR/^M
+@ 0.000148
+. CR/^M
+|Reading package lists... 29%|
+. CR/^M
+@ 0.139869
+. CR/^M
+|Reading package lists... 44%|
+. CR/^M
+@ 0.035798
+. CR/^M
+|Reading package lists... 48%|
+. CR/^M
+@ 0.000129
+. CR/^M
+|Reading package lists... 48%|
+. CR/^M
+@ 0.178827
+. CR/^M
+|Reading package lists... 78%|
+. CR/^M
+@ 0.000143
+. CR/^M
+|Reading package lists... 78%|
+. CR/^M
+@ 0.142939
+. CR/^M
+|Reading package lists... 97%|
+. CR/^M
+@ 0.000216
+. CR/^M
+|Reading package lists... 97%|
+. CR/^M
+@ 0.014583
+. CR/^M
+|Reading package lists... 98%|
+. CR/^M
+@ 0.000104
+. CR/^M
+|Reading package lists... 98%|
+. CR/^M
+@ 0.004963
+. CR/^M
+|Reading package lists... 99%|
+. CR/^M
+@ 0.000156
+. CR/^M
+|Reading package lists... 99%|
+. CR/^M
+@ 0.009733
+. CR/^M
+|Reading package lists... 99%|
+. CR/^M
+@ 0.000162
+. CR/^M
+|Reading package lists... 99%|
+. CR/^M
+@ 0.176493
+. CR/^M
+|Reading package lists... 99%|
+. CR/^M
+@ 0.000145
+. CR/^M
+|Reading package lists... 99%|
+. CR/^M
+@ 0.169124
+. CR/^M
+|Reading package lists... Done|
+. CR/^M
+@ 0.000109
+. CR/^M LF/^J
+@ 0.001827
+|$ |
+@ 1.677379
+|s|
+@ 0.076737
+|u|
+@ 0.118646
+|d|
+@ 0.059021
+|o|
+@ 0.135722
+| |
+@ 0.161332
+|a|
+@ 0.098143
+|p|
+@ 0.093465
+|t|
+@ 0.114438
+|-|
+@ 0.128064
+|g|
+@ 0.101719
+|e|
+@ 0.109236
+|t|
+@ 0.075785
+| |
+@ 0.141478
+|i|
+@ 0.071031
+|n|
+@ 0.088853
+|s|
+@ 0.076103
+|t|
+@ 0.111755
+|a|
+@ 0.090207
+|l|
+@ 0.129501
+|l|
+@ 0.090920
+| |
+@ 0.157663
+|p|
+@ 0.100370
+|u|
+@ 0.147149
+|p|
+@ 0.132815
+|p|
+@ 0.095527
+|e|
+@ 0.067718
+|t|
+@ 0.220854
+|m|
+@ 0.128595
+|a|
+@ 0.069917
+|s|
+@ 0.157398
+|t|
+@ 0.164153
+|e|
+@ 0.067121
+|r|
+@ 0.288426
+. CR/^M LF/^J
+@ 0.007737
+. CR/^M
+|Reading package lists... 0%|
+. CR/^M
+@ 0.001113
+. CR/^M
+|Reading package lists... 100%|
+. CR/^M CR/^M
+|Reading package lists... Done|
+. CR/^M CR/^M LF/^J
+@ 0.002246
+. CR/^M
+|Building dependency tree... 0%|
+. CR/^M
+@ 0.000043
+. CR/^M
+|Building dependency tree... 0%|
+. CR/^M
+@ 0.022781
+. CR/^M
+|Building dependency tree... 50%|
+. CR/^M
+@ 0.000101
+. CR/^M
+|Building dependency tree... 50%|
+. CR/^M
+@ 0.066753
+. CR/^M
+|Building dependency tree       |
+. CR/^M
+@ 0.000121
+. CR/^M LF/^J
+@ 0.000029
+. CR/^M
+|Reading state information... 0%|
+. CR/^M
+@ 0.000085
+. CR/^M
+|Reading state information... 3%|
+. CR/^M
+@ 0.000130
+. CR/^M
+|Reading state information... Done|
+. CR/^M
+@ 0.000029
+. CR/^M LF/^J
+@ 0.065456
+|The following extra packages will be installed:|
+@ 0.000118
+. CR/^M LF/^J
+@ 0.000058
+|  augeas-lenses debconf-utils facter hiera libaugeas-ruby libaugeas-ruby1.9|-
+-|.1|
+@ 0.000024
+. CR/^M LF/^J
+@ 0.000026
+|  libaugeas0 libffi5 libjson-ruby libpci3 libruby1.9.1 libxml2 libyaml-0-2|
+@ 0.000022
+. CR/^M LF/^J
+@ 0.000025
+|  pciutils puppet-common puppetmaster-common ruby ruby-json ruby-rgen|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000032
+|  ruby-shadow ruby1.9.1 sgml-base virt-what xml-core|
+@ 0.000022
+. CR/^M LF/^J
+@ 0.000540
+|Suggested packages:|
+@ 0.000026
+. CR/^M LF/^J
+@ 0.000025
+|  augeas-doc augeas-tools bzip2 ruby-selinux libselinux-ruby1.8|
+@ 0.000017
+. CR/^M LF/^J
+@ 0.000020
+|  librrd-ruby1.9.1 librrd-ruby1.8 apache2 nginx puppet-el vim-puppet|
+@ 0.000017
+. CR/^M LF/^J
+@ 0.000019
+|  stompserver ruby-stomp libstomp-ruby1.8 rdoc ruby-ldap libldap-ruby1.8|
+@ 0.000026
+. CR/^M LF/^J
+@ 0.000019
+|  puppetdb-terminus ri ruby-dev ruby1.9.1-examples ri1.9.1 graphviz|
+@ 0.000016
+. CR/^M LF/^J
+@ 0.000024
+|  ruby1.9.1-dev ruby-switch sgml-base-doc debhelper|
+@ 0.000017
+. CR/^M LF/^J
+@ 0.000723
+|The following NEW packages will be installed:|
+@ 0.000029
+. CR/^M LF/^J
+@ 0.000025
+|  augeas-lenses debconf-utils facter hiera libaugeas-ruby libaugeas-ruby1.9|-
+-|.1|
+@ 0.000017
+. CR/^M LF/^J
+@ 0.000019
+|  libaugeas0 libffi5 libjson-ruby libpci3 libruby1.9.1 libxml2 libyaml-0-2|
+@ 0.000017
+. CR/^M LF/^J
+@ 0.000019
+|  pciutils puppet-common puppetmaster puppetmaster-common ruby ruby-json|
+@ 0.000017
+. CR/^M LF/^J
+@ 0.000019
+|  ruby-rgen ruby-shadow ruby1.9.1 sgml-base virt-what xml-core|
+@ 0.000017
+. CR/^M LF/^J
+@ 0.002778
+|0 upgraded, 25 newly installed, 0 to remove and 7 not upgraded.|
+@ 0.000023
+. CR/^M LF/^J
+@ 0.006974
+|Need to get 8075 kB of archives.|
+@ 0.000029
+. CR/^M LF/^J
+@ 0.000030
+|After this operation, 24.2 MB of additional disk space will be used.|
+@ 0.000028
+. CR/^M LF/^J
+@ 0.000038
+|Do you want to continue [Y/n]? |
+@ 1.580658
+|y|
+@ 0.215109
+. CR/^M LF/^J
+@ 0.004221
+. CR/^M CR/^M
+|0% [Working]|
+@ 0.017830
+. CR/^M
+|            |
+. CR/^M
+|Get:1 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main libpci3 |-
+-|amd64 1:3.1.9-6 [58.4 kB]|
+. CR/^M LF/^J CR/^M
+|            |
+. CR/^M
+|0% [1 libpci3 0 B/58.4 kB 0%] [Connecting to apt.puppetlabs.com (198.58.114|-
+-|.168|
+@ 0.003190
+. CR/^M
+|                                                                           |-
+-|    |
+. CR/^M
+|1% [Connecting to apt.puppetlabs.com (198.58.114.168)]|
+@ 0.023694
+. CR/^M
+|                                                      |
+. CR/^M
+|Get:2 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main libxml2 |-
+-|amd64 2.8.0+dfsg1-7+nmu3 [904 kB]|
+. CR/^M LF/^J CR/^M
+|                                                      |
+. CR/^M
+|1% [2 libxml2 0 B/904 kB 0%] [Waiting for headers]|
+@ 0.010536
+. CR/^M
+|                                                  |
+. CR/^M
+|Get:3 http://apt.puppetlabs.com/ wheezy/main facter amd64 2.0.2-1puppetlabs|-
+-|1 [73.9 kB]|
+. CR/^M LF/^J CR/^M
+|                                                  |
+. CR/^M
+|4% [2 libxml2 256 kB/904 kB 28%] [3 facter 13.8 kB/73.9 kB 19%]|
+@ 0.020998
+. CR/^M
+|                                                               |
+. CR/^M
+|12% [3 facter 13.8 kB/73.9 kB 19%]|
+@ 0.032875
+. CR/^M
+|                                  |
+. CR/^M
+|13% [Waiting for headers]|
+@ 0.008525
+. CR/^M
+|                         |
+. CR/^M
+|Get:4 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main libffi5 |-
+-|amd64 3.0.10-3 [24.8 kB]|
+. CR/^M LF/^J CR/^M
+|                         |
+. CR/^M
+|13% [4 libffi5 0 B/24.8 kB 0%] [Waiting for headers]|
+@ 0.000607
+. CR/^M
+|                                                    |
+. CR/^M
+|13% [Waiting for headers]|
+@ 0.013637
+. CR/^M
+|                         |
+. CR/^M
+|Get:5 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main libyaml-|-
+-|0-2 amd64 0.1.4-2+deb7u4 [58.2 kB]|
+. CR/^M LF/^J CR/^M
+|                         |
+. CR/^M
+|13% [5 libyaml-0-2 0 B/58.2 kB 0%] [Waiting for headers]|
+@ 0.001440
+. CR/^M
+|                                                        |
+. CR/^M
+|14% [Waiting for headers]|
+@ 0.002379
+. CR/^M
+|                         |
+. CR/^M
+|Get:6 http://apt.puppetlabs.com/ wheezy/main hiera all 1.3.4-1puppetlabs1 [|-
+-|12.9 kB]|
+. CR/^M LF/^J CR/^M
+|                         |
+. CR/^M
+|14% [Waiting for headers] [6 hiera 3898 B/12.9 kB 30%]|
+@ 0.000508
+. CR/^M
+|                                                      |
+. CR/^M
+|14% [Waiting for headers] [Waiting for headers]|
+@ 0.007946
+. CR/^M
+|                                               |
+. CR/^M
+|Get:7 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main sgml-bas|-
+-|e all 1.26+nmu4 [14.6 kB]|
+. CR/^M LF/^J CR/^M
+|                                               |
+. CR/^M
+|14% [7 sgml-base 0 B/14.6 kB 0%] [Waiting for headers]|
+@ 0.000402
+. CR/^M
+|                                                      |
+. CR/^M
+|14% [Waiting for headers]|
+@ 0.018179
+. CR/^M
+|                         |
+. CR/^M
+|Get:8 http://apt.puppetlabs.com/ wheezy/dependencies ruby-rgen all 0.6.5-1p|-
+-|uppetlabs1 [82.3 kB]|
+. CR/^M LF/^J CR/^M
+|                         |
+. CR/^M
+|14% [Waiting for headers] [8 ruby-rgen 9529 B/82.3 kB 12%]|
+@ 0.028300
+. CR/^M
+|                                                          |
+. CR/^M
+|15% [Waiting for headers]|
+@ 0.014363
+. CR/^M
+|                         |
+. CR/^M
+|Get:9 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main pciutils|-
+-| amd64 1:3.1.9-6 [280 kB]|
+. CR/^M LF/^J CR/^M
+|                         |
+. CR/^M
+|15% [9 pciutils 0 B/280 kB 0%] [Waiting for headers]|
+@ 0.008741
+. CR/^M
+|                                                    |
+. CR/^M
+|19% [Waiting for headers]|
+@ 0.003251
+. CR/^M
+|                         |
+. CR/^M
+|Get:10 http://apt.puppetlabs.com/ wheezy/main puppet-common all 3.6.2-1pupp|-
+-|etlabs1 [1317 kB]|
+. CR/^M LF/^J CR/^M
+|                         |
+. CR/^M
+|19% [Waiting for headers] [10 puppet-common 1078 B/1317 kB 0%]|
+@ 0.089677
+. CR/^M
+|                                                              |
+. CR/^M
+|Get:11 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main augeas-|-
+-|lenses all 0.10.0-1 [195 kB]|
+. CR/^M LF/^J CR/^M
+|                                                              |
+. CR/^M
+|27% [11 augeas-lenses 31.9 kB/195 kB 16%] [10 puppet-common 642 kB/1317 kB |-
+-|49%]|
+@ 0.004394
+. CR/^M
+|                                                                           |-
+-|    |
+. CR/^M
+|29% [10 puppet-common 642 kB/1317 kB 49%]|
+@ 0.013187
+. CR/^M
+|                                         |
+. CR/^M
+|Get:12 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main debconf|-
+-|-utils all 1.5.49 [55.8 kB]|
+. CR/^M LF/^J CR/^M
+|                                         |
+. CR/^M
+|29% [12 debconf-utils 0 B/55.8 kB 0%] [10 puppet-common 642 kB/1317 kB 49%]|
+@ 0.002563
+. CR/^M
+|                                                                           |
+. CR/^M
+|30% [10 puppet-common 691 kB/1317 kB 52%]|
+@ 0.037507
+. CR/^M
+|                                         |
+. CR/^M
+|38% [Waiting for headers]|
+@ 0.027916
+. CR/^M
+|                         |
+. CR/^M
+|Get:13 http://apt.puppetlabs.com/ wheezy/main puppetmaster-common all 3.6.2|-
+-|-1puppetlabs1 [14.9 kB]|
+. CR/^M LF/^J CR/^M
+|                         |
+. CR/^M
+|38% [Waiting for headers] [13 puppetmaster-common 0 B/14.9 kB 0%]|
+@ 0.000640
+. CR/^M
+|                                                                 |
+. CR/^M
+|38% [Waiting for headers]|
+@ 0.026930
+. CR/^M
+|                         |
+. CR/^M
+|Get:14 http://apt.puppetlabs.com/ wheezy/main puppetmaster all 3.6.2-1puppe|-
+-|tlabs1 [10.3 kB]|
+. CR/^M LF/^J CR/^M
+|                         |
+. CR/^M
+|38% [Waiting for headers] [14 puppetmaster 0 B/10.3 kB 0%]|
+@ 0.000491
+. CR/^M
+|                                                          |
+. CR/^M
+|38% [Waiting for headers]|
+@ 0.037745
+. CR/^M
+|                         |
+. CR/^M
+|Get:15 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main libruby|-
+-|1.9.1 amd64 1.9.3.194-8.1+deb7u2 [4415 kB]|
+. CR/^M LF/^J CR/^M
+|                         |
+. CR/^M
+|39% [15 libruby1.9.1 31.9 kB/4415 kB 1%]|
+@ 0.106085
+. CR/^M
+|                                        |
+. CR/^M
+|93% [Working]|
+@ 0.020301
+. CR/^M
+|             |
+. CR/^M
+|Get:16 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main ruby1.9|-
+-|.1 amd64 1.9.3.194-8.1+deb7u2 [209 kB]|
+. CR/^M LF/^J CR/^M
+|             |
+. CR/^M
+|93% [16 ruby1.9.1 0 B/209 kB 0%]|
+@ 0.004961
+. CR/^M
+|                                |
+. CR/^M
+|96% [Working]|
+@ 0.013338
+. CR/^M
+|             |
+. CR/^M
+|Get:17 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main ruby al|-
+-|l 1:1.9.3 [6484 B]|
+. CR/^M LF/^J CR/^M
+|             |
+. CR/^M
+|96% [17 ruby 0 B/6484 B 0%]|
+@ 0.000235
+. CR/^M
+|                           |
+. CR/^M
+|96% [Working]|
+@ 0.029986
+. CR/^M
+|             |
+. CR/^M
+|Get:18 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main virt-wh|-
+-|at amd64 1.12-1 [12.9 kB]|
+. CR/^M LF/^J CR/^M
+|             |
+. CR/^M
+|96% [18 virt-what 0 B/12.9 kB 0%]|
+@ 0.000395
+. CR/^M
+|                                 |
+. CR/^M
+|96% [Working]|
+@ 0.065413
+. CR/^M
+|             |
+. CR/^M
+|Get:19 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main libauge|-
+-|as0 amd64 0.10.0-1 [190 kB]|
+. CR/^M LF/^J CR/^M
+|             |
+. CR/^M
+|96% [19 libaugeas0 0 B/190 kB 0%]|
+@ 0.004550
+. CR/^M
+|                                 |
+. CR/^M
+|98% [Working]|
+@ 0.058359
+. CR/^M
+|             |
+. CR/^M
+|Get:20 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main libauge|-
+-|as-ruby1.9.1 amd64 0.4.1-1.1 [10.6 kB]|
+. CR/^M LF/^J CR/^M
+|             |
+. CR/^M
+|98% [20 libaugeas-ruby1.9.1 0 B/10.6 kB 0%]|
+@ 0.000324
+. CR/^M
+|                                           |
+. CR/^M
+|98% [Working]|
+@ 0.022024
+. CR/^M
+|             |
+. CR/^M
+|Get:21 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main libauge|-
+-|as-ruby all 0.4.1-1.1 [2496 B]|
+. CR/^M LF/^J CR/^M
+|             |
+. CR/^M
+|98% [21 libaugeas-ruby 0 B/2496 B 0%]|
+@ 0.000187
+. CR/^M
+|                                     |
+. CR/^M
+|98% [Working]|
+@ 0.028260
+. CR/^M
+|             |
+. CR/^M
+|Get:22 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main ruby-sh|-
+-|adow amd64 2.1.4-2 [13.3 kB]|
+. CR/^M LF/^J CR/^M
+|             |
+. CR/^M
+|98% [22 ruby-shadow 0 B/13.3 kB 0%]|
+@ 0.000360
+. CR/^M
+|                                   |
+. CR/^M
+|99% [Working]|
+@ 0.015469
+. CR/^M
+|             |
+. CR/^M
+|Get:23 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main ruby-js|-
+-|on amd64 1.7.3-3 [78.5 kB]|
+. CR/^M LF/^J CR/^M
+|             |
+. CR/^M
+|99% [23 ruby-json 0 B/78.5 kB 0%]|
+@ 0.001874
+. CR/^M
+|                                 |
+. CR/^M
+|100% [Working]|
+@ 0.009998
+. CR/^M
+|              |
+. CR/^M
+|Get:24 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main libjson|-
+-|-ruby all 1.7.3-3 [11.7 kB]|
+. CR/^M LF/^J CR/^M
+|              |
+. CR/^M
+|100% [24 libjson-ruby 0 B/11.7 kB 0%]|
+@ 0.000336
+. CR/^M
+|                                     |
+. CR/^M
+|100% [Working]|
+@ 0.012646
+. CR/^M
+|              |
+. CR/^M
+|Get:25 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main xml-cor|-
+-|e all 0.13+nmu2 [24.2 kB]|
+. CR/^M LF/^J CR/^M
+|              |
+. CR/^M
+|100% [25 xml-core 0 B/24.2 kB 0%]|
+@ 0.000738
+. CR/^M
+|                                 |
+. CR/^M
+|100% [Working]|
+. CR/^M
+|              |
+. CR/^M
+|Fetched 8075 kB in 0s (9446 kB/s)|
+. CR/^M LF/^J
+@ 0.178014
+|Selecting previously unselected package libpci3:amd64.|
+. CR/^M LF/^J
+|(Reading database ... |
+. CR/^M
+|(Reading database ... 5%|
+. CR/^M
+|(Reading database ... 10%|
+. CR/^M
+|(Reading database ... 15%|
+. CR/^M
+|(Reading database ... 20%|
+. CR/^M
+|(Reading database ... 25%|
+. CR/^M
+|(Reading database ... 30%|
+. CR/^M
+|(Reading database ... 35%|
+. CR/^M
+|(Reading database ... 40%|
+. CR/^M
+|(Reading database ... 45%|
+. CR/^M
+|(Reading database ... 50%|
+. CR/^M
+|(Reading database ... 55%|
+. CR/^M
+|(Reading database ... 60%|
+. CR/^M
+|(Reading database ... 65%|
+. CR/^M
+|(Reading database ... 70%|
+. CR/^M
+|(Reading database ... 75%|
+. CR/^M
+|(Reading database ... 80%|
+. CR/^M
+@ 0.001411
+|(Reading database ... 85%|
+. CR/^M
+@ 0.000717
+|(Reading database ... 90%|
+. CR/^M
+@ 0.000463
+|(Reading database ... 95%|
+. CR/^M
+@ 0.000876
+|(Reading database ... 100%|
+. CR/^M
+@ 0.000043
+|(Reading database ... |
+@ 0.000043
+|19562 files and directories currently installed.)|
+@ 0.000042
+. CR/^M LF/^J
+@ 0.000496
+|Unpacking libpci3:amd64 (from .../libpci3_1%3a3.1.9-6_amd64.deb) ...|
+@ 0.000039
+. CR/^M LF/^J
+@ 0.051158
+|Selecting previously unselected package libxml2:amd64.|
+. CR/^M LF/^J
+|Unpacking libxml2:amd64 (from .../libxml2_2.8.0+dfsg1-7+nmu3_amd64.deb) ...|
+. CR/^M LF/^J
+@ 0.078117
+|Selecting previously unselected package libffi5:amd64.|
+. CR/^M LF/^J
+|Unpacking libffi5:amd64 (from .../libffi5_3.0.10-3_amd64.deb) ...|
+. CR/^M LF/^J
+@ 0.047304
+|Selecting previously unselected package libyaml-0-2:amd64.|
+. CR/^M LF/^J
+|Unpacking libyaml-0-2:amd64 (from .../libyaml-0-2_0.1.4-2+deb7u4_amd64.deb)|-
+-| ...|
+. CR/^M LF/^J
+@ 0.051463
+|Selecting previously unselected package sgml-base.|
+. CR/^M LF/^J
+|Unpacking sgml-base (from .../sgml-base_1.26+nmu4_all.deb) ...|
+. CR/^M LF/^J
+@ 0.154516
+|Selecting previously unselected package pciutils.|
+. CR/^M LF/^J
+|Unpacking pciutils (from .../pciutils_1%3a3.1.9-6_amd64.deb) ...|
+. CR/^M LF/^J
+@ 0.097550
+|Selecting previously unselected package augeas-lenses.|
+. CR/^M LF/^J
+|Unpacking augeas-lenses (from .../augeas-lenses_0.10.0-1_all.deb) ...|
+. CR/^M LF/^J
+@ 0.088175
+|Selecting previously unselected package debconf-utils.|
+. CR/^M LF/^J
+|Unpacking debconf-utils (from .../debconf-utils_1.5.49_all.deb) ...|
+. CR/^M LF/^J
+@ 0.161899
+|Selecting previously unselected package libruby1.9.1.|
+. CR/^M LF/^J
+|Unpacking libruby1.9.1 (from .../libruby1.9.1_1.9.3.194-8.1+deb7u2_amd64.de|-
+-|b) ...|
+. CR/^M LF/^J
+@ 0.410145
+|Selecting previously unselected package ruby1.9.1.|
+. CR/^M LF/^J
+|Unpacking ruby1.9.1 (from .../ruby1.9.1_1.9.3.194-8.1+deb7u2_amd64.deb) ...|
+. CR/^M LF/^J
+@ 0.067339
+|Selecting previously unselected package ruby.|
+. CR/^M LF/^J
+|Unpacking ruby (from .../ruby_1%3a1.9.3_all.deb) ...|
+. CR/^M LF/^J
+@ 0.036611
+|Selecting previously unselected package virt-what.|
+. CR/^M LF/^J
+|Unpacking virt-what (from .../virt-what_1.12-1_amd64.deb) ...|
+. CR/^M LF/^J
+@ 0.041563
+|Selecting previously unselected package facter.|
+. CR/^M LF/^J
+|Unpacking facter (from .../facter_2.0.2-1puppetlabs1_amd64.deb) ...|
+. CR/^M LF/^J
+@ 0.073932
+|Selecting previously unselected package libaugeas0.|
+. CR/^M LF/^J
+|Unpacking libaugeas0 (from .../libaugeas0_0.10.0-1_amd64.deb) ...|
+. CR/^M LF/^J
+@ 0.046021
+|Selecting previously unselected package libaugeas-ruby1.9.1.|
+. CR/^M LF/^J
+|Unpacking libaugeas-ruby1.9.1 (from .../libaugeas-ruby1.9.1_0.4.1-1.1_amd64|-
+-|.deb) ...|
+. CR/^M LF/^J
+@ 0.037706
+|Selecting previously unselected package libaugeas-ruby.|
+. CR/^M LF/^J
+|Unpacking libaugeas-ruby (from .../libaugeas-ruby_0.4.1-1.1_all.deb) ...|
+. CR/^M LF/^J
+@ 0.036647
+|Selecting previously unselected package ruby-shadow.|
+. CR/^M LF/^J
+|Unpacking ruby-shadow (from .../ruby-shadow_2.1.4-2_amd64.deb) ...|
+. CR/^M LF/^J
+@ 0.035685
+|Selecting previously unselected package ruby-json.|
+. CR/^M LF/^J
+|Unpacking ruby-json (from .../ruby-json_1.7.3-3_amd64.deb) ...|
+. CR/^M LF/^J
+@ 0.047566
+|Selecting previously unselected package libjson-ruby.|
+. CR/^M LF/^J
+|Unpacking libjson-ruby (from .../libjson-ruby_1.7.3-3_all.deb) ...|
+. CR/^M LF/^J
+@ 0.046673
+|Selecting previously unselected package hiera.|
+. CR/^M LF/^J
+|Unpacking hiera (from .../hiera_1.3.4-1puppetlabs1_all.deb) ...|
+. CR/^M LF/^J
+@ 0.045212
+|Selecting previously unselected package ruby-rgen.|
+. CR/^M LF/^J
+|Unpacking ruby-rgen (from .../ruby-rgen_0.6.5-1puppetlabs1_all.deb) ...|
+. CR/^M LF/^J
+@ 0.066099
+|Selecting previously unselected package puppet-common.|
+. CR/^M LF/^J
+|Unpacking puppet-common (from .../puppet-common_3.6.2-1puppetlabs1_all.deb)|-
+-| ...|
+. CR/^M LF/^J
+@ 0.408605
+|Selecting previously unselected package puppetmaster-common.|
+. CR/^M LF/^J
+|Unpacking puppetmaster-common (from .../puppetmaster-common_3.6.2-1puppetla|-
+-|bs1_all.deb) ...|
+. CR/^M LF/^J
+@ 0.053877
+|Selecting previously unselected package puppetmaster.|
+. CR/^M LF/^J
+@ 0.000384
+|Unpacking puppetmaster (from .../puppetmaster_3.6.2-1puppetlabs1_all.deb) .|-
+-|..|
+@ 0.000042
+. CR/^M LF/^J
+@ 0.051379
+|Selecting previously unselected package xml-core.|
+. CR/^M LF/^J
+|Unpacking xml-core (from .../xml-core_0.13+nmu2_all.deb) ...|
+. CR/^M LF/^J
+@ 0.075390
+|Processing triggers for man-db ...|
+. CR/^M LF/^J
+@ 1.519560
+|Setting up libpci3:amd64 (1:3.1.9-6) ...|
+@ 0.000122
+. CR/^M LF/^J
+@ 0.053044
+|Setting up libxml2:amd64 (2.8.0+dfsg1-7+nmu3) ...|
+. CR/^M LF/^J
+@ 0.039943
+|Setting up libffi5:amd64 (3.0.10-3) ...|
+. CR/^M LF/^J
+@ 0.031861
+|Setting up libyaml-0-2:amd64 (0.1.4-2+deb7u4) ...|
+. CR/^M LF/^J
+@ 0.034177
+|Setting up sgml-base (1.26+nmu4) ...|
+. CR/^M LF/^J
+@ 0.033518
+|Setting up pciutils (1:3.1.9-6) ...|
+. CR/^M LF/^J
+@ 0.015680
+|Setting up augeas-lenses (0.10.0-1) ...|
+. CR/^M LF/^J
+@ 0.013697
+|Setting up debconf-utils (1.5.49) ...|
+. CR/^M LF/^J
+@ 0.013995
+|Setting up libruby1.9.1 (1.9.3.194-8.1+deb7u2) ...|
+. CR/^M LF/^J
+@ 0.037070
+|Setting up ruby1.9.1 (1.9.3.194-8.1+deb7u2) ...|
+. CR/^M LF/^J
+@ 0.011422
+|update-alternatives: |
+@ 0.000098
+|using /usr/bin/gem1.9.1 to provide /usr/bin/gem (gem) in auto mode|
+@ 0.000043
+. CR/^M LF/^J
+@ 0.009242
+|update-alternatives: |
+@ 0.000080
+|using /usr/bin/ruby1.9.1 to provide /usr/bin/ruby (ruby) in auto mode|
+@ 0.000042
+. CR/^M LF/^J
+@ 0.012562
+|Setting up ruby (1:1.9.3) ...|
+. CR/^M LF/^J
+@ 0.013876
+|Setting up virt-what (1.12-1) ...|
+. CR/^M LF/^J
+@ 0.013891
+|Setting up facter (2.0.2-1puppetlabs1) ...|
+@ 0.000084
+. CR/^M LF/^J
+@ 0.012739
+|Setting up libaugeas0 (0.10.0-1) ...|
+@ 0.000071
+. CR/^M LF/^J
+@ 0.029699
+|Setting up libaugeas-ruby1.9.1 (0.4.1-1.1) ...|
+. CR/^M LF/^J
+@ 0.012332
+|Setting up libaugeas-ruby (0.4.1-1.1) ...|
+. CR/^M LF/^J
+@ 0.014075
+|Setting up ruby-shadow (2.1.4-2) ...|
+@ 0.000077
+. CR/^M LF/^J
+@ 0.012939
+|Setting up ruby-json (1.7.3-3) ...|
+@ 0.000070
+. CR/^M LF/^J
+@ 0.012527
+|Setting up libjson-ruby (1.7.3-3) ...|
+@ 0.000080
+. CR/^M LF/^J
+@ 0.012032
+|Setting up hiera (1.3.4-1puppetlabs1) ...|
+@ 0.000071
+. CR/^M LF/^J
+@ 0.021065
+|Setting up ruby-rgen (0.6.5-1puppetlabs1) ...|
+@ 0.000073
+. CR/^M LF/^J
+@ 0.012078
+|Setting up puppet-common (3.6.2-1puppetlabs1) ...|
+@ 0.000097
+. CR/^M LF/^J
+@ 0.812581
+|Setting up puppetmaster-common (3.6.2-1puppetlabs1) ...|
+. CR/^M LF/^J
+@ 1.143074
+|[....] |
+@ 0.000548
+|Starting puppet queue|
+@ 0.004097
+: Esc [ ? 25 l
+& RM: RESET MODE (private params)
+@ 0.000610
+: Esc 7
+@ 0.000591
+: Esc [ 1 G
+& CHA: CURSOR CHARACTER ABSOLUTE
+" Move the cursor to column 1.
+@ 0.000449
+|[|
+: Esc [ 32 m
+& SGR: SELECT GRAPHIC RENDITION
+" Set foreground color green.
+| ok |
+: Esc [ 39 ; 49 m
+& SGR: SELECT GRAPHIC RENDITION
+" Set foreground color default.
+" Set background color default.
+@ 0.000565
+: Esc 8
+@ 0.000638
+: Esc [ ? 12 l
+& RM: RESET MODE (private params)
+: Esc [ ? 25 h
+& SM: SET MODE (private params)
+@ 0.003290
+|.|
+. CR/^M LF/^J
+@ 0.005953
+|Setting up puppetmaster (3.6.2-1puppetlabs1) ...|
+. CR/^M LF/^J
+@ 0.058562
+|[....] |
+@ 0.002739
+|Starting puppet master|
+@ 3.205482
+: Esc [ ? 25 l
+& RM: RESET MODE (private params)
+@ 0.000758
+: Esc 7
+@ 0.000659
+: Esc [ 1 G
+& CHA: CURSOR CHARACTER ABSOLUTE
+" Move the cursor to column 1.
+@ 0.000472
+|[|
+: Esc [ 32 m
+& SGR: SELECT GRAPHIC RENDITION
+" Set foreground color green.
+| ok |
+: Esc [ 39 ; 49 m
+& SGR: SELECT GRAPHIC RENDITION
+" Set foreground color default.
+" Set background color default.
+@ 0.000622
+: Esc 8
+@ 0.000612
+: Esc [ ? 12 l
+& RM: RESET MODE (private params)
+: Esc [ ? 25 h
+& SM: SET MODE (private params)
+@ 0.003665
+|.|
+. CR/^M LF/^J
+@ 0.010529
+|Setting up xml-core (0.13+nmu2) ...|
+. CR/^M LF/^J
+@ 0.190299
+|Processing triggers for sgml-base ...|
+. CR/^M LF/^J
+@ 0.760637
+|$ |
+@ 1.517398
+. CR/^M LF/^J
+|$ |
+@ 0.327056
+|#|
+@ 0.215069
+| |
+@ 0.207583
+|N|
+@ 0.287549
+|w|
+@ 0.647314
+. BS/^H
+| |
+. BS/^H
+@ 0.168275
+|o|
+@ 0.066981
+|w|
+@ 0.126353
+| |
+@ 0.183877
+|w|
+@ 0.096312
+|e|
+@ 0.190128
+|'|
+@ 0.167367
+|l|
+@ 0.118715
+|l|
+@ 0.091667
+| |
+@ 0.166188
+|i|
+@ 0.096823
+|n|
+@ 0.036480
+|s|
+@ 0.140398
+|t|
+@ 0.124933
+|a|
+@ 0.120437
+|l|
+@ 0.154920
+|l|
+@ 0.098693
+| |
+@ 0.068447
+|t|
+@ 0.081538
+|h|
+@ 0.060135
+|e|
+@ 0.084839
+| |
+@ 0.133918
+|r|
+@ 0.081915
+|e|
+@ 0.107996
+|q|
+@ 0.119646
+|u|
+@ 0.110542
+|i|
+@ 0.087214
+|r|
+@ 0.086422
+|e|
+@ 0.217713
+|d|
+@ 0.042743
+| |
+@ 0.260474
+|c|
+@ 0.096492
+|o|
+@ 0.207715
+|m|
+@ 0.133324
+|m|
+@ 0.219225
+|u|
+@ 0.210826
+|n|
+@ 0.152586
+|i|
+@ 0.113404
+|t|
+@ 0.075138
+|y|
+@ 0.095757
+| |
+@ 0.431176
+|p|
+@ 0.090739
+|u|
+@ 0.166872
+|p|
+@ 0.132854
+|p|
+@ 0.079227
+|e|
+@ 0.084563
+|t|
+@ 0.035927
+| |
+@ 0.137495
+|m|
+@ 0.100393
+|o|
+@ 0.109212
+|d|
+@ 0.100726
+|u|
+@ 0.077429
+|l|
+@ 0.076457
+|e|
+@ 0.128707
+|s|
+@ 0.221741
+. CR/^M LF/^J
+|$ |
+@ 0.458987
+|s|
+@ 0.093893
+|u|
+@ 0.092926
+|d|
+@ 0.097482
+|o|
+@ 0.111791
+| |
+@ 1.032326
+|p|
+@ 0.062484
+|u|
+@ 0.196287
+|p|
+@ 0.148092
+|p|
+@ 0.072899
+|e|
+@ 0.106650
+|t|
+@ 0.058472
+| |
+@ 0.141449
+|m|
+@ 0.116555
+|o|
+@ 0.120016
+|d|
+@ 0.206325
+|u|
+@ 0.099483
+|l|
+@ 0.084257
+|e|
+@ 0.121585
+| |
+@ 1.020916
+|i|
+@ 0.057686
+|n|
+@ 0.100592
+|s|
+@ 0.096832
+|t|
+@ 0.108661
+|a|
+@ 0.074586
+|l|
+@ 0.130750
+|l|
+@ 0.103025
+| |
+@ 0.123741
+|p|
+@ 0.058584
+|u|
+@ 0.192355
+|p|
+@ 0.128479
+|p|
+@ 0.075528
+|e|
+@ 0.077474
+|t|
+@ 0.231858
+|l|
+@ 0.107615
+|a|
+@ 0.096280
+|b|
+@ 0.137806
+|s|
+@ 0.702414
+|-|
+@ 0.791626
+|_|
+@ 0.458742
+|g|
+@ 0.287993
+. BS/^H
+| |
+. BS/^H
+@ 0.141928
+. BS/^H
+| |
+. BS/^H
+@ 0.127595
+|g|
+@ 0.199865
+|c|
+@ 0.208956
+|e|
+@ 0.359196
+|_|
+@ 0.008960
+|c|
+@ 0.098338
+|o|
+@ 0.023281
+|m|
+@ 0.220952
+|p|
+@ 0.118663
+|u|
+@ 0.126198
+|t|
+@ 0.088736
+|e|
+@ 0.529183
+. CR/^M LF/^J
+@ 0.463226
+: Esc [ 1 ; 31 m
+& SGR: SELECT GRAPHIC RENDITION
+" Set bold text.
+" Set foreground color red.
+|Warning: Setting templatedir is deprecated. See http://links.puppetlabs.com|-
+-|/env-settings-deprecations|
+@ 0.000130
+. CR/^M LF/^J
+@ 0.000027
+|   (at /usr/lib/ruby/vendor_ruby/puppet/settings.rb:1095:in `block in issue|-
+-|_deprecations')|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+@ 0.000028
+. CR/^M LF/^J
+@ 0.000355
+: Esc [ m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|Notice: Preparing to install into /etc/puppet/modules ...|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+@ 0.000035
+. CR/^M LF/^J
+@ 0.000971
+: Esc [ m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|Notice: Downloading from https://forgeapi.puppetlabs.com ...|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+@ 0.000039
+. CR/^M LF/^J
+@ 0.381903
+: Esc [ m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|Notice: Installing -- do not interrupt ...|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+@ 0.000110
+. CR/^M LF/^J
+@ 0.002818
+|/etc/puppet/modules|
+@ 0.000056
+. CR/^M LF/^J
+@ 0.000033
+. xE2 x94 x94 xE2 x94 x80 xE2 x94 x80
+| puppetlabs-gce_compute (|
+: Esc [ 0 ; 36 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+" Set foreground color cyan.
+|v0.4.0|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|)|
+@ 0.000022
+. CR/^M LF/^J
+@ 0.025416
+|$ |
+@ 1.302616
+|s|
+@ 0.073315
+|u|
+@ 0.107013
+|d|
+@ 0.056345
+|o|
+@ 0.252972
+| |
+@ 0.800510
+|p|
+@ 0.097994
+|u|
+@ 0.339189
+|p|
+@ 0.139153
+|p|
+@ 0.059901
+|e|
+@ 0.092537
+|t|
+@ 0.077942
+| |
+@ 0.145294
+|m|
+@ 0.069014
+|o|
+@ 0.108834
+|d|
+@ 0.122415
+|u|
+@ 0.065575
+|l|
+@ 0.083350
+|e|
+@ 0.091782
+| |
+@ 0.208868
+|i|
+@ 0.056320
+|n|
+@ 0.092593
+|s|
+@ 0.094778
+|t|
+@ 0.118520
+|a|
+@ 0.080219
+|l|
+@ 0.142188
+|l|
+@ 0.106303
+| |
+@ 0.511829
+|p|
+@ 0.068608
+|u|
+@ 0.172026
+|p|
+@ 0.128656
+|p|
+@ 0.109032
+|e|
+@ 0.075259
+|t|
+@ 0.224860
+|l|
+@ 0.088790
+|a|
+@ 0.093299
+|b|
+@ 0.142340
+|s|
+@ 0.210757
+|-|
+@ 0.107826
+|a|
+@ 0.102280
+|p|
+@ 0.054340
+|a|
+@ 0.162135
+|c|
+@ 0.094541
+|h|
+@ 0.127427
+|e|
+@ 0.222125
+. CR/^M LF/^J
+@ 0.465027
+: Esc [ 1 ; 31 m
+& SGR: SELECT GRAPHIC RENDITION
+" Set bold text.
+" Set foreground color red.
+|Warning: Setting templatedir is deprecated. See http://links.puppetlabs.com|-
+-|/env-settings-deprecations|
+@ 0.000131
+. CR/^M LF/^J
+@ 0.000035
+|   (at /usr/lib/ruby/vendor_ruby/puppet/settings.rb:1095:in `block in issue|-
+-|_deprecations')|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+@ 0.000028
+. CR/^M LF/^J
+@ 0.000458
+: Esc [ m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|Notice: Preparing to install into /etc/puppet/modules ...|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+@ 0.000035
+. CR/^M LF/^J
+@ 0.005239
+: Esc [ m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|Notice: Downloading from https://forgeapi.puppetlabs.com ...|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+@ 0.000065
+. CR/^M LF/^J
+@ 1.017171
+: Esc [ m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|Notice: Installing -- do not interrupt ...|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+@ 0.000116
+. CR/^M LF/^J
+@ 0.021810
+|/etc/puppet/modules|
+@ 0.000118
+. CR/^M LF/^J
+@ 0.000038
+. xE2 x94 x94 xE2 x94 x80 xE2 x94 xAC
+| puppetlabs-apache (|
+: Esc [ 0 ; 36 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+" Set foreground color cyan.
+|v1.0.1|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|)|
+@ 0.000034
+. CR/^M LF/^J
+@ 0.000039
+|  |
+. xE2 x94 x9C xE2 x94 x80 xE2 x94 x80
+| puppetlabs-concat (|
+: Esc [ 0 ; 36 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+" Set foreground color cyan.
+|v1.1.0|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|)|
+@ 0.000032
+. CR/^M LF/^J
+@ 0.000040
+|  |
+. xE2 x94 x94 xE2 x94 x80 xE2 x94 x80
+| puppetlabs-stdlib (|
+: Esc [ 0 ; 36 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+" Set foreground color cyan.
+|v4.2.2|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|)|
+@ 0.000033
+. CR/^M LF/^J
+@ 0.027950
+|$ |
+@ 3.581902
+. CR/^M LF/^J
+|$ |
+@ 0.576535
+|#|
+@ 0.619024
+| |
+@ 0.406840
+|N|
+@ 0.148643
+|o|
+@ 0.126805
+|w|
+@ 0.098325
+| |
+@ 0.095847
+|w|
+@ 0.102632
+|e|
+@ 0.142955
+| |
+@ 0.158443
+|c|
+@ 0.319276
+|n|
+@ 0.330831
+. BS/^H
+| |
+. BS/^H
+@ 0.132770
+. BS/^H
+| |
+. BS/^H
+@ 0.321121
+|n|
+@ 0.142120
+|e|
+@ 0.411356
+|e|
+@ 0.471077
+|d|
+@ 0.089221
+| |
+@ 0.193343
+|t|
+@ 0.167659
+|o|
+@ 0.120213
+| |
+@ 0.120475
+|c|
+@ 0.051640
+|o|
+@ 0.059431
+|n|
+@ 0.085807
+|f|
+@ 0.093561
+|i|
+@ 0.112026
+|g|
+@ 0.084127
+|u|
+@ 0.122206
+|r|
+@ 0.098930
+|e|
+@ 0.073017
+| |
+@ 0.391253
+|t|
+@ 0.101214
+|h|
+@ 0.087685
+|e|
+@ 0.092605
+| |
+@ 0.158788
+|d|
+@ 0.116520
+|e|
+@ 0.147904
+|v|
+@ 0.082202
+|i|
+@ 0.106880
+|c|
+@ 0.175033
+|e|
+@ 0.071551
+|.|
+@ 0.120819
+|c|
+@ 0.113291
+|o|
+@ 0.037668
+|n|
+@ 0.081682
+|f|
+@ 0.088375
+| |
+@ 0.097270
+|f|
+@ 0.088471
+|i|
+@ 0.075334
+|l|
+@ 0.080905
+|e|
+@ 0.090157
+| |
+@ 0.103811
+|f|
+@ 0.060133
+|o|
+@ 0.132491
+|r|
+@ 0.033139
+| |
+@ 0.425680
+|g|
+@ 0.155114
+|c|
+@ 0.183778
+|e|
+@ 0.252583
+|_|
+@ 0.126913
+|c|
+@ 0.119760
+|om|
+@ 0.081029
+|p|
+@ 0.220760
+|u|
+@ 0.062831
+|t|
+@ 0.092586
+|e|
+@ 0.724176
+. CR/^M LF/^J
+|$ |
+@ 1.421553
+|P|
+@ 0.106257
+|R|
+@ 0.140098
+|O|
+@ 0.110831
+|J|
+@ 1.224243
+|=|
+@ 0.461888
+|$|
+@ 0.482554
+|(|
+@ 0.307538
+|/|
+@ 0.177323
+|u|
+@ 0.114202
+|s|
+@ 0.084318
+|r|
+@ 0.126192
+|/|
+@ 0.547848
+|s|
+@ 0.088142
+|h|
+@ 0.101000
+|a|
+@ 0.105073
+|r|
+@ 0.080962
+|e|
+@ 0.141404
+|/|
+@ 0.142827
+|g|
+@ 0.097914
+|o|
+@ 0.121984
+|o|
+@ 0.094349
+|gle/|
+@ 2.096742
+|g|
+@ 0.120496
+|e|
+@ 0.103272
+|t|
+@ 0.349192
+|_|
+@ 0.175176
+|m|
+@ 0.085386
+|e|
+@ 0.145988
+|tadata_value |
+@ 1.537483
+|p|
+@ 0.094189
+|r|
+@ 0.179905
+|o|
+@ 0.385074
+|j|
+@ 0.141056
+|e|
+@ 0.210114
+|c|
+@ 0.143499
+|t|
+@ 0.209306
+|-|
+@ 0.192426
+|i|
+@ 0.097617
+|d|
+@ 0.340713
+|)|
+@ 0.511312
+. CR/^M LF/^J
+@ 0.008632
+|$ |
+@ 1.329826
+|s|
+@ 0.721044
+|u|
+@ 0.127530
+|d|
+@ 0.077507
+|o|
+@ 0.110729
+| |
+@ 0.123341
+|b|
+@ 0.090002
+|a|
+@ 0.103183
+|s|
+@ 0.542770
+|h|
+@ 0.180093
+| |
+@ 0.187453
+|-|
+@ 0.203414
+|c|
+@ 0.157240
+| |
+@ 0.536034
+|"|
+@ 0.491930
+|c|
+@ 0.200240
+|a|
+@ 0.101266
+|t|
+@ 0.100646
+| |
+@ 0.219393
+|>|
+@ 0.180355
+| |
+@ 0.166336
+|/|
+@ 0.087809
+|e|
+@ 0.087664
+|t|
+@ 0.198378
+|c|
+@ 0.079398
+|/|
+@ 1.380721
+|p|
+@ 0.057297
+|u|
+@ 0.187606
+|p|
+@ 0.150680
+|p|
+@ 0.121732
+|e|
+@ 0.085835
+|t|
+@ 0.253479
+|/|
+@ 0.119383
+|d|
+@ 0.192480
+|e|
+@ 0.184225
+|v|
+@ 0.094084
+|i|
+@ 0.101097
+|c|
+@ 0.187662
+|e|
+@ 0.106918
+|.|
+@ 0.098553
+|c|
+@ 0.143665
+|o|
+@ 0.059909
+|n|
+@ 0.090068
+|f|
+@ 0.430694
+|"|
+@ 0.267063
+| |
+@ 0.196251
+|<|
+@ 0.142822
+|<|
+@ 0.150234
+|E|
+@ 0.167962
+|O|
+@ 0.105922
+|F|
+@ 0.829745
+. CR/^M LF/^J
+|> |
+@ 1.130643
+|[|
+@ 0.295865
+|m|
+@ 0.225249
+|y|
+@ 0.233927
+|_|
+@ 0.202702
+|p|
+@ 0.087006
+|r|
+@ 0.092445
+|o|
+@ 0.025940
+|j|
+@ 0.119383
+|e|
+@ 0.165343
+|c|
+@ 0.161373
+|t|
+@ 0.132486
+|]|
+@ 0.440821
+. CR/^M LF/^J
+|> |
+@ 0.721125
+| |
+@ 0.139931
+| |
+@ 0.109699
+|t|
+@ 0.119490
+|y|
+@ 0.056072
+|p|
+@ 0.134916
+|e|
+@ 0.144635
+| |
+@ 0.147765
+|g|
+@ 0.202215
+|c|
+@ 0.199170
+|e|
+@ 0.252893
+. CR/^M LF/^J
+|> |
+@ 0.248231
+| |
+@ 0.142572
+| |
+@ 0.195984
+|u|
+@ 0.093172
+|r|
+@ 0.073661
+|l|
+@ 0.199039
+| |
+@ 1.127249
+|[|
+@ 0.144228
+|/|
+@ 0.117875
+|d|
+@ 0.172632
+|e|
+@ 0.137663
+|v|
+@ 0.105793
+|/|
+@ 0.252131
+|n|
+@ 0.196943
+|u|
+@ 0.157976
+|l|
+@ 0.150639
+|l|
+@ 0.148259
+|]|
+@ 0.154307
+|:|
+@ 0.188381
+|$|
+@ 0.122103
+|P|
+@ 0.131133
+|R|
+@ 0.175893
+|O|
+@ 0.111118
+|J|
+@ 0.794801
+. CR/^M LF/^J
+|> |
+@ 0.474117
+|E|
+@ 0.122360
+|O|
+@ 0.119109
+|F|
+@ 0.375118
+. CR/^M LF/^J
+@ 0.004892
+|$ |
+@ 2.113137
+. CR/^M LF/^J
+|$ |
+@ 0.269898
+|#|
+@ 0.245978
+| |
+@ 0.201789
+|S|
+@ 0.184650
+|i|
+@ 0.041139
+|n|
+@ 0.076682
+|c|
+@ 0.162580
+|e|
+@ 0.109548
+| |
+@ 0.104652
+|w|
+@ 0.078307
+|e|
+@ 0.202576
+|'|
+@ 0.102272
+|r|
+@ 0.067298
+|e|
+@ 0.042127
+| |
+@ 0.454584
+|u|
+@ 0.153475
+|s|
+@ 0.087265
+|i|
+@ 0.029044
+|n|
+@ 0.111740
+|g|
+@ 0.047802
+| |
+@ 0.183057
+|r|
+@ 0.153066
+|o|
+@ 0.137309
+|o|
+@ 0.742210
+|t|
+@ 1.032182
+|,|
+@ 0.091001
+| |
+@ 0.104789
+|w|
+@ 0.094748
+|e|
+@ 0.137263
+|'|
+@ 0.187226
+|l|
+@ 0.128593
+|l|
+@ 0.088126
+| |
+@ 0.131906
+|n|
+@ 0.118195
+|e|
+@ 0.134862
+|e|
+@ 0.190409
+|d|
+@ 0.103383
+| |
+@ 0.239262
+|o|
+@ 0.121348
+|t|
+@ 0.169582
+| |
+@ 0.219033
+|m|
+@ 0.295175
+. BS/^H
+| |
+. BS/^H
+@ 0.147934
+. BS/^H
+| |
+. BS/^H
+@ 0.162523
+. BS/^H
+| |
+. BS/^H
+@ 0.143637
+. BS/^H
+| |
+. BS/^H
+@ 0.544682
+|t|
+@ 0.071612
+|o|
+@ 0.105478
+| |
+@ 0.132440
+|m|
+@ 0.081319
+|a|
+@ 0.105264
+|k|
+@ 0.179804
+|e|
+@ 0.501088
+| |
+@ 0.122573
+|s|
+@ 0.118004
+|u|
+@ 0.073453
+|r|
+@ 0.067598
+|e|
+@ 0.061348
+| |
+@ 0.131759
+|t|
+@ 0.061685
+|o|
+@ 0.082678
+| |
+@ 0.305321
+|s|
+@ 0.111113
+|e|
+@ 0.079593
+|t|
+@ 0.106719
+| |
+@ 0.102948
+|u|
+@ 0.063842
+|p|
+@ 0.073623
+| |
+@ 0.112287
+|a|
+@ 0.220050
+|u|
+@ 0.000737
+|t|
+@ 0.073342
+|h|
+@ 0.122733
+|o|
+@ 0.706470
+|o|
+@ 0.661344
+. BS/^H
+| |
+. BS/^H
+@ 0.133546
+|r|
+@ 0.096133
+|i|
+@ 0.550642
+|z|
+@ 0.257307
+|a|
+@ 0.089182
+|t|
+@ 0.091701
+|i|
+@ 0.073550
+|o|
+@ 0.048254
+|n|
+@ 0.364529
+|.|
+@ 1.265343
+. CR/^M LF/^J
+|$ |
+@ 0.317336
+|#|
+@ 0.184727
+| |
+@ 0.163383
+|c|
+@ 0.833234
+. BS/^H
+| |
+. BS/^H
+@ 0.256017
+|C|
+@ 0.102578
+|u|
+@ 0.128421
+|t|
+@ 0.174534
+|/|
+@ 0.326202
+|p|
+@ 0.370041
+|a|
+@ 0.035486
+|s|
+@ 0.173198
+|t|
+@ 0.086893
+|e|
+@ 0.157298
+| |
+@ 0.090565
+|t|
+@ 0.066508
+|h|
+@ 0.112559
+|e|
+@ 0.131127
+| |
+@ 1.020025
+|U|
+@ 0.071542
+|R|
+@ 0.111899
+|L|
+@ 0.121065
+| |
+@ 0.150010
+|i|
+@ 0.066931
+|n|
+@ 0.067096
+|t|
+@ 0.078625
+|o|
+@ 0.109506
+| |
+@ 0.345039
+|a|
+@ 0.071372
+|n|
+@ 0.141411
+| |
+@ 0.091375
+|a|
+@ 0.117047
+|u|
+@ 0.089717
+|t|
+@ 0.070700
+|h|
+@ 0.166542
+|e|
+@ 0.149188
+|n|
+@ 0.158311
+|t|
+@ 0.180925
+|i|
+@ 0.088511
+|c|
+@ 0.163558
+|a|
+@ 0.062569
+|t|
+@ 0.066757
+|e|
+@ 0.183622
+|d|
+@ 0.078635
+| |
+@ 0.286143
+|b|
+@ 0.187676
+|r|
+@ 0.102034
+|o|
+@ 0.079142
+|w|
+@ 0.197948
+|s|
+@ 0.299645
+|e|
+@ 0.143954
+|r|
+	@ 0.597870
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.170642
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.188898
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.156691
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.621411
+	|s|
+	@ 0.521414
+	|w|
+	@ 0.036615
+	|e|
+	@ 0.080506
+	|r|
+@ 0.075146
+| |
+@ 0.132249
+|s|
+@ 0.095049
+|e|
+@ 0.297624
+|s|
+@ 0.121463
+|s|
+@ 0.097837
+|i|
+@ 0.037842
+|o|
+@ 0.087817
+|n|
+@ 0.361102
+|,|
+@ 0.091752
+| |
+@ 0.252210
+|c|
+@ 0.069869
+|l|
+@ 0.072863
+|i|
+@ 0.182508
+|c|
+@ 0.098807
+|k|
+@ 0.257798
+| |
+@ 0.237605
+|A|
+@ 0.215714
+|c|
+@ 0.138379
+|c|
+@ 0.179212
+|e|
+@ 0.093297
+|p|
+@ 0.112329
+|t|
+@ 0.130995
+|,|
+@ 0.306247
+. CR/^M LF/^J
+|$ |
+@ 0.403963
+|#|
+@ 0.512410
+| |
+@ 0.203407
+|a|
+@ 0.092983
+|n|
+@ 0.069183
+|d|
+@ 0.111591
+| |
+@ 0.382064
+|t|
+@ 0.085644
+|h|
+@ 0.092895
+|e|
+@ 0.123889
+|n|
+@ 0.103445
+| |
+@ 0.073495
+|c|
+@ 0.117774
+|u|
+@ 0.108255
+|t|
+@ 0.120191
+|/|
+@ 0.205735
+|p|
+@ 0.074935
+|a|
+@ 0.084848
+|s|
+@ 0.131854
+|t|
+@ 0.248112
+| |
+@ 0.800546
+. BS/^H
+| |
+. BS/^H
+@ 0.086912
+|e|
+@ 0.089847
+| |
+@ 0.085450
+|t|
+@ 0.097255
+|h|
+@ 0.064279
+|e|
+@ 0.048348
+| |
+@ 0.138508
+|t|
+@ 0.096247
+|o|
+@ 0.200165
+|k|
+@ 0.046824
+|e|
+@ 0.792015
+| |
+@ 0.330388
+. BS/^H
+| |
+. BS/^H
+@ 0.254515
+|n|
+@ 0.128052
+| |
+@ 0.093633
+|b|
+@ 0.069061
+|a|
+@ 0.152236
+|c|
+@ 0.094623
+|k|
+@ 0.100724
+| |
+@ 0.151926
+|i|
+@ 0.083552
+|n|
+@ 0.056094
+|t|
+@ 0.088568
+|o|
+@ 0.094236
+| |
+@ 0.041114
+|t|
+@ 0.102630
+|h|
+@ 0.066589
+|e|
+@ 0.067669
+| |
+@ 0.124101
+|t|
+@ 0.165543
+|e|
+@ 0.150592
+|r|
+@ 0.005477
+|m|
+@ 0.803802
+|i|
+@ 0.074986
+|n|
+@ 0.188115
+|a|
+@ 0.217138
+|l|
+@ 0.293001
+|,|
+@ 0.258529
+. CR/^M LF/^J
+|$ |
+@ 0.166835
+|s|
+@ 0.128718
+|u|
+@ 0.108128
+|d|
+@ 0.077497
+|o|
+@ 0.644823
+| |
+@ 0.303764
+|g|
+@ 0.225194
+|c|
+@ 0.098153
+|l|
+@ 0.178174
+|o|
+@ 0.047471
+|u|
+@ 0.095449
+|d|
+@ 0.146045
+| |
+@ 0.453552
+|a|
+@ 0.103833
+|u|
+@ 0.108059
+|t|
+@ 0.090414
+|h|
+@ 0.096897
+| |
+@ 0.162250
+|l|
+@ 0.135405
+|o|
+@ 0.124959
+|g|
+@ 0.087752
+|i|
+@ 0.056921
+|n|
+@ 0.997047
+. CR/^M LF/^J
+@ 5.081517
+|Go to the following link in your browser:|
+@ 0.000067
+. CR/^M LF/^J
+@ 0.000022
+. CR/^M LF/^J
+@ 0.000028
+|    https://accounts.google.com/o/oauth2/auth?redirect_uri=urn%3Aietf%3Awg%|-
+-|3Aoauth%3A2.0%3Aoob&prompt=select_account&response_type=code&client_id=111|-
+-|11111111.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com|-
+-|%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fbigque|-
+-|ry+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.goo|-
+-|gleapis.com%2Fauth%2Fdevstorage.full_control+https%3A%2F%2Fwww.googleapis.|-
+-|com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fndev|-
+-|.cloudman+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3|-
+-|A%2F%2Fwww.googleapis.com%2Fauth%2Fsqlservice.admin+https%3A%2F%2Fwww.goog|-
+-|leapis.com%2Fauth%2Fprediction+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fp|-
+-|rojecthosting&access_type=offline|
+@ 0.000031
+. CR/^M LF/^J
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000019
+. CR/^M LF/^J
+@ 0.000083
+|Enter verification code: |
+@ 6.867434
+|4|
+@ 0.000087
+|/|
+@ 0.000032
+|x|
+@ 0.000028
+|x|
+@ 0.000026
+|x|
+@ 0.000072
+|x|
+@ 0.000037
+|x|
+@ 0.000027
+|x|
+@ 0.000027
+|x|
+@ 0.000026
+|x|
+@ 0.000026
+|x|
+@ 0.000023
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000020
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000031
+|x|
+@ 0.000025
+|x|
+@ 0.000029
+|x|
+@ 0.000021
+|x|
+@ 0.000020
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000020
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000033
+|x|
+@ 0.000033
+|x|
+@ 0.000022
+|x|
+@ 0.000022
+|x|
+@ 0.000021
+|x|
+@ 0.000020
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000026
+|x |
+. CR/^M
+@ 0.000022
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000021
+|x|
+@ 0.000022
+|x|
+@ 0.000021
+|x|
+@ 0.858806
+. CR/^M LF/^J
+@ 0.210503
+. CR/^M LF/^J
+@ 0.000056
+|You are now logged in as [erjohnso@google.com].|
+@ 0.000023
+. CR/^M LF/^J
+@ 0.000021
+|Your current project is [graphite-demos].  You can change this setting by r|-
+-|unning:|
+@ 0.000022
+. CR/^M LF/^J
+@ 0.000021
+|  $ gcloud config set project <project>|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.019056
+|$ |
+@ 3.405178
+|s|
+@ 0.096367
+|u|
+@ 0.052304
+|d|
+@ 0.113066
+|o|
+@ 0.120839
+| |
+@ 0.176162
+|g|
+@ 0.180482
+|c|
+@ 0.074788
+|l|
+@ 0.160768
+|o|
+@ 0.036653
+|u|
+@ 0.101755
+|d|
+@ 0.090555
+| |
+@ 0.101388
+|c|
+@ 0.060868
+|o|
+@ 0.052214
+|n|
+@ 0.097494
+|f|
+@ 0.064590
+|i|
+@ 0.113970
+|g|
+@ 0.122920
+| |
+@ 0.175257
+|s|
+@ 0.091574
+|e|
+@ 0.066046
+|t|
+@ 0.097122
+| |
+@ 0.093403
+|p|
+@ 0.097398
+|r|
+@ 0.077969
+|o|
+@ 0.064571
+|j|
+@ 0.100968
+|e|
+@ 0.189202
+|c|
+@ 0.178338
+|t|
+@ 0.053009
+| |
+@ 0.182862
+|g|
+@ 0.169164
+|r|
+@ 0.098178
+|a|
+@ 0.082511
+|p|
+@ 0.047019
+|h|
+@ 0.104177
+|i|
+@ 0.075599
+|t|
+@ 0.085639
+|e|
+@ 0.133719
+|-|
+@ 0.123476
+|d|
+@ 0.153944
+|e|
+@ 0.050576
+|m|
+@ 0.093416
+|o|
+@ 0.104693
+|s|
+@ 0.710309
+. CR/^M LF/^J
+@ 0.269390
+|$ |
+@ 1.220660
+. CR/^M LF/^J
+|$ |
+@ 0.545920
+|#|
+@ 0.614301
+| |
+@ 0.549291
+|N|
+@ 0.124079
+|o|
+@ 0.072467
+|w|
+@ 0.231584
+| |
+@ 0.317901
+|l|
+@ 0.044525
+|e|
+@ 0.084800
+|t|
+@ 0.113691
+|'|
+@ 0.045945
+|s|
+@ 0.098903
+| |
+@ 0.226629
+|c|
+@ 0.071859
+|h|
+@ 0.137415
+|e|
+@ 0.146176
+|c|
+@ 0.095182
+|k|
+@ 0.112401
+| |
+@ 0.649899
+. BS/^H
+| |
+. BS/^H
+@ 0.215257
+|o|
+@ 0.067949
+|u|
+@ 0.094758
+|t|
+@ 0.098813
+| |
+@ 0.078739
+|t|
+@ 0.077527
+|h|
+@ 0.106100
+|i|
+@ 0.117595
+|s|
+@ 0.076653
+| |
+@ 0.242223
+|g|
+@ 0.215801
+|i|
+@ 0.131708
+|t|
+@ 0.204083
+| |
+@ 0.190471
+|r|
+@ 0.068103
+|e|
+@ 0.138516
+|p|
+@ 0.151435
+|o|
+@ 0.129615
+| |
+@ 0.127916
+|f|
+@ 0.087628
+|o|
+@ 0.089173
+|r|
+@ 0.037900
+| |
+@ 0.136060
+|t|
+@ 0.046404
+|h|
+@ 0.066916
+|e|
+@ 0.049920
+| |
+@ 0.195241
+|m|
+@ 0.102066
+|a|
+@ 0.071774
+|n|
+@ 0.161133
+|i|
+@ 0.488779
+|f|
+@ 0.199161
+|e|
+@ 0.183822
+|s|
+@ 0.109616
+|t|
+@ 0.112766
+| |
+@ 0.112162
+|f|
+@ 0.047837
+|i|
+@ 0.105357
+|l|
+@ 0.045632
+|e|
+@ 0.151949
+|s|
+@ 0.553449
+|,|
+@ 0.754332
+. CR/^M LF/^J
+|$ |
+@ 0.576669
+|g|
+@ 0.078783
+|i|
+@ 0.120103
+|t|
+@ 0.262397
+| |
+@ 0.248108
+|c|
+@ 0.079134
+|l|
+@ 0.183331
+|o|
+@ 0.037705
+|n|
+@ 0.103501
+|e|
+@ 0.105696
+| |
+@ 0.067837
+|h|
+@ 0.118796
+|t|
+@ 0.150025
+|t|
+@ 0.104459
+|p|
+@ 0.155234
+|s|
+@ 0.487456
+|:|
+@ 0.245144
+|/|
+@ 0.130362
+|/|
+@ 0.107545
+|g|
+@ 0.099989
+|i|
+@ 0.137722
+|t|
+@ 0.385001
+|h|
+@ 0.162949
+|u|
+@ 0.088063
+|b|
+@ 0.159567
+|.|
+@ 0.056316
+|c|
+@ 0.155319
+|o|
+@ 0.053920
+|m|
+@ 0.248761
+|/|
+@ 0.245614
+|G|
+@ 0.140233
+|o|
+@ 0.128431
+|o|
+@ 0.069130
+|g|
+@ 0.109251
+|l|
+@ 0.064775
+|e|
+@ 0.222307
+|C|
+@ 0.140956
+|l|
+@ 0.173709
+|o|
+@ 0.054313
+|u|
+@ 0.076812
+|d|
+@ 0.249707
+|P|
+@ 0.182340
+|l|
+@ 0.118239
+|a|
+@ 0.116021
+|t|
+@ 0.202801
+|f|
+@ 0.069158
+|o|
+@ 0.104722
+|r|
+@ 0.072582
+|m|
+@ 0.230150
+|/|
+@ 0.746134
+|c|
+@ 0.090703
+|o|
+@ 0.029772
+|m|
+@ 0.085874
+|p|
+@ 0.196620
+|u|
+@ 0.087547
+|t|
+@ 0.069248
+|e|
+@ 0.138060
+|-|
+@ 0.754431
+|v|
+@ 0.133617
+|i|
+@ 0.094274
+|d|
+@ 0.162023
+|e|
+@ 0.126631
+|o|
+@ 0.278677
+|-|
+@ 0.205773
+|d|
+@ 0.335642
+|e|
+@ 0.133427
+|m|
+@ 0.089870
+|o|
+@ 0.337900
+|-|
+@ 0.194881
+|p|
+@ 0.079143
+|u|
+@ 0.189723
+|p|
+@ 0.117418
+|p|
+@ 0.123324
+|e|
+@ 0.087865
+|t|
+@ 0.692031
+. CR/^M LF/^J
+@ 0.000902
+|Cloning into 'compute-video-demo-puppet'...|
+@ 0.000040
+. CR/^M LF/^J
+@ 0.362165
+	|Username for 'https://github.com': |
+	@ 1.256118
+	|e|
+	@ 0.055267
+	|r|
+	@ 0.109033
+	|j|
+	@ 0.097765
+	|o|
+	@ 0.079082
+	|h|
+	@ 0.108875
+	|n|
+	@ 0.163766
+	|s|
+	@ 0.067219
+	|o|
+	@ 0.265733
+	. CR/^M LF/^J
+	@ 0.000171
+	|Password for 'https://erjohnso@github.com': |
+	@ 4.012317
+	. CR/^M LF/^J
+	@ 0.947785
+|remote: Reusing existing pack: 13, done.|
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+@ 0.000075
+. CR/^M LF/^J
+@ 0.000037
+|remote: Counting objects: 42, done.|
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+@ 0.000023
+. CR/^M LF/^J
+@ 0.000364
+|remote: Compressing objects:   2% (1/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000034
+|remote: Compressing objects:   4% (2/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000027
+|remote: Compressing objects:   7% (3/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000026
+|remote: Compressing objects:   9% (4/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.039646
+|remote: Compressing objects:  11% (5/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000063
+|remote: Compressing objects:  14% (6/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000027
+|remote: Compressing objects:  16% (7/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000022
+|remote: Compressing objects:  19% (8/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000020
+|remote: Compressing objects:  21% (9/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000021
+|remote: Compressing objects:  23% (10/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000021
+|remote: Compressing objects:  26% (11/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000020
+|remote: Compressing objects:  28% (12/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000025
+|remote: Compressing objects:  30% (13/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000020
+|remote: Compressing objects:  33% (14/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000021
+|remote: Compressing objects:  35% (15/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000028
+|remote: Compressing objects:  38% (16/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000020
+|remote: Compressing objects:  40% (17/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000019
+|remote: Compressing objects:  42% (18/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000021
+|remote: Compressing objects:  45% (19/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000027
+|remote: Compressing objects:  47% (20/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000020
+|remote: Compressing objects:  50% (21/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000074
+|remote: Compressing objects:  52% (22/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000032
+|remote: Compressing objects:  54% (23/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000025
+|remote: Compressing objects:  57% (24/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000021
+|remote: Compressing objects:  59% (25/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000021
+|remote: Compressing objects:  61% (26/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000020
+|remote: Compressing objects:  64% (27/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000020
+|remote: Compressing objects:  66% (28/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000024
+|remote: Compressing objects:  69% (29/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000020
+|remote: Compressing objects:  71% (30/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000021
+|remote: Compressing objects:  73% (31/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000019
+|remote: Compressing objects:  76% (32/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000020
+|remote: Compressing objects:  78% (33/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000020
+|remote: Compressing objects:  80% (34/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000021
+|remote: Compressing objects:  83% (35/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000020
+|remote: Compressing objects:  85% (36/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000021
+|remote: Compressing objects:  88% (37/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000020
+|remote: Compressing objects:  90% (38/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000020
+|remote: Compressing objects:  92% (39/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000020
+|remote: Compressing objects:  95% (40/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000020
+|remote: Compressing objects:  97% (41/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000020
+|remote: Compressing objects: 100% (42/42)   |
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M
+@ 0.000020
+|remote: Compressing objects: 100% (42/42), done.|
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+@ 0.000017
+. CR/^M LF/^J
+@ 0.001820
+|Unpacking objects:   1% (1/55)   |
+. CR/^M
+@ 0.000154
+|Unpacking objects:   3% (2/55)   |
+. CR/^M
+@ 0.000149
+|Unpacking objects:   5% (3/55)   |
+. CR/^M
+@ 0.000153
+|Unpacking objects:   7% (4/55)   |
+. CR/^M
+@ 0.000142
+|Unpacking objects:   9% (5/55)   |
+. CR/^M
+@ 0.000468
+|Unpacking objects:  10% (6/55)   |
+. CR/^M
+@ 0.000379
+|Unpacking objects:  12% (7/55)   |
+. CR/^M
+@ 0.036768
+|Unpacking objects:  14% (8/55)   |
+. CR/^M
+@ 0.000395
+|Unpacking objects:  16% (9/55)   |
+. CR/^M
+@ 0.000161
+|Unpacking objects:  18% (10/55)   |
+. CR/^M
+@ 0.000158
+|Unpacking objects:  20% (11/55)   |
+. CR/^M
+@ 0.000168
+|Unpacking objects:  21% (12/55)   |
+. CR/^M
+@ 0.000133
+|Unpacking objects:  23% (13/55)   |
+. CR/^M
+@ 0.000155
+|Unpacking objects:  25% (14/55)   |
+. CR/^M
+@ 0.000155
+|Unpacking objects:  27% (15/55)   |
+. CR/^M
+@ 0.000162
+|Unpacking objects:  29% (16/55)   |
+. CR/^M
+@ 0.000156
+|Unpacking objects:  30% (17/55)   |
+. CR/^M
+@ 0.000163
+|Unpacking objects:  32% (18/55)   |
+. CR/^M
+@ 0.000138
+|Unpacking objects:  34% (19/55)   |
+. CR/^M
+@ 0.000156
+|Unpacking objects:  36% (20/55)   |
+. CR/^M
+@ 0.000136
+|Unpacking objects:  38% (21/55)   |
+. CR/^M
+@ 0.000139
+|Unpacking objects:  40% (22/55)   |
+. CR/^M
+@ 0.000145
+|Unpacking objects:  41% (23/55)   |
+. CR/^M
+@ 0.000139
+|Unpacking objects:  43% (24/55)   |
+. CR/^M
+@ 0.000137
+|Unpacking objects:  45% (25/55)   |
+. CR/^M
+@ 0.000170
+|Unpacking objects:  47% (26/55)   |
+. CR/^M
+@ 0.000446
+|Unpacking objects:  49% (27/55)   |
+. CR/^M
+@ 0.000214
+|Unpacking objects:  50% (28/55)   |
+. CR/^M
+@ 0.000133
+|Unpacking objects:  52% (29/55)   |
+. CR/^M
+@ 0.000196
+|Unpacking objects:  54% (30/55)   |
+. CR/^M
+@ 0.000638
+|remote: Total 55 (delta 19), reused 0 (delta 0)|
+: Esc [ K
+& EL: ERASE IN LINE
+" Clear from the cursor to the end of the line.
+. CR/^M LF/^J
+@ 0.000205
+|Unpacking objects:  56% (31/55)   |
+. CR/^M
+@ 0.000125
+|Unpacking objects:  58% (32/55)   |
+. CR/^M
+@ 0.000157
+|Unpacking objects:  60% (33/55)   |
+. CR/^M
+@ 0.000453
+|Unpacking objects:  61% (34/55)   |
+. CR/^M
+@ 0.000167
+|Unpacking objects:  63% (35/55)   |
+. CR/^M
+@ 0.000427
+|Unpacking objects:  65% (36/55)   |
+. CR/^M
+@ 0.000126
+|Unpacking objects:  67% (37/55)   |
+. CR/^M
+@ 0.000487
+|Unpacking objects:  69% (38/55)   |
+. CR/^M
+@ 0.000234
+|Unpacking objects:  70% (39/55)   |
+. CR/^M
+@ 0.000123
+|Unpacking objects:  72% (40/55)   |
+. CR/^M
+@ 0.000192
+|Unpacking objects:  74% (41/55)   |
+. CR/^M
+@ 0.000198
+|Unpacking objects:  76% (42/55)   |
+. CR/^M
+@ 0.000157
+|Unpacking objects:  78% (43/55)   |
+. CR/^M
+@ 0.000416
+|Unpacking objects:  80% (44/55)   |
+. CR/^M
+@ 0.000422
+|Unpacking objects:  81% (45/55)   |
+. CR/^M
+@ 0.000177
+|Unpacking objects:  83% (46/55)   |
+. CR/^M
+@ 0.000159
+|Unpacking objects:  85% (47/55)   |
+. CR/^M
+@ 0.000154
+|Unpacking objects:  87% (48/55)   |
+. CR/^M
+@ 0.000124
+|Unpacking objects:  89% (49/55)   |
+. CR/^M
+@ 0.000138
+|Unpacking objects:  90% (50/55)   |
+. CR/^M
+@ 0.000657
+|Unpacking objects:  92% (51/55)   |
+. CR/^M
+@ 0.000150
+|Unpacking objects:  94% (52/55)   |
+. CR/^M
+@ 0.000378
+|Unpacking objects:  96% (53/55)   |
+. CR/^M
+@ 0.000129
+|Unpacking objects:  98% (54/55)   |
+. CR/^M
+@ 0.000354
+|Unpacking objects: 100% (55/55)   |
+. CR/^M
+@ 0.000032
+|Unpacking objects: 100% (55/55), done.|
+@ 0.000025
+. CR/^M LF/^J
+@ 0.024133
+|$ |
+@ 1.125683
+|c|
+@ 0.186979
+|d|
+@ 0.128361
+| |
+@ 0.090790
+|c|
+@ 0.105769
+|o|
+@ 0.023714
+|m|
+@ 0.164553
+|p|
+@ 0.193393
+|ute-video-demo-puppet/|
+@ 0.625026
+. CR/^M LF/^J
+|$ |
+@ 5.981707
+. CR/^M LF/^J
+|$ |
+@ 0.337063
+|#|
+@ 0.207023
+| |
+@ 0.228570
+|S|
+@ 0.237693
+|e|
+@ 0.218146
+|t|
+@ 0.125359
+| |
+@ 0.334556
+|u|
+@ 0.393803
+|p|
+@ 1.478706
+| |
+@ 0.870348
+|a|
+@ 0.104574
+|u|
+@ 0.086736
+|t|
+@ 0.084158
+|o|
+@ 0.334965
+|-|
+@ 0.219708
+|s|
+@ 0.222599
+|ig|
+@ 0.086308
+|n|
+@ 0.210131
+|i|
+@ 0.019581
+|n|
+@ 0.147813
+|g|
+@ 0.318573
+| |
+@ 0.337060
+|o|
+@ 0.182949
+|f|
+@ 0.195186
+| |
+@ 0.285040
+|n|
+@ 0.057383
+|e|
+@ 0.096644
+|w|
+@ 0.077049
+| |
+@ 0.096454
+|p|
+@ 0.726849
+|u|
+@ 0.219074
+|p|
+@ 0.139580
+|p|
+@ 0.079915
+|e|
+@ 0.073667
+|t|
+@ 0.054172
+| |
+@ 0.155822
+|m|
+@ 0.448503
+. BS/^H
+| |
+. BS/^H
+@ 0.196147
+|n|
+@ 0.100096
+|o|
+@ 0.064052
+|d|
+@ 0.140230
+|e|
+@ 0.165638
+|s|
+@ 0.093321
+| |
+@ 0.148653
+|t|
+@ 0.086011
+|h|
+@ 0.075712
+|a|
+@ 0.085673
+|t|
+@ 0.018018
+| |
+@ 0.169748
+|m|
+@ 0.069942
+|a|
+@ 0.113117
+|t|
+@ 0.199924
+|c|
+@ 0.075716
+|h|
+@ 0.155776
+| |
+@ 0.142717
+|o|
+@ 0.090197
+|u|
+@ 0.123944
+|r|
+@ 0.056258
+| |
+@ 0.164223
+|d|
+@ 0.027655
+|o|
+@ 0.184967
+|m|
+@ 0.095499
+|a|
+@ 0.097724
+|i|
+@ 0.044482
+|n|
+@ 0.374289
+|,|
+@ 1.417643
+. CR/^M LF/^J
+|$ |
+@ 1.362224
+|e|
+@ 0.187645
+|c|
+@ 0.085666
+|h|
+@ 0.049119
+|o|
+@ 0.100091
+| |
+@ 0.249844
+|"|
+@ 0.915711
+|*|
+@ 0.391648
+|.|
+@ 1.109358
+|$|
+@ 0.907297
+|(|
+@ 0.217902
+|h|
+@ 0.089898
+|o|
+@ 0.121422
+|s|
+@ 0.077443
+|t|
+@ 0.089601
+|n|
+@ 0.117395
+|a|
+@ 0.075245
+|m|
+@ 0.134284
+|e|
+@ 0.116188
+| |
+@ 0.163945
+|-|
+@ 0.729496
+	|d|
+	@ 0.115134
+	|o|
+	@ 0.211049
+	|m|
+	@ 0.086468
+	|a|
+	@ 0.090858
+	|i|
+	@ 0.076331
+	|n|
+	@ 0.643159
+	|)|
+	@ 0.511180
+	|"|
+	@ 0.260412
+	| |
+	@ 0.160448
+	|||
+	@ 0.100687
+	| |
+	@ 0.141507
+	|s|
+	@ 0.108714
+	|u|
+	@ 0.090901
+	|d|
+	@ 0.118296
+	|o|
+	@ 0.084524
+	| |
+	@ 0.538520
+	|t|
+	@ 0.062013
+	|e|
+	@ 0.307749
+	|e|
+	@ 0.505362
+	| |
+	@ 0.246622
+	|/|
+	@ 0.189094
+	| |
+	@ 0.605586
+	|/|
+	@ 0.357963
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.163262
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.368408
+	|e|
+	@ 0.100446
+	|t|
+	@ 0.215777
+	|c|
+	@ 0.130910
+	|/|
+	@ 0.255569
+	|p|
+	@ 0.092749
+	|u|
+	@ 0.195568
+	|p|
+	@ 0.128657
+	|p|
+	@ 0.108754
+	|e|
+	@ 0.080063
+	|t|
+	@ 0.255355
+	|/|
+	@ 0.166630
+	|a|
+	@ 0.104775
+	|u|
+	@ 0.116364
+	|t|
+	@ 0.073877
+	|o|
+	@ 0.410145
+	|s|
+	@ 0.106969
+	|i|
+	@ 0.149017
+	|g|
+	@ 0.066619
+	|n|
+	@ 0.226344
+	|.|
+	@ 0.181503
+	|c|
+	@ 0.144308
+	|o|
+	@ 0.077017
+	|n|
+	@ 0.123430
+	|f|
+	@ 1.142317
+	. CR/^M LF/^J
+	@ 0.003465
+	|hostname: invalid option -- 'o'|
+	@ 0.000143
+	. CR/^M LF/^J
+	@ 0.049143
+	|*.Usage: hostname [-v] [-b] {hostname|-F file}         set host name (from |-
+	-|file)|
+	@ 0.000072
+	. CR/^M LF/^J
+	@ 0.000026
+	|       hostname [-v] [-a|-A|-d|-f|-i|-I|-s|-y]       display formatted name|
+	@ 0.000021
+	. CR/^M LF/^J
+	@ 0.000020
+	|       hostname [-v]                                 display host name|
+	@ 0.000021
+	. CR/^M LF/^J
+	@ 0.000022
+	. CR/^M LF/^J
+	@ 0.000021
+	|       {yp,nis,}domainname [-v] {nisdomain|-F file}  set NIS domain name (f|-
+	-|rom file)|
+	@ 0.000021
+	. CR/^M LF/^J
+	@ 0.000020
+	|       {yp,nis,}domainname [-v]                      display NIS domain nam|-
+	-|e|
+	@ 0.000020
+	. CR/^M LF/^J
+	@ 0.000016
+	. CR/^M LF/^J
+	@ 0.000019
+	|       dnsdomainname [-v]                            display dns domain nam|-
+	-|e|
+	@ 0.000016
+	. CR/^M LF/^J
+	@ 0.000015
+	. CR/^M LF/^J
+	@ 0.000022
+	|       hostname -V|--version|-h|--help               print info and exit|
+	@ 0.000016
+	. CR/^M LF/^J
+	@ 0.000015
+	. CR/^M LF/^J
+	@ 0.000015
+	|Program name:|
+	@ 0.000015
+	. CR/^M LF/^J
+	@ 0.000015
+	|       {yp,nis,}domainname=hostname -y|
+	@ 0.000015
+	. CR/^M LF/^J
+	@ 0.000016
+	|       dnsdomainname=hostname -d|
+	@ 0.000015
+	. CR/^M LF/^J
+	@ 0.000015
+	. CR/^M LF/^J
+	@ 0.000015
+	|Program options:|
+	@ 0.000017
+	. CR/^M LF/^J
+	@ 0.000015
+	|    -a, --alias            alias names|
+	@ 0.000016
+	. CR/^M LF/^J
+	@ 0.000015
+	|    -A, --all-fqdns        all long host names (FQDNs)|
+	@ 0.000016
+	. CR/^M LF/^J
+	@ 0.000015
+	|    -b, --boot             set default hostname if none available|
+	@ 0.000032
+	. CR/^M LF/^J
+	@ 0.000031
+	|    -d, --domain           DNS domain name|
+	@ 0.000019
+	. CR/^M LF/^J
+	@ 0.000016
+	|    -f, --fqdn, --long     long host name (FQDN)|
+	@ 0.000015
+	. CR/^M LF/^J
+	@ 0.000016
+	|    -F, --file             read host name or NIS domain name from given fil|-
+	-|e|
+	@ 0.000016
+	. CR/^M LF/^J
+	@ 0.000016
+	|    -i, --ip-address       addresses for the host name|
+	@ 0.000016
+	. CR/^M LF/^J
+	@ 0.000015
+	|    -I, --all-ip-addresses all addresses for the host|
+	@ 0.000016
+	. CR/^M LF/^J
+	@ 0.000015
+	|    -s, --short            short host name|
+	@ 0.000016
+	. CR/^M LF/^J
+	@ 0.000015
+	|    -y, --yp, --nis        NIS/YP domain name|
+	@ 0.000016
+	. CR/^M LF/^J
+	@ 0.000014
+	. CR/^M LF/^J
+	@ 0.000016
+	|Description:|
+	@ 0.000014
+	. CR/^M LF/^J
+	@ 0.000016
+	|   This command can get or set the host name or the NIS domain name. You ca|-
+	-|n|
+	@ 0.000016
+	. CR/^M LF/^J
+	@ 0.000016
+	|   also get the DNS domain or the FQDN (fully qualified domain name).|
+	@ 0.000016
+	. CR/^M LF/^J
+	@ 0.000015
+	|   Unless you are using bind or NIS for host lookups you can change the|
+	@ 0.000017
+	. CR/^M LF/^J
+	@ 0.000015
+	|   FQDN (Fully Qualified Domain Name) and the DNS domain name (which is|
+	@ 0.000016
+	. CR/^M LF/^J
+	@ 0.000016
+	|   part of the FQDN) in the /etc/hosts file.|
+	@ 0.000016
+	. CR/^M LF/^J
+	@ 0.000492
+	|$ |
+	@ 6.540536
+	|e|
+	@ 0.197314
+	|c|
+	@ 0.062023
+	|h|
+	@ 0.065730
+	|o|
+	@ 0.123421
+	| |
+	@ 0.242003
+	|"|
+	@ 0.280766
+	|*|
+	@ 1.217845
+	|.|
+	@ 0.462861
+	|$|
+	@ 0.589074
+	|(|
+	@ 0.212106
+	|h|
+	@ 0.086034
+	|o|
+	@ 0.098878
+	|s|
+	@ 0.086709
+	|t|
+	@ 0.098646
+	|n|
+	@ 0.077778
+	|a|
+	@ 0.094737
+	|m|
+	@ 0.129254
+	|e|
+	@ 0.444907
+	| |
+	@ 0.648001
+	|-|
+@ 0.448350
+|-|
+@ 0.340747
+|d|
+@ 0.063420
+|o|
+@ 0.203287
+|m|
+@ 0.087108
+|a|
+@ 0.113906
+|i|
+@ 0.062234
+|n|
+@ 0.616127
+|)|
+@ 0.737353
+|"|
+@ 0.454220
+| |
+@ 0.184544
+|||
+@ 0.097299
+| |
+@ 0.984370
+|s|
+@ 0.098212
+|u|
+@ 0.591019
+|d|
+@ 0.081382
+|o|
+@ 0.170526
+| |
+@ 0.238841
+|/|
+@ 0.540958
+. BS/^H
+| |
+. BS/^H
+@ 0.185166
+|e|
+@ 0.072992
+|t|
+@ 0.162809
+|e|
+@ 0.131982
+|e|
+@ 0.458483
+. BS/^H
+| |
+. BS/^H
+@ 0.168486
+. BS/^H
+| |
+. BS/^H
+@ 0.154724
+. BS/^H
+| |
+. BS/^H
+@ 0.139940
+. BS/^H
+| |
+. BS/^H
+@ 0.440420
+|t|
+@ 0.115026
+|e|
+@ 0.280008
+|e|
+@ 0.736241
+| |
+@ 0.190904
+|/|
+@ 0.124207
+|e|
+@ 0.063590
+|t|
+@ 0.229221
+|c|
+@ 0.350123
+|/|
+@ 0.247155
+|p|
+@ 0.086679
+|u|
+@ 0.170824
+|p|
+@ 0.144109
+|p|
+@ 0.070090
+|e|
+@ 0.077945
+|t|
+@ 0.371817
+|/|
+@ 0.192190
+|a|
+@ 0.110018
+|u|
+@ 0.116660
+|t|
+@ 0.078780
+|o|
+@ 0.277732
+|s|
+@ 0.119183
+|i|
+@ 0.113748
+|g|
+@ 0.073291
+|n|
+@ 0.210198
+|.|
+@ 0.242477
+|c|
+@ 0.091280
+|o|
+@ 0.034377
+|n|
+@ 0.118760
+|f|
+@ 0.331682
+. CR/^M LF/^J
+@ 0.004829
+|*.c.graphite-demos.internal|
+@ 0.000057
+. CR/^M LF/^J
+@ 0.000470
+|$ |
+@ 8.259949
+. CR/^M LF/^J
+|$ |
+@ 0.475921
+|#|
+@ 0.222364
+| |
+@ 0.457235
+|C|
+@ 0.118602
+|o|
+@ 0.164223
+|p|
+@ 0.116655
+|y|
+@ 0.135819
+| |
+@ 0.104676
+|o|
+@ 0.126448
+|v|
+@ 0.147087
+|e|
+@ 0.070041
+|r|
+@ 0.065307
+| |
+@ 0.101189
+|t|
+@ 0.057971
+|h|
+@ 0.134348
+|e|
+@ 0.107327
+| |
+@ 0.254963
+|d|
+@ 0.140733
+|e|
+@ 0.079342
+|m|
+@ 0.114836
+|o|
+@ 0.204747
+| |
+@ 0.437098
+|m|
+@ 0.078288
+|a|
+@ 0.109901
+|n|
+@ 0.132450
+|i|
+@ 0.118893
+|f|
+@ 0.259081
+|e|
+@ 0.202018
+|s|
+@ 0.093666
+|t|
+@ 0.122713
+| |
+@ 0.117873
+|f|
+@ 0.082804
+|i|
+@ 0.065498
+|l|
+@ 0.072923
+|e|
+@ 0.149382
+|s|
+@ 0.094835
+|,|
+@ 0.364830
+. CR/^M LF/^J
+|$ |
+@ 0.549044
+|s|
+@ 0.086618
+|u|
+@ 0.117587
+|d|
+@ 0.030114
+|o|
+@ 0.126046
+| |
+@ 0.165305
+|c|
+@ 0.100832
+|p|
+@ 0.343598
+| |
+@ 0.262035
+|m|
+@ 0.154856
+|a|
+@ 0.068161
+|n|
+@ 0.177217
+|ifests/|
+@ 1.195040
+|*|
+@ 0.439243
+| |
+@ 0.438597
+|/|
+@ 0.113563
+|e|
+@ 0.048649
+|t|
+@ 0.231800
+|c|
+@ 0.150985
+|/|
+@ 0.284413
+|p|
+@ 0.093602
+|u|
+@ 0.406673
+|ppet/|
+@ 1.594119
+|m|
+@ 0.106198
+|a|
+@ 0.070038
+|n|
+@ 0.142625
+|ifests/|
+@ 1.154443
+. CR/^M LF/^J
+@ 0.004125
+|$ |
+@ 3.589737
+. CR/^M LF/^J
+|$ |
+@ 0.296107
+|#|
+@ 0.195846
+| |
+@ 0.303145
+|C|
+@ 0.133338
+|o|
+@ 0.177172
+|p|
+@ 0.089704
+|y|
+@ 0.094709
+| |
+@ 0.097726
+|t|
+@ 0.058949
+|h|
+@ 0.119107
+|e|
+@ 0.069857
+| |
+@ 1.316761
+|d|
+@ 0.170483
+|e|
+@ 0.118824
+|m|
+@ 0.088215
+|o|
+@ 0.172137
+| |
+@ 0.287742
+|s|
+@ 0.091695
+|i|
+@ 0.108689
+|t|
+@ 0.066920
+|e|
+@ 0.117903
+| |
+@ 0.152653
+|p|
+@ 0.098700
+|a|
+@ 0.084025
+|g|
+@ 0.056929
+|e|
+@ 0.118722
+| |
+@ 0.120206
+|t|
+@ 0.562791
+|a|
+@ 0.380137
+. BS/^H
+| |
+. BS/^H
+@ 0.122225
+|e|
+@ 0.110056
+|m|
+@ 0.101571
+|p|
+@ 0.163907
+|l|
+@ 0.016844
+|a|
+@ 0.175071
+|t|
+@ 0.118760
+|e|
+@ 0.564150
+|,|
+@ 0.413899
+. CR/^M LF/^J
+|$ |
+@ 0.562680
+|s|
+@ 0.087774
+|u|
+@ 0.101405
+|d|
+@ 0.081058
+|o|
+@ 0.100743
+| |
+@ 0.184634
+|c|
+@ 0.086847
+|p|
+@ 0.126855
+| |
+@ 0.158891
+|i|
+@ 0.075253
+|n|
+@ 0.060011
+|d|
+@ 0.124508
+|ex.html.erb |
+@ 2.031708
+|/|
+@ 0.178299
+|e|
+@ 0.085236
+|t|
+@ 0.178008
+|c|
+@ 0.061820
+|/|
+@ 0.229169
+|p|
+@ 0.089423
+|u|
+@ 0.169952
+|ppet/|
+@ 0.559288
+|m|
+@ 0.128200
+|o|
+@ 0.176658
+|d|
+@ 0.167397
+|ules/|
+@ 1.543862
+|a|
+@ 0.097730
+|p|
+@ 0.084459
+|a|
+@ 0.171527
+|che/|
+@ 0.410720
+|t|
+@ 0.028242
+|e|
+@ 0.149603
+. BEL/^G
+@ 0.760596
+|m|
+@ 0.182143
+|plates/|
+@ 0.758573
+. CR/^M LF/^J
+@ 0.003979
+|$ |
+@ 1.838612
+. CR/^M LF/^J
+|$ |
+@ 0.321570
+|#|
+@ 0.227961
+| |
+@ 0.480508
+|N|
+@ 0.145881
+|o|
+@ 0.106646
+|w|
+@ 0.116616
+| |
+@ 0.123172
+|a|
+@ 0.111620
+|p|
+@ 0.131494
+|p|
+@ 0.203501
+|l|
+@ 0.118561
+|y|
+@ 0.126761
+| |
+@ 0.073552
+|t|
+@ 0.103509
+|h|
+@ 0.101103
+|e|
+@ 0.086286
+| |
+@ 2.318356
+|d|
+@ 0.172090
+|e|
+@ 0.048098
+|m|
+@ 0.113606
+|o|
+@ 0.106816
+| |
+@ 0.181688
+|m|
+@ 0.109451
+|a|
+@ 0.076876
+|n|
+@ 0.176315
+|i|
+@ 0.406201
+|f|
+@ 0.151309
+|e|
+@ 0.154922
+|s|
+@ 0.088610
+|t|
+@ 0.104755
+| |
+@ 0.068386
+|t|
+@ 0.055797
+|o|
+@ 0.100659
+| |
+@ 0.133488
+|c|
+@ 0.186393
+|r|
+@ 0.070860
+|e|
+@ 0.184843
+|t|
+@ 0.094164
+|e|
+@ 0.105818
+| |
+@ 0.103712
+|t|
+@ 0.108553
+|h|
+@ 0.090824
+|e|
+@ 0.510418
+. BS/^H
+| |
+. BS/^H
+@ 0.147947
+. BS/^H
+| |
+. BS/^H
+@ 0.128940
+. BS/^H
+| |
+. BS/^H
+@ 0.148150
+. BS/^H
+| |
+. BS/^H
+@ 0.144250
+. BS/^H
+| |
+. BS/^H
+@ 0.155391
+. BS/^H
+| |
+. BS/^H
+@ 0.225091
+|a|
+@ 0.103693
+|t|
+@ 0.064931
+|e|
+@ 0.086757
+| |
+@ 0.239184
+|t|
+@ 0.093830
+|h|
+@ 0.057960
+|e|
+@ 0.070344
+| |
+@ 0.237076
+|C|
+@ 0.171847
+|o|
+@ 0.019663
+|m|
+@ 0.155745
+|p|
+@ 0.113974
+|u|
+@ 0.074121
+|t|
+@ 0.086680
+|e|
+@ 0.095666
+| |
+@ 0.235403
+|E|
+@ 0.124160
+|n|
+@ 0.094013
+|g|
+@ 0.064694
+|i|
+@ 0.051317
+|n|
+@ 0.072584
+|e|
+@ 0.103415
+| |
+@ 0.113421
+|r|
+@ 0.059143
+|e|
+@ 0.151096
+|s|
+@ 0.101585
+|o|
+@ 0.068662
+|u|
+@ 0.043037
+|r|
+@ 0.174435
+|c|
+@ 0.190824
+|e|
+@ 0.152164
+|s|
+@ 0.644452
+. CR/^M LF/^J
+|$ |
+@ 0.417453
+|s|
+@ 0.112142
+|u|
+@ 0.102371
+|d|
+@ 0.056300
+|o|
+@ 0.117786
+| |
+@ 0.122240
+|p|
+@ 0.097028
+|u|
+@ 0.162121
+|p|
+@ 0.134315
+|p|
+@ 0.080860
+|e|
+@ 0.065096
+|t|
+@ 0.338026
+| |
+@ 0.128776
+|a|
+@ 0.080466
+|p|
+@ 0.135491
+|p|
+@ 0.116378
+|l|
+@ 0.220016
+|y|
+@ 0.144419
+| |
+@ 0.474858
+|-|
+@ 0.136240
+|-|
+@ 0.127410
+|c|
+@ 0.560306
+|e|
+@ 0.073115
+|r|
+@ 0.246488
+|t|
+@ 0.239466
+|n|
+@ 0.077028
+|a|
+@ 0.105355
+|m|
+@ 0.092255
+|e|
+@ 0.520385
+|=|
+@ 0.289483
+|m|
+@ 0.183136
+|y|
+@ 0.214026
+|_|
+@ 0.180791
+|p|
+@ 0.186038
+|r|
+@ 0.380112
+|o|
+@ 0.137175
+|j|
+@ 0.167821
+|e|
+@ 0.164772
+|c|
+@ 0.177605
+|t|
+@ 0.089873
+| |
+@ 0.126355
+|/|
+@ 0.060519
+|e|
+@ 0.266518
+|c|
+@ 0.168493
+|/|
+@ 0.723059
+. BS/^H
+| |
+. BS/^H
+@ 0.217530
+. BS/^H
+| |
+. BS/^H
+@ 0.249806
+|t|
+@ 0.198958
+|c|
+@ 0.090944
+|/|
+@ 0.207565
+|p|
+@ 0.090443
+|u|
+@ 0.113602
+|ppet/|
+@ 0.470483
+|m|
+@ 0.182696
+|o|
+@ 0.817281
+. BS/^H
+| |
+. BS/^H
+@ 0.116223
+|a|
+@ 0.147884
+|n|
+@ 0.072758
+|ifests/|
+@ 1.531227
+|p|
+@ 0.085476
+|u|
+@ 0.115902
+. BEL/^G
+|ppet_|
+@ 0.517073
+|u|
+@ 0.177391
+|p.pp |
+@ 1.414167
+. CR/^M LF/^J
+@ 0.443968
+: Esc [ 1 ; 31 m
+& SGR: SELECT GRAPHIC RENDITION
+" Set bold text.
+" Set foreground color red.
+|Warning: Setting templatedir is deprecated. See http://links.puppetlabs.com|-
+-|/env-settings-deprecations|
+@ 0.000123
+. CR/^M LF/^J
+@ 0.000027
+|   (at /usr/lib/ruby/vendor_ruby/puppet/settings.rb:1095:in `block in issue|-
+-|_deprecations')|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+@ 0.000027
+. CR/^M LF/^J
+@ 0.776962
+: Esc [ m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|Notice: Compiled catalog for my_project in environment production in 0.06 s|-
+-|econds|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+@ 0.000354
+. CR/^M LF/^J
+@ 9.551292
+: Esc [ m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|Notice: /Stage[main]/Main/Gce_disk[puppet-agent-3]/ensure: created|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+. CR/^M LF/^J
+@ 11.700021
+: Esc [ m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|Notice: /Stage[main]/Main/Gce_disk[puppet-agent-1]/ensure: created|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+. CR/^M LF/^J
+@ 9.223989
+: Esc [ m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|Notice: /Stage[main]/Main/Gce_instance[puppet-agent-1]/ensure: created|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+. CR/^M LF/^J
+@ 5.830574
+: Esc [ m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|Notice: /Stage[main]/Main/Gce_disk[puppet-agent-4]/ensure: created|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+. CR/^M LF/^J
+@ 5.466755
+: Esc [ m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|Notice: /Stage[main]/Main/Gce_disk[puppet-agent-2]/ensure: created|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+. CR/^M LF/^J
+@ 7.947953
+: Esc [ m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|Notice: /Stage[main]/Main/Gce_instance[puppet-agent-2]/ensure: created|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+. CR/^M LF/^J
+@ 11.819571
+: Esc [ m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|Notice: /Stage[main]/Main/Gce_instance[puppet-agent-3]/ensure: created|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+. CR/^M LF/^J
+@ 8.052843
+: Esc [ m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|Notice: /Stage[main]/Main/Gce_instance[puppet-agent-4]/ensure: created|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+. CR/^M LF/^J
+@ 4.941608
+: Esc [ m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|Notice: /Stage[main]/Main/Gce_httphealthcheck[puppet-http]/ensure: created|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+. CR/^M LF/^J
+@ 5.176843
+: Esc [ m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|Notice: /Stage[main]/Main/Gce_targetpool[puppet-pool]/ensure: created|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+. CR/^M LF/^J
+@ 11.399860
+: Esc [ m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|Notice: /Stage[main]/Main/Gce_forwardingrule[puppet-rule]/ensure: created|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+. CR/^M LF/^J
+@ 0.006562
+: Esc [ m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+|Notice: Finished catalog run in 90.95 seconds|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+@ 0.000070
+. CR/^M LF/^J
+@ 0.077467
+|$ |
+@ 2.475027
+. CR/^M LF/^J
+|$ |
+	@ 0.391809
+	|#|
+	@ 0.190543
+	| |
+	@ 0.209729
+	|N|
+	@ 0.092366
+	|o|
+	@ 0.127094
+	|w|
+	@ 0.155842
+	| |
+	@ 0.158077
+	|l|
+	@ 0.060202
+	|e|
+	@ 0.093943
+	|t|
+	@ 0.193465
+	|s|
+	@ 0.681541
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.172681
+	|'|
+	@ 0.052964
+	|s|
+	@ 0.106996
+	| |
+	@ 0.745984
+	|t|
+	@ 0.092022
+	|e|
+	@ 0.077669
+	|s|
+	@ 0.099857
+	|t|
+	@ 0.106230
+	| |
+	@ 0.071168
+	|o|
+	@ 0.086328
+	|u|
+	@ 0.068612
+	|t|
+	@ 0.100878
+	| |
+	@ 0.354463
+	|t|
+	@ 0.079716
+	|h|
+	@ 0.087843
+	|e|
+	@ 0.096805
+	| |
+	@ 1.098677
+	|w|
+	@ 0.064641
+	|h|
+	@ 0.068268
+	|o|
+	@ 0.125307
+	|e|
+	@ 0.480045
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.240058
+	|l|
+	@ 0.075150
+	|e|
+	@ 0.066851
+	| |
+	@ 0.120538
+	|t|
+	@ 0.062437
+	|h|
+	@ 0.088256
+	|i|
+	@ 0.127109
+	|n|
+	@ 0.082042
+	|g|
+	@ 0.274572
+	| |
+	@ 0.743090
+	|w|
+	@ 0.062684
+	|i|
+	@ 0.121944
+	|t|
+	@ 0.049037
+	|h|
+	@ 0.061172
+	| |
+	@ 0.078771
+	|t|
+	@ 0.063280
+	|h|
+	@ 0.090785
+	|e|
+	@ 0.077167
+	| |
+	@ 0.189614
+	|p|
+	@ 0.090914
+	|u|
+	@ 0.087395
+	|b|
+	@ 0.089907
+	|l|
+	@ 0.074849
+	|i|
+	@ 0.063744
+	|c|
+	@ 0.139479
+	| |
+	@ 0.171156
+	|I|
+	@ 0.094420
+	|P|
+	@ 0.065953
+	| |
+	@ 0.196014
+	|o|
+	@ 0.142291
+	|f|
+	@ 0.108156
+	| |
+	@ 0.163881
+	|t|
+	@ 0.034906
+	|h|
+	@ 0.131187
+	|e|
+	@ 0.059238
+	| |
+	@ 0.665635
+	|l|
+	@ 0.134022
+	|o|
+	@ 0.049504
+	|a|
+	@ 0.095439
+	|d|
+	@ 0.149269
+	|-|
+	@ 0.122755
+	|b|
+	@ 0.020683
+	|a|
+	@ 0.125048
+	|l|
+	@ 0.089043
+	|a|
+	@ 0.118361
+	|n|
+	@ 0.096194
+	|c|
+	@ 0.172687
+	|e|
+	@ 0.055084
+	|r|
+	@ 0.398083
+	. CR/^M LF/^J
+	|$ |
+	@ 1.279786
+	|i|
+	@ 0.110129
+	|p|
+	@ 0.263886
+	|=|
+	@ 0.337294
+	|$|
+	@ 0.303770
+	|(|
+	@ 0.254789
+	|s|
+	@ 0.100302
+	|u|
+	@ 0.094561
+	|d|
+	@ 0.076359
+	|o|
+	@ 0.122039
+	| |
+	@ 0.964102
+	|g|
+	@ 0.172485
+	|c|
+	@ 0.109620
+	|u|
+	@ 0.122938
+	|t|
+	@ 0.073421
+	|i|
+	@ 0.061121
+	|l|
+	@ 0.397020
+	| |
+	@ 0.720538
+	|l|
+	@ 0.051971
+	|i|
+	@ 0.114032
+	|s|
+	@ 0.077166
+	|t|
+	@ 0.403056
+	|f|
+	@ 0.091775
+	|o|
+	@ 0.259565
+	|r|
+	@ 0.545048
+	|w|
+	@ 0.314242
+	|a|
+	@ 0.180313
+	|r|
+	@ 0.174352
+	|d|
+	@ 0.095185
+	|i|
+	@ 0.043864
+	|n|
+	@ 0.083305
+	|g|
+	@ 0.271828
+	|r|
+	@ 0.119375
+	|u|
+	@ 0.105187
+	|l|
+	@ 0.111189
+	|e|
+	@ 0.167491
+	|s|
+	@ 0.360414
+	| |
+	@ 0.393815
+	|-|
+	@ 0.196607
+	|-|
+	@ 0.159737
+	|r|
+	@ 0.067574
+	|e|
+	@ 0.206570
+	|g|
+	@ 0.096376
+	|i|
+	@ 0.207645
+	|o|
+	@ 0.084079
+	|n|
+	@ 0.710304
+	| |
+	@ 0.167101
+	|u|
+	@ 0.099832
+	|s|
+	@ 0.666133
+	|-|
+	@ 0.293470
+	|c|
+	@ 0.199684
+	|e|
+	@ 0.100035
+	|n|
+	@ 0.099921
+	|t|
+	@ 0.188932
+	|r|
+	@ 0.186912
+	|a|
+	@ 0.458715
+	|l|
+	@ 0.395564
+	|1|
+	@ 1.172693
+	| |
+	@ 0.231926
+	|||
+	@ 0.128692
+	| |
+	@ 0.338416
+	|g|
+	@ 0.194912
+	|r|
+	@ 0.066406
+	|e|
+	@ 0.115336
+	|p|
+	@ 0.080011
+	| |
+	@ 0.373102
+	|p|
+	@ 0.255046
+	|u|
+	@ 0.263177
+	|p|
+	@ 0.132004
+	|p|
+	@ 0.109293
+	|e|
+	@ 0.059960
+	|t|
+	@ 0.205429
+	|-|
+	@ 0.139886
+	|r|
+	@ 0.103504
+	|u|
+	@ 0.107249
+	|l|
+	@ 0.156485
+	|e|
+	@ 0.269787
+	| |
+	@ 0.209418
+	|| |
+	. CR/^M
+	@ 0.102707
+	| |
+	@ 0.156035
+	|a|
+	@ 0.191832
+	|k|
+	@ 0.092294
+	|w|
+	@ 0.832696
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.117193
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.100884
+	|w|
+	@ 0.084918
+	|k|
+	@ 0.454433
+	| |
+	@ 0.300712
+	|'|
+	@ 0.589617
+	|{|
+	@ 0.617367
+	|p|
+	@ 0.075692
+	|r|
+	@ 0.080915
+	|i|
+	@ 0.072746
+	|n|
+	@ 0.053148
+	|t|
+	@ 0.103782
+	| |
+	@ 0.353084
+	|$|
+	@ 0.570899
+	|6|
+	@ 0.432640
+	|}|
+	@ 0.248277
+	|'|
+	@ 0.392023
+	|)|
+	@ 0.461810
+	. CR/^M LF/^J
+	@ 0.690762
+	|$ |
+	@ 0.613086
+	|e|
+	@ 0.176213
+	|c|
+	@ 0.027553
+	|h|
+	@ 0.049951
+	|o|
+	@ 0.184602
+	| |
+	@ 0.253899
+	|$|
+	@ 0.235009
+	|I|
+	@ 0.048903
+	|P|
+	@ 0.655025
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.120329
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.199091
+	|i|
+	@ 0.129684
+	|o|
+	@ 0.975026
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.216246
+	|p|
+	@ 0.264589
+	. CR/^M LF/^J
+	|107.178.221.7|
+	. CR/^M LF/^J
+	|$ |
+	@ 1.694016
+	|w|
+	@ 0.081846
+	|h|
+	@ 0.212994
+	|il|
+	@ 0.002627
+	|e|
+	@ 0.837069
+	| |
+	@ 0.148818
+	|[|
+	@ 0.290714
+	|1|
+	@ 0.464156
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.122605
+	| |
+	@ 0.134009
+	|1|
+	@ 0.323706
+	| |
+	@ 0.304337
+	|]|
+	@ 0.309530
+	|;|
+	@ 0.180947
+	| |
+	@ 1.487777
+	|d|
+	@ 0.081797
+	|o|
+	@ 0.114522
+	| |
+	@ 0.117852
+	|c|
+	@ 0.095393
+	|u|
+	@ 0.102449
+	|r|
+	@ 0.099192
+	|l|
+	@ 0.134705
+	| |
+	@ 0.211032
+	|-|
+	@ 0.121814
+	|s|
+	@ 0.360060
+	|L|
+	@ 0.531463
+	| |
+	@ 0.286012
+	|h|
+	@ 0.090049
+	|t|
+	@ 0.143280
+	|t|
+	@ 0.087332
+	|p|
+	@ 0.391874
+	|:|
+	@ 0.695654
+	|/|
+	@ 0.127501
+	|/|
+	@ 0.480797
+	|$|
+	@ 0.230891
+	|i|
+	@ 0.083663
+	|p|
+	@ 0.807292
+	|/|
+	@ 0.401248
+	| |
+	@ 0.255827
+	|||
+	@ 0.153688
+	| |
+	@ 0.148464
+	|g|
+	@ 0.164861
+	|r|
+	@ 0.088151
+	|e|
+	@ 0.038102
+	|p|
+	@ 0.102706
+	| |
+	@ 0.959047
+	|\|
+	@ 0.358182
+	|<|
+	@ 0.207967
+	|t|
+	@ 0.092493
+	|i|
+	@ 0.100653
+	|t|
+	@ 0.106203
+	|l|
+	@ 0.095520
+	|e|
+	@ 1.460252
+	|;|
+	@ 0.150194
+	| |
+	@ 0.113157
+	|s|
+	@ 0.089979
+	|l|
+	@ 0.129186
+	|e|
+	@ 0.145911
+	|e|
+	@ 0.489810
+	|p|
+	@ 0.249726
+	| |
+	@ 0.268581
+	|.|
+	@ 0.188717
+	|5|
+	@ 0.241079
+	|;|
+	@ 0.147152
+	| |
+	@ 0.183544
+	|d|
+	@ 0.099651
+	|o|
+	@ 0.047810
+	|n|
+	@ 0.139402
+	|e|
+	@ 0.647661
+	. CR/^M LF/^J
+	@ 53.137233
+	|^C|
+	@ 0.000356
+	. CR/^M LF/^J
+	|$ |
+	@ 0.795873
+	. CR/^M LF/^J
+	|$ |
+
+
+	|Script started on Wed Jun 18 19:21:59 2014|.
+	@ 0.003280
+	|$ |
+@ 0.673292
+|#|
+@ 0.187454
+| |
+@ 0.215051
+|W|
+@ 0.149667
+|e|
+@ 0.097483
+| |
+@ 0.143995
+|c|
+@ 0.075635
+|a|
+@ 0.083625
+|n|
+@ 0.098911
+| |
+@ 1.688835
+|c|
+@ 0.138213
+|h|
+@ 0.095534
+|e|
+@ 0.194636
+|c|
+@ 0.053073
+|k|
+@ 0.077751
+| |
+@ 0.089560
+|t|
+@ 0.052543
+|o|
+@ 0.108149
+| |
+@ 0.328803
+|ma|
+@ 0.075968
+|k|
+@ 0.855935
+|e|
+@ 0.554300
+| s|
+@ 0.019266
+|u|
+@ 0.092308
+|r|
+@ 0.088635
+|e|
+@ 0.060799
+| |
+@ 0.225590
+|t|
+@ 0.108325
+|h|
+@ 0.121573
+|e|
+@ 0.132356
+| |
+@ 0.210606
+|n|
+@ 0.076276
+|e|
+@ 0.108215
+|w|
+@ 0.113922
+| |
+@ 0.119732
+|i|
+@ 0.069197
+|n|
+@ 0.050461
+|s|
+@ 0.078806
+|t|
+@ 0.109305
+|a|
+@ 0.050970
+|n|
+@ 0.125172
+|c|
+@ 0.159028
+|e|
+@ 0.123833
+|s|
+@ 0.088193
+| |
+@ 0.404545
+|w|
+@ 0.047510
+|e|
+@ 0.094248
+|r|
+@ 0.080286
+|e|
+@ 0.090317
+| |
+@ 0.177969
+|r|
+@ 0.052994
+|e|
+@ 0.449541
+|gis|
+@ 0.142983
+|t|
+@ 0.837343
+|e|
+@ 0.309306
+|r|
+@ 0.109139
+|e|
+@ 0.257082
+|d|
+@ 0.085760
+| |
+@ 0.080330
+|w|
+@ 0.077713
+|i|
+@ 0.128965
+|t|
+@ 0.074007
+|h|
+@ 0.087813
+| |
+@ 0.112392
+|t|
+@ 0.115182
+|h|
+@ 0.099898
+|e|
+@ 0.331825
+. CR/^M LF/^J
+|$ |
+@ 0.293176
+|#|
+@ 0.165349
+| |
+@ 0.171457
+|p|
+@ 0.091235
+|u|
+@ 0.155395
+|p|
+@ 0.391549
+	|e|
+	@ 0.106075
+	|t|
+	@ 0.681156
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.163443
+	. BS/^H
+	| |
+	. BS/^H
+@ 0.183089
+|p|
+@ 0.039015
+|e|
+@ 0.062746
+|t|
+@ 0.070173
+| |
+@ 0.153378
+|m|
+@ 0.093069
+|a|
+@ 0.063984
+|s|
+@ 0.167749
+|t|
+@ 0.191334
+|e|
+@ 0.011626
+|r|
+@ 0.205755
+| |
+@ 0.602414
+|w|
+@ 0.094573
+|i|
+@ 0.100834
+|t|
+@ 0.332034
+|h,|
+@ 0.588027
+. CR/^M LF/^J
+|$ |
+@ 0.704135
+|s|
+@ 0.090198
+|u|
+@ 0.092144
+|d|
+@ 0.088602
+|o|
+@ 0.078261
+| |
+@ 0.155902
+|p|
+@ 0.075733
+|u|
+@ 0.494033
+|ppe|
+@ 0.012176
+|t|
+@ 0.034987
+| |
+@ 0.194694
+|c|
+@ 0.174117
+|e|
+@ 0.050945
+|r|
+@ 0.181692
+|t|
+@ 0.435570
+| |
+@ 0.165454
+| |
+@ 0.114878
+|l|
+@ 0.064758
+|i|
+@ 0.088828
+|s|
+@ 0.063923
+|t|
+@ 0.135073
+| |
+@ 0.522013
+|a|
+@ 0.126363
+|-|
+@ 0.183329
+|-|
+@ 0.613752
+. BS/^H
+| |
+. BS/^H
+@ 0.158871
+. BS/^H
+| |
+. BS/^H
+@ 0.133800
+. BS/^H
+| |
+. BS/^H
+@ 0.292163
+|-|
+@ 0.162534
+|-|
+@ 0.368925
+|a|
+@ 0.435891
+|l|
+@ 0.195191
+|l|
+@ 0.214023
+. CR/^M LF/^J
+@ 0.379198
+: Esc [ 1 ; 31 m
+& SGR: SELECT GRAPHIC RENDITION
+" Set bold text.
+" Set foreground color red.
+|Warning: Setting templatedir is deprecated. See http://links.puppetlabs.com|-
+-|/env-settings-deprecations|
+@ 0.000125
+. CR/^M LF/^J
+@ 0.000033
+|   (at /usr/lib/ruby/vendor_ruby/puppet/settings.rb:1095:in `block in issue|-
+-|_deprecations')|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+@ 0.000034
+. CR/^M LF/^J
+@ 0.221544
+|+ "puppet-agent-1.c.graphite-demos.internal"   (SHA256) 44:5F:57:6F:F4:7B:E|-
+-|4:22:16:74:E0:43:8D:50:5A:C4:AA:C0:64:3D:D8:9B:F6:61:94:9A:17:ED:D4:ED:4B:|-
+-|F4|
+@ 0.000224
+. CR/^M LF/^J
+@ 0.000032
+|+ "puppet-agent-2.c.graphite-demos.internal"   (SHA256) 80:23:F5:60:BC:65:C|-
+-|2:29:F4:F4:0E:F5:0D:BA:C3:08:E3:19:29:55:78:5D:11:91:5C:BA:24:59:24:14:CA:|-
+-|BA|
+@ 0.000029
+. CR/^M LF/^J
+@ 0.000035
+|+ "puppet-agent-3.c.graphite-demos.internal"   (SHA256) A9:D6:2E:5B:AB:E1:A|-
+-|8:37:2B:CB:4E:1F:8D:A4:23:DB:D4:25:73:DC:8B:2A:AF:8D:43:80:8F:55:2E:71:ED:|-
+-|85|
+@ 0.000028
+. CR/^M LF/^J
+@ 0.000034
+|+ "puppet-agent-4.c.graphite-demos.internal"   (SHA256) 58:AF:4B:11:99:50:E|-
+-|7:C6:D1:A2:2F:10:C4:94:77:3E:86:8B:60:5B:9C:CD:8A:DD:1C:DE:08:82:C5:C1:63:|-
+-|DF|
+@ 0.000027
+. CR/^M LF/^J
+@ 0.000039
+|+ "puppet-master-io.c.graphite-demos.internal" (SHA256) EC:E4:8E:A4:F9:83:7|-
+-|5:91:B6:91:7D:2A:95:9D:72:9F:8A:E0:4A:2C:75:D3:F5:F6:54:0F:5C:DC:9C:3B:F2:|-
+-|2B (alt names: "DNS:puppet", "DNS:puppet-master-io.c.graphite-demos.intern|-
+-|al", "DNS:puppet.c.graphite-demos.internal")|
+@ 0.000039
+. CR/^M LF/^J
+@ 0.016115
+|$ |
+@ 1.705458
+. CR/^M LF/^J
+|$ |
+@ 1.063060
+|#|
+@ 0.186780
+| |
+@ 0.241960
+|W|
+@ 0.415056
+|e|
+@ 0.000251
+| c|
+@ 0.010937
+|a|
+@ 0.072468
+|n|
+@ 0.103782
+| |
+@ 0.315852
+|e|
+@ 0.163139
+|v|
+@ 0.096200
+|e|
+@ 0.051639
+|n|
+@ 0.115727
+| |
+@ 0.183628
+|u|
+@ 0.197528
+|s|
+@ 0.054033
+|e|
+@ 0.386264
+| |
+@ 0.794143
+|f|
+@ 0.102904
+|a|
+@ 0.160457
+|c|
+@ 0.380696
+|t|
+@ 0.674740
+|e|
+@ 0.086812
+|r|
+@ 0.144619
+| |
+@ 0.087428
+|t|
+@ 0.093811
+|o|
+@ 0.066302
+| |
+@ 0.140504
+|c|
+@ 0.094033
+|h|
+@ 0.136646
+|e|
+@ 0.158445
+|c|
+@ 0.094793
+|k|
+@ 0.146602
+| |
+@ 0.090424
+|o|
+@ 0.072278
+|u|
+@ 0.342755
+|t |
+@ 0.602529
+|d|
+@ 0.162081
+|e|
+@ 0.189028
+|t|
+@ 0.076329
+|a|
+@ 0.119343
+|i|
+@ 0.076847
+|l|
+@ 0.068240
+|s|
+@ 1.262431
+. CR/^M LF/^J
+|$ |
+@ 0.767218
+|s|
+@ 0.166905
+|u|
+@ 0.174122
+|d|
+@ 0.844574
+|o|
+@ 0.281044
+| |
+@ 0.216452
+|p|
+@ 0.089688
+|u|
+@ 0.182382
+|p|
+@ 0.142574
+|p|
+@ 0.089406
+|e|
+@ 0.094222
+|t|
+@ 0.076340
+| |
+@ 0.392219
+|no|
+@ 0.071980
+|d|
+@ 0.230127
+|e|
+@ 0.707239
+| |
+@ 0.463276
+|f|
+@ 0.097316
+|i|
+@ 0.047987
+|n|
+@ 0.133644
+|d|
+@ 0.092924
+| |
+@ 0.180711
+|p|
+@ 0.098686
+|u|
+@ 0.151233
+|p|
+@ 0.138939
+|p|
+@ 0.083828
+|e|
+@ 0.271140
+|t-|
+@ 0.056399
+|a|
+@ 0.186289
+|g|
+@ 0.123234
+|e|
+@ 0.191328
+|n|
+@ 0.131947
+|t|
+@ 0.291232
+|-|
+@ 0.230557
+|1|
+@ 0.359615
+| |
+@ 0.429974
+|-|
+@ 0.145014
+|-|
+@ 0.531041
+|r|
+@ 0.062845
+|e|
+@ 0.240490
+|n|
+@ 0.092262
+|d|
+@ 0.156611
+|e|
+@ 0.051352
+|r|
+@ 0.299103
+|-|
+@ 0.124419
+|a|
+@ 0.088324
+|s|
+@ 0.169914
+| |
+@ 0.207136
+|y|
+@ 0.113656
+|a|
+@ 0.138865
+|m|
+@ 0.223991
+|l|
+@ 0.973847
+. CR/^M LF/^J
+@ 0.428404
+: Esc [ 1 ; 31 m
+& SGR: SELECT GRAPHIC RENDITION
+" Set bold text.
+" Set foreground color red.
+|Warning: Setting templatedir is deprecated. See http://links.puppetlabs.com|-
+-|/env-settings-deprecations|
+@ 0.000144
+. CR/^M LF/^J
+@ 0.000046
+|   (at /usr/lib/ruby/vendor_ruby/puppet/settings.rb:1095:in `block in issue|-
+-|_deprecations')|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+@ 0.000035
+. CR/^M LF/^J
+@ 0.305713
+|--- !ruby/object:Puppet::Node|
+@ 0.000118
+. CR/^M LF/^J
+@ 0.000040
+|  name: puppet-agent-1|
+@ 0.000027
+. CR/^M LF/^J
+@ 0.000034
+|  classes: []|
+@ 0.000041
+. CR/^M LF/^J
+@ 0.000036
+|  parameters: |
+@ 0.000025
+. CR/^M LF/^J
+@ 0.000034
+|    kernelversion: "3.2.0"|
+@ 0.000025
+. CR/^M LF/^J
+@ 0.000026
+|    kernel: Linux|
+@ 0.000022
+. CR/^M LF/^J
+@ 0.000022
+|    physicalprocessorcount: "1"|
+@ 0.000030
+. CR/^M LF/^J
+@ 0.000022
+|    hostname: puppet-master-io|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000021
+|    domain: c.graphite-demos.internal|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    uptime_seconds: "16896"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    netmask: "255.255.255.255"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    id: root|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000024
+|    sshdsakey: "AAAAB3NzaC1kc3MAAACBAN6iKHVXg0CNnkwqpX1HheD0MFk4hoW0FBEWbKi|-
+-|jBRzk+QZz3TG+LfmNBxW0a3We8/cYtSf8rCpPlfPtYFcg1meARgLYgGQGPhmB0wu217wGIX8pO|-
+-|vsBoohPewpV5xdCwypzAalmaZkGKyGLiZz7xBn94GYMR48dplCo6eXKKMFZAAAAFQCcFgfcpjb|-
+-|gaSJDWjoKJRyUcOQLUQAAAIEAySL2Sl3vw2/UEG2l4weQR20oaU/4qXzs9DT3JMDso7r1oIF1Q|-
+-|0ihzUJKYeR8VEO8MKZvdC5ijFduCB6IZHZTFQWDsl6a2Rv20spgCXZDdf98FcPvuellWoIM4nt|-
+-|UBSO5ITSVJZ8f6ZMxWYvHKMHlncFxa1s62o7Bc1qGTD13nOwAAACAKaZbN3MEKHrB+AcfAlaeJ|-
+-|yjIWDmB31AXVmKxQp3e7tuimrh+MyHofYOxj5P6Q5hZQYHp01pPkDvFS++wdBIwLXa5mCrEz/R|-
+-|7esObbYAzo8RcKziE+WCiXmlEAhYH4auhwENQQ0cO8GgovEhgBGNEURwLux24ZoYQ6OSTRjHLE|-
+-|gk="|
+@ 0.000041
+. CR/^M LF/^J
+@ 0.000021
+|    sshfp_dsa: |-|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|      SSHFP 2 1 75eaecf866205951c258386a84ebf16a12df47bc|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000021
+|      SSHFP 2 2 833d2200c60a00c1eab9d91490cdc92bc80d57bebce8bb806b3158e62ef|-
+-|dda3f|
+@ 0.000022
+. CR/^M LF/^J
+@ 0.000023
+|    sshrsakey: "AAAAB3NzaC1yc2EAAAADAQABAAABAQCe0dj3c7JZ+0aP7r2INqIaSIYpKj6|-
+-|yMH9nZwjy4j/zletAkYe4+ubJPIba081SqszIfFXYQdju+apc9Kp6YYCS7pAQqX9nn+O+JZ6PP|-
+-|+iwvCwm3LYzaOQAnA+ZRTFFxJ7P2e3trYYbBqZBzbusd8jHf2PoGQ1YeHVDXGiI72UOFosd1Yx|-
+-|/JBWrv5kRNW5K1gw1iJ9dP28xbeJpWjKxh+VoUqo9bL+LZjMQXnzG8yCip/n7DxNiX/uiyadWp|-
+-|Uucki1vrF8mumOTqzoQfc5GMm8QSW9QbexSYgMHFUmclA3rc+vf33Dnj/DsyPliNVUbUC95pyF|-
+-|U1B6rmlASS2//3JuV"|
+@ 0.000027
+. CR/^M LF/^J
+@ 0.000021
+|    sshfp_rsa: |-|
+@ 0.000024
+. CR/^M LF/^J
+@ 0.000022
+|      SSHFP 1 1 9767b5de2ef0f705d18776248a27923814907af0|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000021
+|      SSHFP 1 2 6773e15131e689ba8baf2772ee119155633155da7d52e55286b02f0bcb8|-
+-|aa3a2|
+@ 0.000022
+. CR/^M LF/^J
+@ 0.000022
+|    sshecdsakey: "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMjYA|-
+-|84jj7nJ6Zkydszr+NhQsJirWGb/nt/vJFsBQFFu+oh4CXYJrPMqoMLtBBAw/v+5O+dLoIo7Is7|-
+-|+FPBHdi0="|
+@ 0.000024
+. CR/^M LF/^J
+@ 0.000021
+|    sshfp_ecdsa: |-|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|      SSHFP 3 1 b2a23df3c6da07949a3afc2e22a9a44420f43992|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000021
+|      SSHFP 3 2 336ee425e89c8579e620810fe75ab11322114acc11243babb129b9527d9|-
+-|e2cbc|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000021
+|    network_eth0: "10.240.19.107"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    network_lo: "127.0.0.0"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    puppetversion: "3.6.2"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000020
+|    lsbdistid: Debian|
+@ 0.000022
+. CR/^M LF/^J
+@ 0.000020
+|    interfaces: "et|
+@ 0.000022
+|h0,lo"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000179
+|    ipaddress_eth0: "10.240.19.107"|
+@ 0.000054
+. CR/^M LF/^J
+@ 0.000022
+|    macaddress_eth0: "42:01:0a:f0:13:6b"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    netmask_eth0: "255.255.255.255"|
+@ 0.000022
+. CR/^M LF/^J
+@ 0.000020
+|    mtu_eth0: "1460"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    ipaddress_lo: "127.0.0.1"|
+@ 0.000026
+. CR/^M LF/^J
+@ 0.000020
+|    netmask_lo: "255.0.0.0"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    mtu_lo: "16436"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000022
+|    operatingsystemrelease: "7.5"|
+@ 0.000026
+. CR/^M LF/^J
+@ 0.000020
+|    hardwaremodel: x86_64|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    lsbmajdistrelease: "7"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    uniqueid: f00a6b13|
+@ 0.000022
+. CR/^M LF/^J
+@ 0.000020
+|    filesystems: ext4|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    operatingsystemmajrelease: "7"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000022
+|    uptime_days: "0"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000038
+|    augeasversion: "0.10.0"|
+@ 0.000026
+. CR/^M LF/^J
+@ 0.000021
+|    ps: "ps -ef"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000025
+|    selinux: "false"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    facterversion: "2.0.2"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|    kernelrelease: "3.2.0-4-amd64"|
+@ 0.000030
+. CR/^M LF/^J
+@ 0.000021
+|    virtual: kvm|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000026
+|    is_virtual: "true"|
+@ 0.000022
+. CR/^M LF/^J
+@ 0.000021
+|    hardwareisa: unknown|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000025
+|    lsbdistrelease: "7.5"|
+@ 0.000027
+. CR/^M LF/^J
+@ 0.000021
+|    uptime_hours: "4"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    kernelmajversion: "3.2"|
+@ 0.000022
+. CR/^M LF/^J
+@ 0.000020
+|    rubyversion: "1.9.3"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000023
+|    lsbdistcodename: wheezy|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    memorysize: "3.63 GB"|
+@ 0.000026
+. CR/^M LF/^J
+@ 0.000020
+|    memoryfree: "3.46 GB"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    swapsize: "0.00 MB"|
+@ 0.000023
+. CR/^M LF/^J
+@ 0.000024
+|    swapfree: "0.00 MB"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|    swapsize_mb: "0.00"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000036
+|    swapfree_mb: "0.00"|
+@ 0.000025
+. CR/^M LF/^J
+@ 0.000021
+|    memorysize_mb: "3714.49"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    memoryfree_mb: "3540.36"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    macaddress: "42:01:0a:f0:13:6b"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    architecture: amd64|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000021
+|    operatingsystem: Debian|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|    fqdn: puppet-master-io.c.graphite-demos.internal|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000021
+|    rubysitedir: /usr/local/lib/site_ruby/1.9.1|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    bios_vendor: Google|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000027
+|    bios_version: Google|
+@ 0.000023
+. CR/^M LF/^J
+@ 0.000021
+|    bios_release_date: "01/01/2011"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    manufacturer: Google|
+@ 0.000026
+. CR/^M LF/^J
+@ 0.000021
+|    productname: Google|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000026
+|    serialnumber: "Not Specified"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    uuid: "Not Settable"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000022
+|    type: Other|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|    osfamily: Debian|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|    uptime: "4:41 hours"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000020
+|    processor0: "Intel(R) Xeon(R) CPU @ 2.60GHz"|
+@ 0.000022
+. CR/^M LF/^J
+@ 0.000020
+|    processorcount: "1"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000020
+|    blockdevice_sda_size: "10737418240"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000026
+|    blockdevice_sda_vendor: Google|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000021
+|    blockdevice_sda_model: PersistentDisk|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    blockdevices: sda|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000021
+|    timezone: UTC|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000022
+|    path: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000021
+|    ipaddress: "10.240.19.107"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000022
+|    lsbdistdescription: "Debian GNU/Linux 7.5 (wheezy)"|
+@ 0.000043
+. CR/^M LF/^J
+@ 0.000021
+|    root_home: /root|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|    is_pe: "false"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|    puppet_vardir: /var/lib/puppet|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    concat_basedir: /var/lib/puppet/concat|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000027
+|    "_timestamp": "2014-06-18 19:22:49 +0000"|
+@ 0.000023
+. CR/^M LF/^J
+@ 0.000021
+|    clientcert: puppet-master-io.c.graphite-demos.internal|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    clientversion: "3.6.2"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    clientnoop: "false"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    e|
+@ 0.000028
+|nvironment: production|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000021
+|  facts: !ruby/object:Puppet::Node::Facts|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|    name: puppet-agent-1|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000020
+|    values: |
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|      kernelversion: "3.2.0"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000020
+|      kernel: Linux|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|      physicalprocessorcount: "1"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000021
+|      hostname: puppet-master-io|
+@ 0.000026
+. CR/^M LF/^J
+@ 0.000021
+|      domain: c.graphite-demos.internal|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000022
+|      uptime_seconds: "16896"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|      netmask: "255.255.255.255"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|      id: root|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000024
+|      sshdsakey: "AAAAB3NzaC1kc3MAAACBAN6iKHVXg0CNnkwqpX1HheD0MFk4hoW0FBEWb|-
+-|KijBRzk+QZz3TG+LfmNBxW0a3We8/cYtSf8rCpPlfPtYFcg1meARgLYgGQGPhmB0wu217wGIX8|-
+-|pOvsBoohPewpV5xdCwypzAalmaZkGKyGLiZz7xBn94GYMR48dplCo6eXKKMFZAAAAFQCcFgfcp|-
+-|jbgaSJDWjoKJRyUcOQLUQAAAIEAySL2Sl3vw2/UEG2l4weQR20oaU/4qXzs9DT3JMDso7r1oIF|-
+-|1Q0ihzUJKYeR8VEO8MKZvdC5ijFduCB6IZHZTFQWDsl6a2Rv20spgCXZDdf98FcPvuellWoIM4|-
+-|ntUBSO5ITSVJZ8f6ZMxWYvHKMHlncFxa1s62o7Bc1qGTD13nOwAAACAKaZbN3MEKHrB+AcfAla|-
+-|eJyjIWDmB31AXVmKxQp3e7tuimrh+MyHofYOxj5P6Q5hZQYHp01pPkDvFS++wdBIwLXa5mCrEz|-
+-|/R7esObbYAzo8RcKziE+WCiXmlEAhYH4auhwENQQ0cO8GgovEhgBGNEURwLux24ZoYQ6OSTRjH|-
+-|LEgk="|
+@ 0.000029
+. CR/^M LF/^J
+@ 0.000021
+|      sshfp_dsa: |-|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|        SSHFP 2 1 75eaecf866205951c258386a84ebf16a12df47bc|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000021
+|        SSHFP 2 2 833d2200c60a00c1eab9d91490cdc92bc80d57bebce8bb806b3158e62|-
+-|efdda3f|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000023
+|      sshrsakey: "AAAAB3NzaC1yc2EAAAADAQABAAABAQCe0dj3c7JZ+0aP7r2INqIaSIYpK|-
+-|j6yMH9nZwjy4j/zletAkYe4+ubJPIba081SqszIfFXYQdju+apc9Kp6YYCS7pAQqX9nn+O+JZ6|-
+-|PP+iwvCwm3LYzaOQAnA+ZRTFFxJ7P2e3trYYbBqZBzbusd8jHf2PoGQ1YeHVDXGiI72UOFosd1|-
+-|Yx/JBWrv5kRNW5K1gw1iJ9dP28xbeJpWjKxh+VoUqo9bL+LZjMQXnzG8yCip/n7DxNiX/uiyad|-
+-|WpUucki1vrF8mumOTqzoQfc5GMm8QSW9QbexSYgMHFUmclA3rc+vf33Dnj/DsyPliNVUbUC95p|-
+-|yFU1B6rmlASS2//3JuV"|
+@ 0.000027
+. CR/^M LF/^J
+@ 0.000021
+|      sshfp_rsa: |-|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|        SSHFP 1 1 9767b5de2ef0f705d18776248a27923814907af0|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000031
+|        SSHFP 1 2 6773e15131e689ba8baf2772ee119155633155da7d52e55286b02f0bc|-
+-|b8aa3a2|
+@ 0.000023
+. CR/^M LF/^J
+@ 0.000022
+|      sshecdsakey: "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMj|-
+-|YA84jj7nJ6Zkydszr+NhQsJirWGb/nt/vJFsBQFFu+oh4CXYJrPMqoMLtBBAw/v+5O+dLoIo7I|-
+-|s7+FPBHdi0="|
+@ 0.000022
+. CR/^M LF/^J
+@ 0.000021
+|      sshfp_ecdsa: |-|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|        SSHFP 3 1 b2a23df3c6da07949a3afc2e22a9a44420f43992|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000021
+|        SSHFP 3 2 336ee425e89c8579e620810fe75ab11322114acc11243babb129b9527|-
+-|d9e2cbc|
+@ 0.000034
+. CR/^M LF/^J
+@ 0.000021
+|      network_eth0: "10.240.19.107"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|      network_lo: "127.0.0.0"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|   |
+@ 0.000021
+|   puppetversion: "3.6.2"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|      lsbdistid: Debian|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|      interfaces: "eth0,lo"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000020
+|      ipaddress_eth0: "10.240.19.107"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000026
+|      macaddress_eth0: "42:01:0a:f0:13:6b"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|      netmask_eth0: "255.255.255.255"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|      mtu_eth0: "1460"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000021
+|      ipaddress_lo: "127.0.0.1"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000021
+|      netmask_lo: "255.0.0.0"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|      mtu_lo: "16436"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000028
+|      operatingsystemrelease: "7.5"|
+@ 0.000025
+. CR/^M LF/^J
+@ 0.000021
+|      hardwaremodel: x86_64|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000020
+|      lsbmajdistrelease: "7"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|      uniqueid: f00a6b13|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|      filesystems: ext4|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|      operatingsystemmajrelease: "7"|
+@ 0.000028
+. CR/^M LF/^J
+@ 0.000021
+|      uptime_days: "0"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|      augeasversion: "0.10.0"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|      ps: "ps -ef"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|      selinux: "false"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|      facterversion: "2.0.2"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|      kernelrelease: "3.2.0-4-amd64"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000020
+|      virtual: kvm|
+@ 0.000022
+. CR/^M LF/^J
+@ 0.000020
+|      is_virtual: "true"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000021
+|      hardwareisa: unknown|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000020
+|      lsbdistrelease: "7.5"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000020
+|      uptime_hours: "4"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|      kernelmajversion: "3.2"|
+@ 0.000026
+. CR/^M LF/^J
+@ 0.000022
+|      rubyversion: "1.9.3"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|      lsbdistcodename: wheezy|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|      memorysize: "3.63 GB"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000021
+|      memoryfree: "3.46 GB"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|      swapsize: "0.00 MB"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000020
+|      swapfree: "0.00 MB"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|      swapsize_mb: "0.00"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000021
+|      swapfree_mb: "0.00"|
+@ 0.000020
+. CR/^M LF/^J
+@ 0.000024
+|      memorysize_mb: "3714.49"|
+@ 0.000036
+. CR/^M LF/^J
+@ 0.000038
+|      memoryfree_mb: "3540.36"|
+@ 0.000045
+. CR/^M LF/^J
+@ 0.000228
+|      macaddress: "42:01:0a:f0:13:6b"|
+@ 0.000043
+. CR/^M LF/^J
+@ 0.000033
+|      architecture: amd64|
+@ 0.000022
+. CR/^M LF/^J
+@ 0.000020
+|      operatingsystem: Debian|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000021
+|      fqdn: puppet-master-io.c.graphite-demos.internal|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|      rubysitedir: /usr/local/lib/site_ruby/1.9.1|
+@ 0.000026
+. CR/^M LF/^J
+@ 0.000020
+|      bios_vendor: Google|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|      bios_version: Google|
+@ 0.000028
+. CR/^M LF/^J
+@ 0.000023
+|      bios_release_date: "01/01/2011"|
+@ 0.000031
+. CR/^M LF/^J
+@ 0.000021
+|      manufacturer: Google|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000020
+|      productname: Google|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000011
+|      serialnumber: "Not Specified"|
+@ 0.000021
+. CR/^M LF/^J
+@ 0.000011
+|      uuid: "Not Settable"|
+@ 0.000010
+. CR/^M LF/^J
+@ 0.000010
+|      type: Other|
+@ 0.000010
+. CR/^M LF/^J
+@ 0.000010
+|      osfamily: Debian|
+@ 0.000010
+. CR/^M LF/^J
+@ 0.000011
+|      uptime: "4:41 hours"|
+@ 0.000023
+. CR/^M LF/^J
+@ 0.000014
+|      processor0: "Intel(R) Xeon(R) CPU @ 2.60GHz"|
+@ 0.000010
+. CR/^M LF/^J
+@ 0.000024
+|      processorcount: "1"|
+@ 0.000011
+. CR/^M LF/^J
+@ 0.000010
+|      blockdevice_sda_size: "10737418240"|
+@ 0.000010
+. CR/^M LF/^J
+@ 0.000011
+|      blockdevice_sda_vendor: Google|
+@ 0.000010
+. CR/^M LF/^J
+@ 0.000010
+|      blockdevice_sda_model: PersistentDisk|
+@ 0.000010
+. CR/^M LF/^J
+@ 0.000010
+|      blockdevices: sda|
+@ 0.000010
+. CR/^M LF/^J
+@ 0.000010
+|      timezone: UTC|
+@ 0.000009
+. CR/^M LF/^J
+@ 0.000011
+|      path: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"|
+@ 0.000010
+. CR/^M LF/^J
+@ 0.000009
+|      ipaddress: "10.240.19.107"|
+@ 0.000010
+. CR/^M LF/^J
+@ 0.000018
+|      lsbdistdescription: "Debian GNU/Linux 7.5 (wheezy)"|
+@ 0.000028
+. CR/^M LF/^J
+@ 0.000010
+|      root_home: /root|
+@ 0.000010
+. CR/^M LF/^J
+@ 0.000010
+|      is_pe: "false"|
+@ 0.000010
+. CR/^M LF/^J
+@ 0.000010
+|      puppet_vardir: /var/lib/puppet|
+@ 0.000010
+. CR/^M LF/^J
+@ 0.000010
+|      c|
+@ 0.000011
+|oncat_basedir: /var/lib/puppet/concat|
+@ 0.000010
+. CR/^M LF/^J
+@ 0.000011
+|      "_timestamp": "2014-06-18 19:22:49 +0000"|
+@ 0.000010
+. CR/^M LF/^J
+@ 0.000017
+|      clientcert: puppet-master-io.c.graphite-demos.internal|
+@ 0.000013
+. CR/^M LF/^J
+@ 0.000013
+|      clientversion: "3.6.2"|
+@ 0.000015
+. CR/^M LF/^J
+@ 0.000017
+|      clientnoop: "false"|
+@ 0.000010
+. CR/^M LF/^J
+@ 0.000010
+|    expiration: 2014-06-18 19:52:49.138881 +00:00|
+@ 0.000027
+. CR/^M LF/^J
+@ 0.000010
+|  time: 2014-06-18 19:22:48.843254 +00:00|
+@ 0.000010
+. CR/^M LF/^J
+@ 0.000010
+|  environment: production|
+@ 0.000010
+. CR/^M LF/^J
+@ 0.000011
+|  expiration: 2014-06-18 19:52:49.139139 +00:00|
+@ 0.000015
+. CR/^M LF/^J
+@ 0.020994
+|$ |
+@ 2.373256
+. CR/^M LF/^J
+|$ |
+	@ 0.716897
+	|#|
+	@ 0.014444
+	| |
+	@ 0.449517
+	|O|
+	@ 0.143624
+	|K|
+	@ 0.716446
+	|,|
+	@ 0.087122
+	| |
+	@ 0.208714
+	|t|
+	@ 0.089423
+	|h|
+	@ 0.064583
+	|a|
+	@ 0.081474
+	|t|
+	@ 0.281897
+	|'|
+	@ 0.073854
+	|s|
+	@ 0.086513
+	| |
+	@ 0.172334
+	|a|
+	@ 0.719463
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.199130
+	|i|
+	@ 0.075288
+	|t|
+	@ 0.204691
+	|,|
+	@ 0.102669
+	| |
+	@ 0.135268
+	|w|
+	@ 0.095980
+	|e|
+	@ 0.164387
+	|'|
+	@ 0.136087
+	|r|
+	@ 0.102871
+	|e|
+	@ 0.133483
+	| |
+	@ 0.208049
+	|d|
+	@ 0.105012
+	|o|
+	@ 0.046072
+	|n|
+	@ 0.087097
+	|e|
+	@ 0.258817
+	|!|
+	@ 0.864312
+	| |
+	@ 0.140200
+	| |
+	@ 0.317062
+	|R|
+	@ 0.123383
+	|e|
+	@ 0.091840
+	|m|
+	@ 0.079668
+	|e|
+	@ 0.090809
+	|m|
+	@ 0.152649
+	|b|
+	@ 0.156145
+	|e|
+	@ 0.065201
+	|r|
+	@ 0.098284
+	| |
+	@ 0.126528
+	|e|
+	@ 0.346592
+	|t|
+	@ 0.083803
+	|o|
+	@ 0.285808
+	| |
+	@ 0.342091
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.115158
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.140055
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.167301
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.130508
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.115910
+	|t|
+	@ 0.103330
+	|o|
+	@ 0.082252
+	| |
+	@ 0.537508
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.157904
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.148157
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.119977
+	| |
+	@ 0.243918
+	|t|
+	@ 0.137018
+	|o|
+	@ 0.129411
+	| |
+	@ 0.145671
+	|a|
+	@ 0.119137
+	|p|
+	@ 0.331290
+	|pl|
+	@ 0.078960
+	|y|
+	@ 0.112267
+	| |
+	@ 0.053241
+	|t|
+	@ 0.115736
+	|h|
+	@ 0.092664
+	|e|
+	@ 0.069693
+	| |
+	@ 0.679555
+	|p|
+	@ 0.078831
+	|u|
+	@ 0.147048
+	|p|
+	@ 0.128238
+	|p|
+	@ 0.086828
+	|e|
+	@ 0.057769
+	|t|
+	@ 0.513201
+	|_|
+	@ 0.000237
+	|d|
+	@ 0.000425
+	|o|
+	@ 0.138178
+	|e|
+	@ 0.140277
+	|n|
+	@ 0.280515
+	|.|
+	@ 0.214389
+	|p|
+	@ 0.144350
+	|p|
+	@ 0.252615
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.132496
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.135016
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.162005
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.126737
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.259466
+	|w|
+	@ 0.128675
+	|n|
+	@ 0.443151
+	|.|
+	@ 0.165339
+	|p|
+	@ 0.109629
+	|p|
+	@ 0.140462
+	| |
+	@ 0.153795
+	|m|
+	@ 0.120709
+	|a|
+	@ 0.077992
+	|n|
+	@ 0.240661
+	|i|
+	@ 0.755741
+	|e|
+	@ 0.705895
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.097668
+	|f|
+	@ 0.133991
+	|e|
+	@ 0.181622
+	|s|
+	@ 0.108541
+	|t|
+	@ 0.140974
+	. CR/^M LF/^J
+	|$ |
+	@ 0.466029
+	|#|
+	@ 0.145845
+	| |
+	@ 0.142436
+	|t|
+	@ 0.089344
+	|o|
+	@ 0.128598
+	| |
+	@ 0.230688
+	|d|
+	@ 0.157618
+	|l|
+	@ 0.085051
+	|e|
+	@ 0.132644
+	|a|
+	@ 0.062383
+	|n|
+	@ 0.158886
+	| |
+	@ 0.115166
+	|u|
+	@ 0.095004
+	|p|
+	@ 0.274577
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.111012
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.093192
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.143547
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.138064
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.167660
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.172988
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.160249
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.264994
+	|c|
+	@ 0.099568
+	|l|
+	@ 0.129198
+	|e|
+	@ 0.320494
+	|n|
+	@ 0.157234
+	|a|
+	@ 0.578796
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.175430
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.098808
+	|a|
+	@ 0.069525
+	|n|
+	@ 0.152286
+	| |
+	@ 0.149347
+	|u|
+	@ 0.104862
+	|p|
+	@ 1.504849
+	|.|
+	@ 0.686338
+	. CR/^M LF/^J
+	|$ |
+	@ 0.256652
+	|e|
+	@ 0.183859
+	|x|
+	@ 0.106096
+	|i|
+	@ 0.119970
+	|t|
+	@ 0.000000
+	. CR/^M LF/^J
+	|exit|
+	. CR/^M LF/^J LF/^J
+		|Script done on Wed Jun 18 19:23:20 2014|.@ 0.663299
+	|#|
+	@ 0.568362
+	| |
+	@ 0.152272
+	|t|
+	@ 0.280153
+	|h|
+	@ 0.157958
+	|s|
+	@ 0.327995
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.164845
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.144554
+	. BS/^H
+	| |
+	. BS/^H
+@ 0.294841
+|#|
+@ 0.294841
+| |
+@ 0.294841
+|I|
+@ 0.156672
+|t|
+@ 0.153309
+| |
+@ 0.095481
+|w|
+@ 0.091238
+|i|
+@ 0.161647
+|l|
+@ 0.144588
+|l|
+@ 0.063942
+| |
+@ 0.335958
+|t|
+@ 0.101697
+|a|
+@ 0.090700
+|k|
+@ 0.105713
+|e|
+@ 0.107623
+| |
+@ 0.055670
+|a|
+@ 0.107148
+| |
+@ 0.098382
+|f|
+@ 0.057814
+|e|
+@ 0.119065
+|w|
+@ 0.079892
+| |
+@ 0.125177
+|m|
+@ 0.156335
+|i|
+@ 0.061608
+|n|
+@ 0.220152
+|u|
+@ 0.045236
+|t|
+@ 0.055721
+|e|
+@ 0.127403
+|s|
+@ 0.138546
+| |
+@ 0.110089
+|f|
+@ 0.084000
+|o|
+@ 0.071063
+|r|
+@ 0.058520
+| |
+@ 0.130320
+|t|
+@ 0.050306
+|h|
+@ 0.109461
+|e|
+@ 0.067025
+| |
+@ 0.133265
+|i|
+@ 0.070023
+|n|
+@ 0.049685
+|s|
+@ 0.075795
+|t|
+@ 0.108928
+|a|
+@ 0.141190
+|n|
+@ 0.149012
+|c|
+@ 0.168769
+|e|
+@ 0.137118
+|s|
+@ 0.135294
+| |
+@ 0.292204
+|t|
+@ 0.086881
+|o|
+@ 0.067212
+| |
+@ 0.520676
+|f|
+@ 0.079343
+|i|
+@ 0.156821
+|n|
+@ 1.547699
+|i|
+@ 0.257765
+|s|
+@ 0.110521
+|h|
+@ 0.513380
+| |
+@ 0.126162
+|b|
+@ 0.099121
+|o|
+@ 0.131974
+|o|
+@ 0.087924
+|t|
+@ 0.127447
+|i|
+@ 0.066103
+|n|
+@ 0.089004
+|g|
+@ 0.290434
+| |
+@ 0.071308
+|a|
+@ 0.120716
+|n|
+@ 0.073865
+|d|
+@ 0.827919
+. CR/^M LF/^J
+|$ |
+@ 0.373213
+|#|
+@ 0.284730
+| |
+@ 0.109298
+|f|
+@ 0.090791
+|o|
+@ 0.079642
+|r|
+@ 0.057831
+| |
+@ 0.134276
+|t|
+@ 0.031702
+|h|
+@ 0.121904
+|e|
+@ 0.043755
+| |
+@ 0.265269
+|P|
+@ 0.468430
+. BS/^H
+| |
+. BS/^H
+@ 0.209877
+|p|
+@ 0.076865
+|u|
+@ 0.127577
+|e|
+@ 0.750749
+. BS/^H
+| |
+. BS/^H
+@ 0.213371
+|p|
+@ 0.133919
+|p|
+@ 0.050452
+|e|
+@ 0.083051
+|t|
+@ 0.084104
+| |
+@ 0.135323
+|a|
+@ 0.119514
+|g|
+@ 0.121783
+|e|
+@ 0.115675
+|n|
+@ 0.100405
+|t|
+@ 0.138327
+| |
+@ 0.105089
+|t|
+@ 0.133244
+|o|
+@ 0.058624
+| |
+@ 2.671397
+|a|
+@ 0.083997
+|p|
+@ 0.143063
+|p|
+@ 0.123693
+|l|
+@ 0.129091
+|y|
+@ 0.120347
+| |
+@ 0.038965
+|t|
+@ 0.121551
+|h|
+@ 0.054669
+|e|
+@ 0.105725
+| |
+@ 0.077180
+|s|
+@ 0.115889
+|i|
+@ 0.069605
+|t|
+@ 0.055627
+|e|
+@ 0.873572
+|.|
+@ 0.202942
+|p|
+@ 0.118825
+|p|
+@ 0.110764
+| |
+@ 0.098164
+|m|
+@ 0.105283
+|a|
+@ 0.069911
+|n|
+@ 0.165881
+|i|
+@ 0.128020
+|f|
+@ 0.119007
+|e|
+@ 0.124087
+|s|
+@ 0.083282
+|t|
+@ 0.071587
+| |
+@ 0.183212
+|t|
+@ 0.379859
+. BS/^H
+| |
+. BS/^H
+@ 0.131624
+|f|
+@ 0.089481
+|i|
+@ 0.097621
+|l|
+@ 0.051087
+|e|
+@ 0.133272
+| |
+@ 0.045857
+|t|
+@ 0.068456
+|o|
+@ 0.082215
+| |
+@ 0.167306
+|i|
+@ 2.267414
+| |
+@ 0.728790
+. BS/^H
+| |
+. BS/^H
+@ 0.214922
+|n|
+@ 0.180330
+|s|
+@ 0.122668
+|t|
+@ 0.114017
+|a|
+@ 0.047444
+|l|
+@ 0.146225
+|l|
+@ 0.101228
+| |
+@ 0.234124
+|A|
+@ 0.300084
+|p|
+@ 0.092622
+|a|
+@ 0.196426
+|c|
+@ 0.107390
+|h|
+@ 0.126550
+|e|
+@ 0.205354
+. CR/^M LF/^J
+|$ |
+@ 0.299377
+|#|
+@ 0.614320
+| |
+@ 0.295820
+|a|
+@ 0.087009
+|n|
+@ 0.074920
+|d|
+@ 0.108986
+| |
+@ 0.071849
+|t|
+@ 0.098351
+|h|
+@ 0.040638
+|e|
+@ 0.049507
+| |
+@ 0.204162
+|c|
+@ 0.094205
+|u|
+@ 0.119775
+|s|
+@ 0.147710
+|t|
+@ 0.126959
+|o|
+@ 0.008825
+|m|
+@ 0.753755
+| |
+@ 0.144050
+|s|
+@ 0.088940
+|i|
+@ 0.101555
+|t|
+@ 0.077182
+|e|
+@ 0.052804
+| |
+@ 0.352308
+|p|
+@ 0.116269
+|a|
+@ 0.092716
+|g|
+@ 0.054849
+|e|
+@ 0.387660
+|.|
+@ 1.108342
+| |
+@ 0.144722
+| |
+@ 0.946818
+. BS/^H
+| |
+. BS/^H
+@ 0.207092
+. BS/^H
+| |
+. BS/^H
+@ 0.972841
+| |
+@ 0.314225
+|B|
+@ 0.118591
+|u|
+@ 0.076574
+|t|
+@ 0.085601
+| |
+@ 0.114872
+|o|
+@ 0.037133
+|n|
+@ 0.097665
+|c|
+@ 0.193890
+|e|
+@ 0.071668
+| |
+@ 0.155960
+|c|
+@ 0.093265
+|o|
+@ 0.031072
+|m|
+@ 0.126055
+|p|
+@ 0.078224
+|l|
+@ 0.039272
+|e|
+@ 0.097712
+|t|
+@ 0.091489
+|e|
+@ 0.129460
+|,|
+@ 0.108973
+| |
+@ 0.086562
+|w|
+@ 0.081193
+|e|
+@ 0.139821
+| |
+@ 0.114962
+|c|
+@ 0.112708
+|a|
+@ 0.069675
+|n|
+@ 0.104168
+| |
+@ 2.169572
+|s|
+@ 0.086358
+|e|
+@ 0.116020
+|n|
+@ 0.106809
+|d|
+@ 0.145818
+| |
+@ 0.194711
+|H|
+@ 0.092309
+|T|
+@ 0.144291
+|T|
+@ 0.064251
+|P|
+@ 0.124999
+| |
+@ 0.109063
+|r|
+@ 0.041291
+|e|
+@ 0.135554
+|q|
+@ 0.125988
+|u|
+@ 0.048809
+|e|
+@ 0.147621
+|s|
+@ 0.091177
+|t|
+@ 0.110114
+|s|
+@ 0.530302
+. CR/^M LF/^J
+|$ |
+@ 0.443579
+|#|
+@ 0.308290
+| |
+@ 0.180367
+|t|
+@ 0.069396
+|o|
+@ 0.114760
+| |
+@ 0.019790
+|t|
+@ 0.099733
+|h|
+@ 0.087202
+|e|
+@ 0.073974
+| |
+@ 0.219440
+|p|
+@ 0.059156
+|u|
+@ 0.091990
+|b|
+@ 0.108221
+|l|
+@ 0.069451
+|i|
+@ 0.063833
+|c|
+@ 0.124648
+| |
+@ 0.140058
+|I|
+@ 0.095153
+|P|
+@ 0.083286
+| |
+@ 0.172307
+|o|
+@ 0.124491
+|f|
+@ 0.074841
+| |
+@ 0.088989
+|t|
+@ 0.059517
+|h|
+@ 0.088033
+|e|
+@ 0.049978
+| |
+@ 0.157944
+|l|
+	@ 0.121619
+	|a|
+	@ 0.024478
+	|o|
+	@ 0.211522
+	|d|
+	@ 0.703460
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.154914
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.136576
+	. BS/^H
+	| |
+	. BS/^H
+@ 0.174483
+|o|
+@ 0.045137
+|a|
+@ 0.124291
+|d|
+@ 0.215632
+|-|
+@ 0.128625
+|b|
+@ 0.205380
+|a|
+@ 0.231654
+|l|
+@ 0.110706
+|a|
+@ 0.134542
+|n|
+@ 0.105103
+|c|
+@ 0.263819
+|e|
+@ 0.068483
+|r|
+@ 0.191069
+| |
+@ 0.725715
+|t|
+@ 0.119269
+|o|
+@ 0.093689
+| |
+@ 0.175671
+|s|
+@ 0.120621
+|e|
+@ 0.177194
+|e|
+@ 0.214346
+| |
+@ 0.103196
+|t|
+@ 0.083368
+|h|
+@ 0.092533
+|e|
+@ 0.078428
+| |
+@ 0.160660
+|w|
+@ 0.055839
+|e|
+@ 0.215748
+|b|
+@ 0.185650
+| |
+@ 0.165427
+|p|
+@ 0.103393
+|a|
+@ 0.074091
+|g|
+@ 0.076452
+|e|
+@ 0.246957
+|s|
+@ 0.504108
+| |
+@ 0.238036
+|c|
+@ 0.059588
+|y|
+@ 0.085996
+|c|
+@ 0.130870
+|l|
+@ 0.083530
+|e|
+@ 0.110466
+| |
+@ 0.136757
+|b|
+@ 0.111602
+|y|
+@ 0.589701
+|,|
+@ 1.021108
+. CR/^M LF/^J
+|$ |
+@ 1.597979
+|$|
+@ 0.966242
+. BS/^H
+| |
+. BS/^H
+@ 0.288672
+|i|
+@ 0.113353
+|p|
+@ 0.443381
+|=|
+@ 0.430011
+|$|
+@ 0.925603
+|(|
+@ 0.946514
+|s|
+@ 0.111278
+|u|
+@ 0.096582
+|d|
+@ 0.071613
+|o|
+@ 0.138701
+| |
+@ 0.190149
+|g|
+@ 0.185019
+|c|
+@ 0.138148
+|u|
+@ 0.193437
+|t|
+@ 0.100105
+|i|
+@ 0.045523
+|l|
+@ 0.818947
+| |
+@ 0.432546
+|l|
+@ 0.071868
+|i|
+@ 0.080719
+|s|
+@ 0.063685
+|t|
+@ 0.244158
+|f|
+@ 0.054532
+|o|
+@ 0.110758
+|r|
+@ 0.160185
+|w|
+@ 0.299427
+|a|
+@ 0.087410
+|r|
+@ 0.179747
+|d|
+@ 0.126124
+|i|
+@ 0.073964
+|n|
+@ 0.062938
+|g|
+@ 0.253326
+|r|
+@ 0.109787
+|u|
+@ 0.095546
+|l|
+@ 0.053654
+|e|
+@ 0.160387
+|s|
+@ 0.554994
+| |
+@ 0.280310
+|-|
+@ 0.144008
+|-|
+@ 0.118272
+|r|
+@ 0.072912
+|e|
+@ 0.200089
+|g|
+@ 0.102061
+|i|
+@ 0.196596
+|o|
+@ 0.068083
+|n|
+@ 0.659756
+| |
+@ 0.238056
+|u|
+@ 0.420261
+|s|
+@ 0.331291
+|-|
+@ 0.134334
+|c|
+@ 0.218211
+|e|
+@ 0.183715
+|n|
+@ 0.131843
+|t|
+@ 0.208928
+|r|
+@ 0.098275
+|a|
+@ 0.130608
+|l|
+@ 0.282443
+|1|
+@ 1.612578
+| |
+@ 0.238795
+|||
+@ 0.102942
+| |
+@ 0.099871
+|g|
+@ 0.168173
+|r|
+@ 0.067625
+|e|
+@ 0.070382
+|p|
+@ 0.081048
+| |
+@ 0.196344
+|p|
+@ 0.050427
+|u|
+@ 0.177823
+|p|
+@ 0.135778
+|p|
+@ 0.040681
+|e|
+@ 0.083249
+|t|
+@ 0.665662
+|-|
+@ 0.255967
+|r|
+@ 0.143838
+|u|
+@ 0.097525
+|l|
+@ 0.109967
+|e|
+@ 1.137873
+| |
+@ 0.218158
+|| |
+. CR/^M
+@ 0.098212
+| |
+@ 0.127106
+|a|
+@ 0.215782
+|w|
+@ 0.122384
+|k|
+@ 0.165845
+| |
+@ 0.348212
+|'|
+@ 0.475267
+|{|
+	@ 0.217616
+	|r|
+	@ 0.063761
+	|p|
+	@ 0.182411
+	|i|
+	@ 0.033602
+	|n|
+	@ 0.091410
+	|t|
+	@ 0.207981
+	| |
+	@ 0.261821
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.131024
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.141512
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.118456
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.144812
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.176869
+	. BS/^H
+	| |
+	. BS/^H
+@ 0.227760
+|p|
+@ 0.072696
+|r|
+@ 0.146274
+|i|
+@ 0.061197
+|n|
+@ 0.044703
+|t|
+@ 0.232928
+| |
+@ 0.250502
+|$|
+@ 0.255281
+|6|
+@ 1.074370
+|}|
+@ 0.601991
+|'|
+@ 0.678676
+|)|
+@ 0.373749
+. CR/^M LF/^J
+@ 0.449793
+|$ |
+@ 1.267437
+|w|
+@ 0.071699
+|h|
+@ 0.056626
+|i|
+@ 0.045318
+|l|
+@ 0.106491
+|e|
+@ 0.106789
+| |
+@ 0.152091
+|[|
+@ 0.824257
+| |
+@ 0.124998
+|1|
+@ 0.380021
+| |
+@ 0.215574
+|]|
+@ 0.352783
+|;|
+@ 0.353093
+| |
+@ 0.136145
+|d|
+@ 0.104326
+|o|
+@ 0.099946
+| |
+@ 0.164829
+|c|
+@ 0.102423
+|u|
+@ 0.120306
+|r|
+@ 0.094682
+|l|
+@ 0.195375
+| |
+@ 0.219280
+|-|
+@ 0.151202
+|s|
+@ 0.619194
+|L|
+@ 0.401676
+| |
+@ 0.178910
+|h|
+@ 0.090230
+|t|
+@ 0.166409
+|t|
+@ 0.075047
+|p|
+@ 0.318923
+|:|
+@ 0.218559
+|/|
+@ 0.143930
+|/|
+@ 0.360830
+|$|
+@ 0.213138
+|i|
+@ 0.089247
+|p|
+@ 0.419780
+|/|
+@ 0.317636
+| |
+@ 0.247571
+|||
+@ 0.217171
+| |
+@ 0.052670
+|g|
+@ 0.172340
+|r|
+@ 0.081998
+|e|
+@ 0.040418
+|p|
+@ 0.104640
+| |
+@ 0.832226
+|\|
+@ 0.320506
+|<|
+@ 0.406024
+|t|
+@ 0.124665
+|i|
+@ 0.040324
+|t|
+@ 0.184284
+|l|
+@ 0.098785
+|l|
+@ 0.793222
+. BS/^H
+| |
+. BS/^H
+@ 0.206963
+|e|
+@ 1.248469
+|;|
+@ 0.129810
+| |
+@ 0.116292
+|s|
+@ 0.100199
+|l|
+@ 0.141812
+|e|
+@ 0.156668
+|e|
+@ 0.073661
+|p|
+@ 0.359980
+| |
+@ 0.269250
+|.|
+@ 0.212048
+|5|
+@ 0.457418
+|;|
+@ 0.221642
+| |
+@ 0.112049
+|d|
+@ 0.126458
+|o|
+@ 0.049118
+|n|
+@ 0.093289
+|e|
+@ 0.639110
+. CR/^M LF/^J
+@ 0.008041
+|  <title>puppet-agent-2</title>|
+. CR/^M LF/^J
+@ 0.509452
+|  <title>puppet-agent-2</title>|
+. CR/^M LF/^J
+@ 0.509491
+|  <title>puppet-agent-4</title>|
+. CR/^M LF/^J
+@ 0.509675
+|  <title>puppet-agent-2</title>|
+. CR/^M LF/^J
+@ 0.509358
+|  <title>puppet-agent-1</title>|
+. CR/^M LF/^J
+@ 0.509344
+|  <title>puppet-agent-1</title>|
+. CR/^M LF/^J
+@ 0.509364
+|  <title>puppet-agent-2</title>|
+. CR/^M LF/^J
+@ 0.509410
+|  <title>puppet-agent-4</title>|
+. CR/^M LF/^J
+@ 0.509144
+|  <title>puppet-agent-2</title>|
+. CR/^M LF/^J
+@ 0.509136
+|  <title>puppet-agent-1</title>|
+. CR/^M LF/^J
+@ 0.509783
+|  <title>puppet-agent-3</title>|
+. CR/^M LF/^J
+@ 0.508968
+|  <title>puppet-agent-4</title>|
+. CR/^M LF/^J
+@ 0.508775
+|  <title>puppet-agent-3</title>|
+. CR/^M LF/^J
+@ 0.509297
+|  <title>puppet-agent-1</title>|
+. CR/^M LF/^J
+@ 0.509321
+|  <title>puppet-agent-4</title>|
+. CR/^M LF/^J
+@ 0.230897
+|^C|
+@ 0.000277
+. CR/^M LF/^J
+|$ |
+@ 1.242714
+|#|
+@ 0.432965
+| |
+@ 0.524262
+|T|
+@ 0.113027
+|h|
+@ 0.058463
+|e|
+@ 0.075495
+|r|
+@ 0.093781
+|e|
+@ 0.157996
+|,|
+@ 0.089294
+| |
+@ 1.093202
+|w|
+@ 0.071087
+|e|
+@ 0.591774
+|'|
+@ 0.120997
+|v|
+@ 0.065691
+|e|
+@ 0.097663
+| |
+@ 0.103676
+|s|
+@ 0.204009
+|e|
+@ 0.164041
+|e|
+@ 0.511066
+|n|
+@ 0.170850
+| |
+@ 0.117486
+|a|
+@ 0.129904
+|l|
+@ 0.128534
+|l|
+@ 0.094222
+| |
+@ 0.174383
+|f|
+@ 0.115658
+|o|
+@ 0.178475
+|r|
+@ 0.187904
+| |
+@ 0.569118
+. BS/^H
+| |
+. BS/^H
+@ 0.199275
+. BS/^H
+| |
+. BS/^H
+@ 0.246092
+|u|
+@ 0.347641
+|r|
+@ 0.215019
+| |
+@ 0.134381
+|i|
+@ 0.076673
+|n|
+@ 0.059281
+|s|
+@ 0.142921
+|t|
+@ 0.301455
+|a|
+@ 0.248342
+|n|
+@ 0.170222
+|c|
+@ 0.167081
+|e|
+@ 0.116482
+|s|
+@ 0.116751
+| |
+@ 0.105837
+|r|
+@ 0.066226
+|e|
+@ 0.567223
+|s|
+@ 0.173311
+|p|
+@ 0.175845
+|o|
+@ 0.052829
+|n|
+@ 0.167877
+|d|
+@ 1.583246
+. CR/^M LF/^J
+|$ |
+@ 3.265322
+|#|
+@ 0.209773
+| |
+	@ 0.096340
+	|t|
+	@ 0.119485
+	|h|
+	@ 0.052017
+	|a|
+	@ 0.071166
+	|t|
+	@ 0.052040
+	|'|
+	@ 0.145642
+	|s|
+	@ 0.075086
+	| |
+	@ 0.109569
+	|a|
+	@ 0.121307
+	|l|
+	@ 0.338395
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.149806
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.144056
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.138519
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.132572
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.137843
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.153675
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.172150
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.230818
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.432581
+|T|
+@ 0.120861
+|h|
+@ 0.027517
+|a|
+@ 0.080851
+|t|
+@ 0.043870
+|'|
+@ 0.143904
+|s|
+@ 0.048012
+| |
+@ 0.220106
+|i|
+@ 0.134396
+|t|
+@ 0.097677
+| |
+@ 0.136185
+|f|
+@ 0.060273
+|o|
+@ 0.107742
+|r|
+@ 0.046067
+| |
+@ 0.115357
+|t|
+@ 0.039727
+|h|
+@ 0.121877
+|e|
+@ 0.020225
+| |
+@ 0.196937
+|d|
+@ 0.142169
+|e|
+@ 0.066671
+|m|
+@ 0.081827
+|o|
+@ 1.872911
+|!|
+@ 0.269961
+| |
+@ 0.140553
+| |
+@ 0.180557
+|M|
+@ 0.110908
+|a|
+@ 0.089313
+|k|
+@ 0.100743
+|e|
+@ 0.058052
+| |
+@ 0.131820
+|s|
+@ 0.082439
+|u|
+@ 0.087008
+|r|
+@ 0.048712
+|e|
+@ 0.061865
+| |
+@ 0.170762
+|t|
+@ 0.045291
+|o|
+@ 0.117722
+| |
+@ 0.087719
+|u|
+@ 0.048610
+|s|
+@ 0.084810
+|e|
+@ 0.098603
+| |
+@ 0.108056
+|t|
+@ 0.098662
+|h|
+@ 0.067102
+|e|
+@ 0.079138
+| |
+	@ 0.178686
+	|c|
+	@ 0.109353
+	|l|
+	@ 0.104838
+	|e|
+	@ 0.105565
+	|a|
+	@ 0.083638
+	|n|
+	@ 0.973752
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.167863
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.156632
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.142041
+	. BS/^H
+	| |
+	. BS/^H
+	@ 0.338648
+	. BS/^H
+	| |
+	. BS/^H
+@ 0.280528
+|p|
+@ 0.077344
+|u|
+@ 0.173670
+|p|
+@ 0.136491
+|p|
+@ 0.086355
+|e|
+@ 0.058765
+|t|
+@ 0.284321
+|_|
+@ 0.209517
+|d|
+@ 0.100342
+|o|
+@ 0.178225
+|w|
+@ 0.083531
+|n|
+@ 0.452149
+|.|
+@ 0.197170
+|p|
+@ 0.116001
+|p|
+@ 0.095376
+| |
+@ 0.966517
+|m|
+@ 0.118984
+|a|
+@ 0.105396
+|n|
+@ 0.626342
+|i|
+@ 0.299011
+|f|
+@ 0.324645
+|e|
+@ 0.173301
+|s|
+@ 0.144186
+|t|
+@ 0.157924
+| |
+@ 0.091645
+|t|
+@ 0.096547
+|o|
+@ 0.336006
+. CR/^M LF/^J
+|$ |
+@ 0.328295
+|#|
+@ 0.210721
+| |
+@ 0.111863
+|c|
+@ 0.109940
+|l|
+@ 0.094441
+|e|
+@ 0.077430
+|a|
+@ 0.064946
+|n|
+@ 0.448044
+|-|
+@ 0.210550
+|u|
+@ 0.305012
+|p |
+@ 1.064162
+|a|
+@ 0.096355
+|f|
+@ 0.174207
+|t|
+@ 0.145691
+|e|
+@ 0.089894
+|r|
+@ 0.051496
+| |
+@ 0.170739
+|y|
+@ 0.071751
+|o|
+@ 0.089138
+|u|
+@ 0.211918
+|'|
+@ 0.019460
+|r|
+@ 0.166403
+|e|
+@ 0.358353
+| |
+@ 0.175322
+|d|
+@ 0.089110
+|o|
+@ 0.029681
+|n|
+@ 0.111981
+|e|
+@ 0.378738
+|.|
+@ 0.607654
+. CR/^M LF/^J
+|$ |
+@ 0.484986
+|e|
+@ 0.180503
+|x|
+@ 0.128544
+|i|
+@ 0.085229
+|t|
+@ 0.000000
+. CR/^M LF/^J
+|exit|
+. CR/^M LF/^J LF/^J
+	|Script done on Wed Jun 18 19:13:28 2014|.
+
+

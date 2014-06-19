@@ -1,0 +1,346 @@
+Script started on Wed Jun 18 18:58:37 2014
+$ # This screencast demonstrates how to use the Puppet 'gce_compute' module to
+$ # manage Google Compute Engine resources. Everything you need to replicate the [A$ # manage Google Compute Engine resources. Everything you need to replicate th[Ke
+$ # demo can be found at,
+$ # https://github.com/GoogleCloudPlatform/compute-video-demo-puppet
+$ 
+$ # We'll use the 'gce_compute' module to create and bootstrap frou   our instances
+$ 3 # in to wo different zones, cret ate a firewall rule to allow HTTP traffic, and
+$ # also create a Compute Engine load-balancer. The Apache web server and a
+$ # custom site page will be installed on each instance.
+$ 
+$ # In this screencast, we have already created a Debian Compute Engine instan      machine. [A$ # In this screencast, we have already created a Debian Compute Engine machine[K.
+$ # We'll begin by installing Puppet and then fo  perform the demo. We're folow  lwoing
+$ # the instructions at,
+$ # http://docs.puppetlabs.com/guides/install_puppet/install_debian_ubuntu.html
+$ wget https://apt.puppetlabs.com/puppetlabs-release-wheezy.deb
+--2014-06-18 19:00:58--  https://apt.puppetlabs.com/puppetlabs-release-wheezy.deb
+Resolving apt.puppetlabs.com (apt.puppetlabs.com)... 198.58.114.168, 2600:3c00::f03c:91ff:fe69:6bf0
+Connecting to apt.puppetlabs.com (apt.puppetlabs.com)|198.58.114.168|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3428 (3.3K) [application/x-debian-package]
+Saving to: `puppetlabs-release-wheezy.deb'
+
+ 0% [                                       ] 0           --.-K/s              100%[======================================>] 3,428       --.-K/s   in 0s      
+
+2014-06-18 19:01:01 (50.9 MB/s) - `puppetlabs-release-wheezy.deb' saved [3428/3428]
+
+$ sudo dpkg -i puppetlabs-release-wheezy.deb 
+Selecting previously unselected package puppetlabs-release.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 19556 files and directories currently installed.)
+Unpacking puppetlabs-release (from puppetlabs-release-wheezy.deb) ...
+Setting up puppetlabs-release (1.0-7) ...
+$ sudo apt-get update
+0% [Working]            Hit http://gce_debian_mirror.storage.googleapis.com wheezy Release.gpg
+            17% [Connecting to http.debian.net] [Connecting to security.debian.org (128.101                                                                               Hit http://gce_debian_mirror.storage.googleapis.com wheezy Release
+17% [Connecting to http.debian.net] [Waiting for headers] [Connecting to apt.pu17% [Release gpgv 168 kB] [Connecting to http.debian.net] [Waiting for headers]22% [Connecting to http.debian.net] [Waiting for headers] [Connecting to apt.pu                                                                               Hit http://gce_debian_mirror.storage.googleapis.com wheezy/main Sources
+33% [Connecting to http.debian.net (46.4.205.44)] [Waiting for headers] [Waitin                                                                               Hit http://security.debian.org wheezy/updates Release.gpg
+40% [Waiting for headers] [Connecting to http.debian.net (46.4.205.44)] [Waitin                                                                               Hit http://gce_debian_mirror.storage.googleapis.com wheezy/main amd64 Packages
+50% [Waiting for headers] [Connecting to http.debian.net (46.4.205.44)] [Waitin                                                                               Hit http://security.debian.org wheezy/updates Release
+50% [Waiting for headers] [Connecting to http.debian.net (46.4.205.44)] [Waitin50% [Release gpgv 102 kB] [Waiting for headers] [Connecting to http.debian.net 46% [Waiting for headers] [Connecting to http.debian.net (46.4.205.44)] [Waitin                                                                               Get:1 http://apt.puppetlabs.com wheezy Release.gpg [876 B]
+99% [Waiting for headers] [Connecting to http.debian.net (46.4.205.44)] [Waitin                                                                               Hit http://gce_debian_mirror.storage.googleapis.com wheezy/main Translation-en
+99% [Connecting to http.debian.net (46.4.205.44)] [Waiting for headers] [Waitin                                                                               Hit http://security.debian.org wheezy/updates/main Sources
+                                                                               100% [Connecting to http.debian.net (46.4.205.44)] [Waiting for headers]                                                                        Get:2 http://apt.puppetlabs.com wheezy Release [22.4 kB]
+                                                                        21% [Connecting to http.debian.net (46.4.205.44)] [Waiting for headers] [2 Rele                                                                               Hit http://security.debian.org wheezy/updates/main amd64 Packages
+63% [Connecting to http.debian.net (46.4.205.44)] [Waiting for headers] [2 Rele                                                                               Hit http://security.debian.org wheezy/updates/main Translation-en
+63% [Connecting to http.debian.net (46.4.205.44)] [2 Release 13.8 kB/22.4 kB 62                                                                               100% [Waiting for headers]                          100% [2 Release gpgv 22.4 kB] [Waiting for headers]                                                   100% [Waiting for headers]                          Get:3 http://apt.puppetlabs.com wheezy/main Sources [69.7 kB]
+                          31% [Waiting for headers] [3 Sources 5315 B/69.7 kB 8%]                                                       97% [3 Sources 67.3 kB/69.7 kB 97%]                                   100% [Connecting to cloudfront.debian.net]                                          100% [3 Sources gzip 0 B] [Connecting to cloudfront.debian.net] [Waiting for he                                                                               100% [Connecting to cloudfront.debian.net] [Waiting for headers]                                                                Get:4 http://apt.puppetlabs.com wheezy/dependencies Sources [8548 B]
+                                                                94% [Connecting to cloudfront.debian.net] [4 Sources 2501 B/8548 B 29%]                                                                       100% [Connecting to cloudfront.debian.net] [Waiting for headers]                                                                100% [4 Sources gzip 0 B] [Connecting to cloudfront.debian.net] [Waiting for he                                                                               100% [Connecting to cloudfront.debian.net] [Waiting for headers]                                                                Get:5 http://apt.puppetlabs.com wheezy/main amd64 Packages [77.4 kB]
+                                                                61% [Waiting for headers] [5 Packages 8131 B/77.4 kB 11%]                                                         100% [Waiting for headers]                          100% [5 Packages gzip 0 B] [Waiting for headers] [Waiting for headers]                                                                      100% [Waiting for headers] [Waiting for headers]                                                Get:6 http://apt.puppetlabs.com wheezy/dependencies amd64 Packages [6178 B]
+                                                98% [Waiting for headers] [6 Packages 2501 B/6178 B 40%]                                                        100% [Waiting for headers] [Waiting for headers]                                                100% [6 Packages gzip 0 B] [Waiting for headers] [Waiting for headers]                                                                      100% [Waiting for headers] [Waiting for headers]                                                Hit http://http.debian.net wheezy Release.gpg
+                                                100% [Waiting for headers]100% [Waiting for headers]                          Hit http://http.debian.net wheezy Release
+100% [Waiting for headers]                          100% [Release gpgv 168 kB] [Waiting for headers]                                                100% [Waiting for headers]                          Ign http://apt.puppetlabs.com wheezy/dependencies Translation-en
+100% [Waiting for headers]                          Ign http://apt.puppetlabs.com wheezy/main Translation-en
+100% [Waiting for headers]                          100% [Working]              100% [Waiting for headers] [Waiting for headers]                                                Hit http://http.debian.net wheezy/main Sources
+                                                100% [Waiting for headers]100% [Waiting for headers]                          Hit http://http.debian.net wheezy/main amd64 Packages
+                          100% [Working]              Hit http://http.debian.net wheezy/main Translation-en
+100% [Working]              Fetched 185 kB in 1s (139 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 29%Reading package lists... 29%Reading package lists... 44%Reading package lists... 48%Reading package lists... 48%Reading package lists... 78%Reading package lists... 78%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+$ sudo apt-get install puppetmaster
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 3%Reading state information... Done
+The following extra packages will be installed:
+  augeas-lenses debconf-utils facter hiera libaugeas-ruby libaugeas-ruby1.9.1
+  libaugeas0 libffi5 libjson-ruby libpci3 libruby1.9.1 libxml2 libyaml-0-2
+  pciutils puppet-common puppetmaster-common ruby ruby-json ruby-rgen
+  ruby-shadow ruby1.9.1 sgml-base virt-what xml-core
+Suggested packages:
+  augeas-doc augeas-tools bzip2 ruby-selinux libselinux-ruby1.8
+  librrd-ruby1.9.1 librrd-ruby1.8 apache2 nginx puppet-el vim-puppet
+  stompserver ruby-stomp libstomp-ruby1.8 rdoc ruby-ldap libldap-ruby1.8
+  puppetdb-terminus ri ruby-dev ruby1.9.1-examples ri1.9.1 graphviz
+  ruby1.9.1-dev ruby-switch sgml-base-doc debhelper
+The following NEW packages will be installed:
+  augeas-lenses debconf-utils facter hiera libaugeas-ruby libaugeas-ruby1.9.1
+  libaugeas0 libffi5 libjson-ruby libpci3 libruby1.9.1 libxml2 libyaml-0-2
+  pciutils puppet-common puppetmaster puppetmaster-common ruby ruby-json
+  ruby-rgen ruby-shadow ruby1.9.1 sgml-base virt-what xml-core
+0 upgraded, 25 newly installed, 0 to remove and 7 not upgraded.
+Need to get 8075 kB of archives.
+After this operation, 24.2 MB of additional disk space will be used.
+Do you want to continue [Y/n]? y
+0% [Working]            Get:1 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main libpci3 amd64 1:3.1.9-6 [58.4 kB]
+            0% [1 libpci3 0 B/58.4 kB 0%] [Connecting to apt.puppetlabs.com (198.58.114.168                                                                               1% [Connecting to apt.puppetlabs.com (198.58.114.168)]                                                      Get:2 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main libxml2 amd64 2.8.0+dfsg1-7+nmu3 [904 kB]
+                                                      1% [2 libxml2 0 B/904 kB 0%] [Waiting for headers]                                                  Get:3 http://apt.puppetlabs.com/ wheezy/main facter amd64 2.0.2-1puppetlabs1 [73.9 kB]
+                                                  4% [2 libxml2 256 kB/904 kB 28%] [3 facter 13.8 kB/73.9 kB 19%]                                                               12% [3 facter 13.8 kB/73.9 kB 19%]                                  13% [Waiting for headers]                         Get:4 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main libffi5 amd64 3.0.10-3 [24.8 kB]
+                         13% [4 libffi5 0 B/24.8 kB 0%] [Waiting for headers]                                                    13% [Waiting for headers]                         Get:5 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main libyaml-0-2 amd64 0.1.4-2+deb7u4 [58.2 kB]
+                         13% [5 libyaml-0-2 0 B/58.2 kB 0%] [Waiting for headers]                                                        14% [Waiting for headers]                         Get:6 http://apt.puppetlabs.com/ wheezy/main hiera all 1.3.4-1puppetlabs1 [12.9 kB]
+                         14% [Waiting for headers] [6 hiera 3898 B/12.9 kB 30%]                                                      14% [Waiting for headers] [Waiting for headers]                                               Get:7 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main sgml-base all 1.26+nmu4 [14.6 kB]
+                                               14% [7 sgml-base 0 B/14.6 kB 0%] [Waiting for headers]                                                      14% [Waiting for headers]                         Get:8 http://apt.puppetlabs.com/ wheezy/dependencies ruby-rgen all 0.6.5-1puppetlabs1 [82.3 kB]
+                         14% [Waiting for headers] [8 ruby-rgen 9529 B/82.3 kB 12%]                                                          15% [Waiting for headers]                         Get:9 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main pciutils amd64 1:3.1.9-6 [280 kB]
+                         15% [9 pciutils 0 B/280 kB 0%] [Waiting for headers]                                                    19% [Waiting for headers]                         Get:10 http://apt.puppetlabs.com/ wheezy/main puppet-common all 3.6.2-1puppetlabs1 [1317 kB]
+                         19% [Waiting for headers] [10 puppet-common 1078 B/1317 kB 0%]                                                              Get:11 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main augeas-lenses all 0.10.0-1 [195 kB]
+                                                              27% [11 augeas-lenses 31.9 kB/195 kB 16%] [10 puppet-common 642 kB/1317 kB 49%]                                                                               29% [10 puppet-common 642 kB/1317 kB 49%]                                         Get:12 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main debconf-utils all 1.5.49 [55.8 kB]
+                                         29% [12 debconf-utils 0 B/55.8 kB 0%] [10 puppet-common 642 kB/1317 kB 49%]                                                                           30% [10 puppet-common 691 kB/1317 kB 52%]                                         38% [Waiting for headers]                         Get:13 http://apt.puppetlabs.com/ wheezy/main puppetmaster-common all 3.6.2-1puppetlabs1 [14.9 kB]
+                         38% [Waiting for headers] [13 puppetmaster-common 0 B/14.9 kB 0%]                                                                 38% [Waiting for headers]                         Get:14 http://apt.puppetlabs.com/ wheezy/main puppetmaster all 3.6.2-1puppetlabs1 [10.3 kB]
+                         38% [Waiting for headers] [14 puppetmaster 0 B/10.3 kB 0%]                                                          38% [Waiting for headers]                         Get:15 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main libruby1.9.1 amd64 1.9.3.194-8.1+deb7u2 [4415 kB]
+                         39% [15 libruby1.9.1 31.9 kB/4415 kB 1%]                                        93% [Working]             Get:16 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main ruby1.9.1 amd64 1.9.3.194-8.1+deb7u2 [209 kB]
+             93% [16 ruby1.9.1 0 B/209 kB 0%]                                96% [Working]             Get:17 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main ruby all 1:1.9.3 [6484 B]
+             96% [17 ruby 0 B/6484 B 0%]                           96% [Working]             Get:18 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main virt-what amd64 1.12-1 [12.9 kB]
+             96% [18 virt-what 0 B/12.9 kB 0%]                                 96% [Working]             Get:19 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main libaugeas0 amd64 0.10.0-1 [190 kB]
+             96% [19 libaugeas0 0 B/190 kB 0%]                                 98% [Working]             Get:20 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main libaugeas-ruby1.9.1 amd64 0.4.1-1.1 [10.6 kB]
+             98% [20 libaugeas-ruby1.9.1 0 B/10.6 kB 0%]                                           98% [Working]             Get:21 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main libaugeas-ruby all 0.4.1-1.1 [2496 B]
+             98% [21 libaugeas-ruby 0 B/2496 B 0%]                                     98% [Working]             Get:22 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main ruby-shadow amd64 2.1.4-2 [13.3 kB]
+             98% [22 ruby-shadow 0 B/13.3 kB 0%]                                   99% [Working]             Get:23 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main ruby-json amd64 1.7.3-3 [78.5 kB]
+             99% [23 ruby-json 0 B/78.5 kB 0%]                                 100% [Working]              Get:24 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main libjson-ruby all 1.7.3-3 [11.7 kB]
+              100% [24 libjson-ruby 0 B/11.7 kB 0%]                                     100% [Working]              Get:25 http://gce_debian_mirror.storage.googleapis.com/ wheezy/main xml-core all 0.13+nmu2 [24.2 kB]
+              100% [25 xml-core 0 B/24.2 kB 0%]                                 100% [Working]              Fetched 8075 kB in 0s (9446 kB/s)
+Selecting previously unselected package libpci3:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 19562 files and directories currently installed.)
+Unpacking libpci3:amd64 (from .../libpci3_1%3a3.1.9-6_amd64.deb) ...
+Selecting previously unselected package libxml2:amd64.
+Unpacking libxml2:amd64 (from .../libxml2_2.8.0+dfsg1-7+nmu3_amd64.deb) ...
+Selecting previously unselected package libffi5:amd64.
+Unpacking libffi5:amd64 (from .../libffi5_3.0.10-3_amd64.deb) ...
+Selecting previously unselected package libyaml-0-2:amd64.
+Unpacking libyaml-0-2:amd64 (from .../libyaml-0-2_0.1.4-2+deb7u4_amd64.deb) ...
+Selecting previously unselected package sgml-base.
+Unpacking sgml-base (from .../sgml-base_1.26+nmu4_all.deb) ...
+Selecting previously unselected package pciutils.
+Unpacking pciutils (from .../pciutils_1%3a3.1.9-6_amd64.deb) ...
+Selecting previously unselected package augeas-lenses.
+Unpacking augeas-lenses (from .../augeas-lenses_0.10.0-1_all.deb) ...
+Selecting previously unselected package debconf-utils.
+Unpacking debconf-utils (from .../debconf-utils_1.5.49_all.deb) ...
+Selecting previously unselected package libruby1.9.1.
+Unpacking libruby1.9.1 (from .../libruby1.9.1_1.9.3.194-8.1+deb7u2_amd64.deb) ...
+Selecting previously unselected package ruby1.9.1.
+Unpacking ruby1.9.1 (from .../ruby1.9.1_1.9.3.194-8.1+deb7u2_amd64.deb) ...
+Selecting previously unselected package ruby.
+Unpacking ruby (from .../ruby_1%3a1.9.3_all.deb) ...
+Selecting previously unselected package virt-what.
+Unpacking virt-what (from .../virt-what_1.12-1_amd64.deb) ...
+Selecting previously unselected package facter.
+Unpacking facter (from .../facter_2.0.2-1puppetlabs1_amd64.deb) ...
+Selecting previously unselected package libaugeas0.
+Unpacking libaugeas0 (from .../libaugeas0_0.10.0-1_amd64.deb) ...
+Selecting previously unselected package libaugeas-ruby1.9.1.
+Unpacking libaugeas-ruby1.9.1 (from .../libaugeas-ruby1.9.1_0.4.1-1.1_amd64.deb) ...
+Selecting previously unselected package libaugeas-ruby.
+Unpacking libaugeas-ruby (from .../libaugeas-ruby_0.4.1-1.1_all.deb) ...
+Selecting previously unselected package ruby-shadow.
+Unpacking ruby-shadow (from .../ruby-shadow_2.1.4-2_amd64.deb) ...
+Selecting previously unselected package ruby-json.
+Unpacking ruby-json (from .../ruby-json_1.7.3-3_amd64.deb) ...
+Selecting previously unselected package libjson-ruby.
+Unpacking libjson-ruby (from .../libjson-ruby_1.7.3-3_all.deb) ...
+Selecting previously unselected package hiera.
+Unpacking hiera (from .../hiera_1.3.4-1puppetlabs1_all.deb) ...
+Selecting previously unselected package ruby-rgen.
+Unpacking ruby-rgen (from .../ruby-rgen_0.6.5-1puppetlabs1_all.deb) ...
+Selecting previously unselected package puppet-common.
+Unpacking puppet-common (from .../puppet-common_3.6.2-1puppetlabs1_all.deb) ...
+Selecting previously unselected package puppetmaster-common.
+Unpacking puppetmaster-common (from .../puppetmaster-common_3.6.2-1puppetlabs1_all.deb) ...
+Selecting previously unselected package puppetmaster.
+Unpacking puppetmaster (from .../puppetmaster_3.6.2-1puppetlabs1_all.deb) ...
+Selecting previously unselected package xml-core.
+Unpacking xml-core (from .../xml-core_0.13+nmu2_all.deb) ...
+Processing triggers for man-db ...
+Setting up libpci3:amd64 (1:3.1.9-6) ...
+Setting up libxml2:amd64 (2.8.0+dfsg1-7+nmu3) ...
+Setting up libffi5:amd64 (3.0.10-3) ...
+Setting up libyaml-0-2:amd64 (0.1.4-2+deb7u4) ...
+Setting up sgml-base (1.26+nmu4) ...
+Setting up pciutils (1:3.1.9-6) ...
+Setting up augeas-lenses (0.10.0-1) ...
+Setting up debconf-utils (1.5.49) ...
+Setting up libruby1.9.1 (1.9.3.194-8.1+deb7u2) ...
+Setting up ruby1.9.1 (1.9.3.194-8.1+deb7u2) ...
+update-alternatives: using /usr/bin/gem1.9.1 to provide /usr/bin/gem (gem) in auto mode
+update-alternatives: using /usr/bin/ruby1.9.1 to provide /usr/bin/ruby (ruby) in auto mode
+Setting up ruby (1:1.9.3) ...
+Setting up virt-what (1.12-1) ...
+Setting up facter (2.0.2-1puppetlabs1) ...
+Setting up libaugeas0 (0.10.0-1) ...
+Setting up libaugeas-ruby1.9.1 (0.4.1-1.1) ...
+Setting up libaugeas-ruby (0.4.1-1.1) ...
+Setting up ruby-shadow (2.1.4-2) ...
+Setting up ruby-json (1.7.3-3) ...
+Setting up libjson-ruby (1.7.3-3) ...
+Setting up hiera (1.3.4-1puppetlabs1) ...
+Setting up ruby-rgen (0.6.5-1puppetlabs1) ...
+Setting up puppet-common (3.6.2-1puppetlabs1) ...
+Setting up puppetmaster-common (3.6.2-1puppetlabs1) ...
+[....] Starting puppet queue[?25l7[1G[[32m ok [39;49m8[?12l[?25h.
+Setting up puppetmaster (3.6.2-1puppetlabs1) ...
+[....] Starting puppet master[?25l7[1G[[32m ok [39;49m8[?12l[?25h.
+Setting up xml-core (0.13+nmu2) ...
+Processing triggers for sgml-base ...
+$ 
+$ # Nw ow we'll install the required community puppet modules
+$ sudo puppet module install puppetlabs-_g  gce_compute
+[1;31mWarning: Setting templatedir is deprecated. See http://links.puppetlabs.com/env-settings-deprecations
+   (at /usr/lib/ruby/vendor_ruby/puppet/settings.rb:1095:in `block in issue_deprecations')[0m
+[mNotice: Preparing to install into /etc/puppet/modules ...[0m
+[mNotice: Downloading from https://forgeapi.puppetlabs.com ...[0m
+[mNotice: Installing -- do not interrupt ...[0m
+/etc/puppet/modules
+└── puppetlabs-gce_compute ([0;36mv0.4.0[0m)
+$ sudo puppet module install puppetlabs-apache
+[1;31mWarning: Setting templatedir is deprecated. See http://links.puppetlabs.com/env-settings-deprecations
+   (at /usr/lib/ruby/vendor_ruby/puppet/settings.rb:1095:in `block in issue_deprecations')[0m
+[mNotice: Preparing to install into /etc/puppet/modules ...[0m
+[mNotice: Downloading from https://forgeapi.puppetlabs.com ...[0m
+[mNotice: Installing -- do not interrupt ...[0m
+/etc/puppet/modules
+└─┬ puppetlabs-apache ([0;36mv1.0.1[0m)
+  ├── puppetlabs-concat ([0;36mv1.1.0[0m)
+  └── puppetlabs-stdlib ([0;36mv4.2.2[0m)
+$ 
+$ # Now we cn  need to configure the device.conf file for gce_compute
+$ PROJ=$(/usr/share/google/get_metadata_value project-id)
+$ sudo bash -c "cat > /etc/puppet/device.conf" <<EOF
+> [my_project]
+>   type gce
+>   url [/dev/null]:$PROJ
+> EOF
+$ 
+$ # Since we're using root, we'll need ot m    to make sure to set up authoo rization.
+$ # c Cut/paste the URL into an authenticated browswer    swer session  , click Accept,
+$ # and then cut/past  e the toke  n back into the terminal,
+$ sudo gcloud auth login
+Go to the following link in your browser:
+
+    https://accounts.google.com/o/oauth2/auth?redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&prompt=select_account&response_type=code&client_id=32555940559.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fbigquery+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdevstorage.full_control+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fndev.cloudman+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fsqlservice.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fprediction+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fprojecthosting&access_type=offline
+
+
+Enter verification code: 4/Hd6XHC22OB5szcTo1_WRtfndtwv9.ciH0Z8sHz3IemmS0T3UFEsPA cr5gjQI
+
+You are now logged in as [erjohnso@google.com].
+Your current project is [graphite-demos].  You can change this setting by running:
+  $ gcloud config set project <project>
+$ sudo gcloud config set project graphite-demos
+$ 
+$ # Now let's check  out this git repo for the manifest files,
+$ git clone https://github.com/GoogleCloudPlatform/compute-video-demo-puppet
+Cloning into 'compute-video-demo-puppet'...
+Username for 'https://github.com': erjohnso
+Password for 'https://erjohnso@github.com': 
+remote: Reusing existing pack: 13, done.[K
+remote: Counting objects: 42, done.[K
+remote: Compressing objects:   2% (1/42)   [Kremote: Compressing objects:   4% (2/42)   [Kremote: Compressing objects:   7% (3/42)   [Kremote: Compressing objects:   9% (4/42)   [Kremote: Compressing objects:  11% (5/42)   [Kremote: Compressing objects:  14% (6/42)   [Kremote: Compressing objects:  16% (7/42)   [Kremote: Compressing objects:  19% (8/42)   [Kremote: Compressing objects:  21% (9/42)   [Kremote: Compressing objects:  23% (10/42)   [Kremote: Compressing objects:  26% (11/42)   [Kremote: Compressing objects:  28% (12/42)   [Kremote: Compressing objects:  30% (13/42)   [Kremote: Compressing objects:  33% (14/42)   [Kremote: Compressing objects:  35% (15/42)   [Kremote: Compressing objects:  38% (16/42)   [Kremote: Compressing objects:  40% (17/42)   [Kremote: Compressing objects:  42% (18/42)   [Kremote: Compressing objects:  45% (19/42)   [Kremote: Compressing objects:  47% (20/42)   [Kremote: Compressing objects:  50% (21/42)   [Kremote: Compressing objects:  52% (22/42)   [Kremote: Compressing objects:  54% (23/42)   [Kremote: Compressing objects:  57% (24/42)   [Kremote: Compressing objects:  59% (25/42)   [Kremote: Compressing objects:  61% (26/42)   [Kremote: Compressing objects:  64% (27/42)   [Kremote: Compressing objects:  66% (28/42)   [Kremote: Compressing objects:  69% (29/42)   [Kremote: Compressing objects:  71% (30/42)   [Kremote: Compressing objects:  73% (31/42)   [Kremote: Compressing objects:  76% (32/42)   [Kremote: Compressing objects:  78% (33/42)   [Kremote: Compressing objects:  80% (34/42)   [Kremote: Compressing objects:  83% (35/42)   [Kremote: Compressing objects:  85% (36/42)   [Kremote: Compressing objects:  88% (37/42)   [Kremote: Compressing objects:  90% (38/42)   [Kremote: Compressing objects:  92% (39/42)   [Kremote: Compressing objects:  95% (40/42)   [Kremote: Compressing objects:  97% (41/42)   [Kremote: Compressing objects: 100% (42/42)   [Kremote: Compressing objects: 100% (42/42), done.[K
+Unpacking objects:   1% (1/55)   Unpacking objects:   3% (2/55)   Unpacking objects:   5% (3/55)   Unpacking objects:   7% (4/55)   Unpacking objects:   9% (5/55)   Unpacking objects:  10% (6/55)   Unpacking objects:  12% (7/55)   Unpacking objects:  14% (8/55)   Unpacking objects:  16% (9/55)   Unpacking objects:  18% (10/55)   Unpacking objects:  20% (11/55)   Unpacking objects:  21% (12/55)   Unpacking objects:  23% (13/55)   Unpacking objects:  25% (14/55)   Unpacking objects:  27% (15/55)   Unpacking objects:  29% (16/55)   Unpacking objects:  30% (17/55)   Unpacking objects:  32% (18/55)   Unpacking objects:  34% (19/55)   Unpacking objects:  36% (20/55)   Unpacking objects:  38% (21/55)   Unpacking objects:  40% (22/55)   Unpacking objects:  41% (23/55)   Unpacking objects:  43% (24/55)   Unpacking objects:  45% (25/55)   Unpacking objects:  47% (26/55)   Unpacking objects:  49% (27/55)   Unpacking objects:  50% (28/55)   Unpacking objects:  52% (29/55)   Unpacking objects:  54% (30/55)   remote: Total 55 (delta 19), reused 0 (delta 0)[K
+Unpacking objects:  56% (31/55)   Unpacking objects:  58% (32/55)   Unpacking objects:  60% (33/55)   Unpacking objects:  61% (34/55)   Unpacking objects:  63% (35/55)   Unpacking objects:  65% (36/55)   Unpacking objects:  67% (37/55)   Unpacking objects:  69% (38/55)   Unpacking objects:  70% (39/55)   Unpacking objects:  72% (40/55)   Unpacking objects:  74% (41/55)   Unpacking objects:  76% (42/55)   Unpacking objects:  78% (43/55)   Unpacking objects:  80% (44/55)   Unpacking objects:  81% (45/55)   Unpacking objects:  83% (46/55)   Unpacking objects:  85% (47/55)   Unpacking objects:  87% (48/55)   Unpacking objects:  89% (49/55)   Unpacking objects:  90% (50/55)   Unpacking objects:  92% (51/55)   Unpacking objects:  94% (52/55)   Unpacking objects:  96% (53/55)   Unpacking objects:  98% (54/55)   Unpacking objects: 100% (55/55)   Unpacking objects: 100% (55/55), done.
+$ cd compute-video-demo-puppet/
+$ 
+$ # Set up auto-signing of new puppet m nodes that match our domain,
+$ echo "*.$(hostname -domain)" | sudo tee / /  etc/puppet/autosign.conf
+hostname: invalid option -- 'o'
+*.Usage: hostname [-v] [-b] {hostname|-F file}         set host name (from file)
+       hostname [-v] [-a|-A|-d|-f|-i|-I|-s|-y]       display formatted name
+       hostname [-v]                                 display host name
+
+       {yp,nis,}domainname [-v] {nisdomain|-F file}  set NIS domain name (from file)
+       {yp,nis,}domainname [-v]                      display NIS domain name
+
+       dnsdomainname [-v]                            display dns domain name
+
+       hostname -V|--version|-h|--help               print info and exit
+
+Program name:
+       {yp,nis,}domainname=hostname -y
+       dnsdomainname=hostname -d
+
+Program options:
+    -a, --alias            alias names
+    -A, --all-fqdns        all long host names (FQDNs)
+    -b, --boot             set default hostname if none available
+    -d, --domain           DNS domain name
+    -f, --fqdn, --long     long host name (FQDN)
+    -F, --file             read host name or NIS domain name from given file
+    -i, --ip-address       addresses for the host name
+    -I, --all-ip-addresses all addresses for the host
+    -s, --short            short host name
+    -y, --yp, --nis        NIS/YP domain name
+
+Description:
+   This command can get or set the host name or the NIS domain name. You can
+   also get the DNS domain or the FQDN (fully qualified domain name).
+   Unless you are using bind or NIS for host lookups you can change the
+   FQDN (Fully Qualified Domain Name) and the DNS domain name (which is
+   part of the FQDN) in the /etc/hosts file.
+$ echo "*.$(hostname --domain)" | sudo / etee    tee /etc/puppet/autosign.conf
+*.c.graphite-demos.internal
+$ 
+$ # Copy over the demo manifest files,
+$ sudo cp manifests/* /etc/puppet/manifests/
+$ 
+$ # Copy the demo site page ta emplate,
+$ sudo cp index.html.erb /etc/puppet/modules/apache/templates/
+$ 
+$ # Now apply the demo manifest to crete the      ate the Compute Engine resources
+$ sudo puppet apply --certname=my_project /ec/  tc/puppet/mo anifests/puppet_up.pp 
+[1;31mWarning: Setting templatedir is deprecated. See http://links.puppetlabs.com/env-settings-deprecations
+   (at /usr/lib/ruby/vendor_ruby/puppet/settings.rb:1095:in `block in issue_deprecations')[0m
+[mNotice: Compiled catalog for my_project in environment production in 0.06 seconds[0m
+[mNotice: /Stage[main]/Main/Gce_disk[puppet-agent-3]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Gce_disk[puppet-agent-1]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Gce_instance[puppet-agent-1]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Gce_disk[puppet-agent-4]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Gce_disk[puppet-agent-2]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Gce_instance[puppet-agent-2]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Gce_instance[puppet-agent-3]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Gce_instance[puppet-agent-4]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Gce_httphealthcheck[puppet-http]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Gce_targetpool[puppet-pool]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Gce_forwardingrule[puppet-rule]/ensure: created[0m
+[mNotice: Finished catalog run in 90.95 seconds[0m
+$ 
+$ # Now lets 's test out the whoe le thing with the public IP of the load-balancer
+$ ip=$(sudo gcutil listforwardingrules --region us-central1 | grep puppet-rule |  akw  wk '{print $6}')
+$ echo $IP  io p
+107.178.221.7
+$ while [1  1 ]; do curl -sL http://$ip/ | grep \<title; sleep .5; done
+^C
+$ 
+$ # ths   This will take a few minutes for the instances to finish booting and
+$ # for the P pue ppet agent to apply the site.pp manifest t file to i  nstall Apache
+$ # and the custom site page.     But once complete, we can send HTTP requests
+$ # to the public IP of the laod   oad-balancer to see the web pages cycle by,
+$ $ ip=$(sudo gcutil listforwardingrules --region us-central1 | grep puppet-rule |  awk '{rpint       print $6}')
+$ while [ 1 ]; do curl -sL http://$ip/ | grep \<titll e; sleep .5; done
+  <title>puppet-agent-2</title>
+  <title>puppet-agent-2</title>
+  <title>puppet-agent-4</title>
+  <title>puppet-agent-2</title>
+  <title>puppet-agent-1</title>
+  <title>puppet-agent-1</title>
+  <title>puppet-agent-2</title>
+  <title>puppet-agent-4</title>
+  <title>puppet-agent-2</title>
+  <title>puppet-agent-1</title>
+  <title>puppet-agent-3</title>
+  <title>puppet-agent-4</title>
+  <title>puppet-agent-3</title>
+  <title>puppet-agent-1</title>
+  <title>puppet-agent-4</title>
+^C
+$ # There, we've seen all for   ur instances respond
+$ # that's al         That's it for the demo!  Make sure to use the clean     puppet_down.pp manifest to
+$ # clean-up after you're done.
+$ exit
+exit
+
+Script done on Wed Jun 18 19:13:28 2014
