@@ -89,6 +89,10 @@ and demo files.
 
 ## Puppet Setup
 
+You can watch a simple terminal screencast, https://asciinema.org/a/10310, of
+the below configuration and demo. The screencast is useful for showing the
+expected output from the commands listed below.
+
 1. Configure the Puppet Master service for autosigning,
     ```
     echo "*.$(hostname --domain)" | sudo tee /etc/puppet/autosign.conf`
