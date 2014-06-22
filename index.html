@@ -1,4 +1,110 @@
-<!doctype html><html><head><meta charset=utf-8><meta name=description content="A front-end template that helps you build fast, modern mobile web apps."><meta name=viewport content="width=device-width, initial-scale=1, minimal-ui"><title>DevOps::Puppet</title><meta name=mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black><meta name=apple-mobile-web-app-title content="Web Starter Kit"><link rel=apple-touch-icon-precomposed sizes=144x144 href=images/touch/apple-touch-icon-144x144-precomposed.png><link rel=apple-touch-icon-precomposed sizes=114x114 href=images/touch/apple-touch-icon-114x114-precomposed.png><link rel=apple-touch-icon-precomposed sizes=72x72 href=images/touch/apple-touch-icon-72x72-precomposed.png><link rel=apple-touch-icon-precomposed href=images/touch/apple-touch-icon-57x57-precomposed.png><meta name=msapplication-TileImage content=images/touch/ms-touch-icon-144x144-precomposed.png><meta name=msapplication-TileColor content=#3372DF><link rel="shortcut icon" href=images/touch/touch-icon-57x57.png><link rel="shortcut icon" sizes=196x196 href=images/touch/touch-icon-196x196.png><link rel=stylesheet href=styles/components/main.min.css></head><body><header class="app-bar promote-layer"><div class=app-bar-container><button class=menu><img src=images/hamburger.svg alt=menu></button><div class=g-medium-full><p class=logo><img height=60 style=max-width:auto; src=images/gcp.png> DevOps::Puppet</p></div><section class=app-bar-actions></section></div></header><nav class="navdrawer-container promote-layer"><h4>Navigation</h4><ul><li><a href="http://googlecloudplatform.github.io/compute-video-demo-main/">DevOps Power Tools</a></li><li><a href="http://googlecloudplatform.github.io/compute-video-demo-puppet/">Puppet</a></li><li><a href="http://googlecloudplatform.github.io/compute-video-demo-chef/">Chef</a></li><li><a href="http://googlecloudplatform.github.io/compute-video-demo-salt/">SaltStack</a></li><li><a href="http://googlecloudplatform.github.io/compute-video-demo-ansible/">Ansible</a></li></ul></nav><main><br><div class="g-wide--1 g-medium--half"><img height=100 style=max-width:auto; src=images/puppet.png><ul class="list-links list-links--primary"><li class=list__item><a href="http://docs.puppetlabs.com/">Documentation</a></li><li class=list__item><a href=http://puppetlabs.com/puppet/puppet-enterprise>Puppet Enterprise</a></li></ul><h3>Google+Puppet</h3><ul class="list-links list-links--primary"><li class=list__item><a href=http://docs.puppetlabs.com/pe/3.2/cloudprovisioner_gce.html>Cloud Provisioner</a></li><li class=list__item><a href=https://forge.puppetlabs.com/puppetlabs/gce_compute>gce_compute</a></li></ul><h3>Demos</h3><ul class="list-links list-links--primary"><li class=list__item><a href="https://www.youtube.com/watch?v=PpoRVQOqzzk">Demo Video</a></li><li class=list__item><a href=https://github.com/GoogleCloudPlatform/compute-video-demo-puppet>Demo Code</a></li></ul><br></div><div class="g-wide--3 g-wide--last g-medium--half g--last"><p class=medium>Demo: Puppet and Google Compute Engine</p><script type=text/javascript src=https://asciinema.org/a/10310.js id=asciicast-10310 async data-autoplay=1></script></div><div class="g-medium--full g-wide--full"><hr></div><div class="g-medium--full g-wide--full"><h3>Example: Install Apache</h3><div class="highlight-module highlight-module--code highlight-module--right"><div class=highlight-module__container><code class=ruby><div class=highlight><pre>1 package { 'apache':
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>DevOps::Puppet</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+
+    <!-- iOS icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/touch/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/touch/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/touch/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/touch/apple-touch-icon-57x57-precomposed.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <!-- Generic Icon -->
+    <link rel="shortcut icon" href="images/touch/touch-icon-57x57.png">
+
+    <!-- SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <!-- Chrome Add to Homescreen -->
+    <link rel="shortcut icon" sizes="196x196" href="images/touch/touch-icon-196x196.png">
+
+    <!-- build:css styles/components/main.min.css -->
+    <link rel="stylesheet" href="styles/h5bp.css">
+    <link rel="stylesheet" href="styles/components/components.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <header class="app-bar promote-layer">
+      <div class="app-bar-container">
+        <button class="menu"><img src="images/hamburger.svg" alt="menu"></button>
+        <div class="g-medium-full">
+          <p class="logo">
+            <img height="60" style="max-width:auto;" src="images/gcp.png" />
+            DevOps::Puppet
+          </p>
+        </div>
+        <section class="app-bar-actions">
+        <!-- Put App Bar Buttons Here -->
+        </section>
+      </div>
+    </header>
+
+    <nav class="navdrawer-container promote-layer">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="http://googlecloudplatform.github.io/compute-video-demo-main/">DevOps Power Tools</a></li>
+        <li><a href="http://googlecloudplatform.github.io/compute-video-demo-puppet/">Puppet</a></li>
+        <li><a href="http://googlecloudplatform.github.io/compute-video-demo-chef/">Chef</a></li>
+        <li><a href="http://googlecloudplatform.github.io/compute-video-demo-salt/">SaltStack</a></li>
+        <li><a href="http://googlecloudplatform.github.io/compute-video-demo-ansible/">Ansible</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <br />
+      <div class="g-wide--1 g-medium--half">
+        <img height="100" style="max-width:auto;" src="images/puppet.png" />
+        <ul class="list-links list-links--primary">
+          <li class="list__item"><a href="http://docs.puppetlabs.com/">Documentation</a>
+          <li class="list__item"><a href="http://puppetlabs.com/puppet/puppet-enterprise">Puppet Enterprise</a>
+        </ul>
+        <h3>Google+Puppet</h3>
+        <ul class="list-links list-links--primary">
+          <li class="list__item"><a href="http://docs.puppetlabs.com/pe/3.2/cloudprovisioner_gce.html">Cloud Provisioner</a>
+          <li class="list__item"><a href="https://forge.puppetlabs.com/puppetlabs/gce_compute">gce_compute</a>
+        </ul>
+        <h3>Demos</h3>
+        <ul class="list-links list-links--primary">
+          <li class="list__item"><a href="https://www.youtube.com/watch?v=PpoRVQOqzzk">Demo Video</a>
+          <li class="list__item"><a href="https://github.com/GoogleCloudPlatform/compute-video-demo-puppet">Demo Code</a>
+        </ul>
+        <br />
+      </div>
+      <div class="g-wide--3 g-wide--last g-medium--half g--last">
+        <p class="medium">Demo: Puppet and Google Compute Engine</p>
+        <script type="text/javascript" src="https://asciinema.org/a/10310.js" id="asciicast-10310" async data-autoplay="1"></script>
+      </div>
+
+      <div class="g-medium--full g-wide--full">
+        <hr />
+      </div>
+
+      <div class="g-medium--full g-wide--full">
+        <h3>Example: Install Apache</h3>
+        <div class="highlight-module highlight-module--code highlight-module--right">
+          <div class="highlight-module__container">
+            <code class="ruby">
+              <div class="highlight">
+                <pre>
+ 1 package { 'apache':
  2   ensure => 'installed'
  3 }
  4
@@ -12,7 +118,26 @@
 12   ensure => present,
 13   mode => 0644,
 14   require => Package['apache']
-15 }</pre></div></code></div></div></div><div class="g-medium--full g-wide--full"><hr></div><div class="g-medium--full g-wide--full"><h3>Example: Create a Compute Engine instance</h3><div class="highlight-module highlight-module--code highlight-module--right"><div class=highlight-module__container><code class=ruby><div class=highlight><pre>1  gce_instance { "gce-puppet":
+15 }
+                </pre>
+              </div>
+            </code>
+          </div>
+        </div>
+      </div>
+
+      <div class="g-medium--full g-wide--full">
+        <hr />
+      </div>
+      
+      <div class="g-medium--full g-wide--full">
+        <h3>Example: Create a Compute Engine instance</h3>
+        <div class="highlight-module highlight-module--code highlight-module--right">
+          <div class="highlight-module__container">
+            <code class="ruby">
+              <div class="highlight">
+                <pre>
+ 1  gce_instance { "gce-puppet":
  2      ensure => present,
  3      machine_type => "n1-standard-1",
  4      zone => "us-central1-b",
@@ -23,4 +148,18 @@
  9        service {"apache2": ensure => running, enable => true, }
 10      }
 11      include apache'
-12  }</pre></div></code></div></div></div></main><script src=scripts/main.min.js></script></body></html>
+12  }
+                </pre>
+              </div>
+            </code>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- build:js scripts/main.min.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>
