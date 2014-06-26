@@ -43,7 +43,7 @@ gce_instance { 'puppet-agent-4':
   zone => "$zoneb",
 }
 
-gce_firewall { 'puppet-http':
+gce_firewall { 'puppet-firewall':
   ensure => absent,
 }
 

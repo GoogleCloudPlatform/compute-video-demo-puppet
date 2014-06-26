@@ -339,7 +339,7 @@ To teardown your setup, apply the following manifest:
     zone => "$zoneb",
   }
 
-  gce_firewall { 'puppet-http':
+  gce_firewall { 'puppet-firewall':
     ensure => absent,
   }
 
