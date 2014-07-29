@@ -64,21 +64,21 @@ to use instructions for an open-source Puppet Master.
 The install may take up to ten minutes but the instance should be up within a
 minute or two. You can SSH into it...
 
-    ```
-    gcutil ssh puppet-enterprise-master
-    ```
+   ```
+   gcutil ssh puppet-enterprise-master
+   ```
 
 and tail the log until it's finished.
 
-    ```
-    sudo tail -f /var/log/messages
-    ```
+   ```
+   sudo tail -f /var/log/messages
+   ```
 
 When finished, you'll see a line like this in your log.
 
-    ```
-    puppet-enterprise-master startupscript: Puppet installation finished!
-    ```
+   ```
+   puppet-enterprise-master startupscript: Puppet installation finished!
+   ```
 
 3. Use Puppet to setup the demo
 
@@ -112,9 +112,9 @@ EOF
     You can also create a link so that device.conf is available as root or as the
     local user.
 
-        ```
-        ln -s /etc/puppetlabs/puppet/device.conf ~/.puppet/device.conf
-        ```
+       ```
+       ln -s /etc/puppetlabs/puppet/device.conf ~/.puppet/device.conf
+       ```
 
 
 6. Use Puppet to build the additional instances and agents.
