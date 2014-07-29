@@ -1,10 +1,8 @@
-$project = ''
-
 package { 'git':
   ensure => present,
 }
 
-vcsrepo { "/home/${id}/compute-video-demo-puppet":
+vcsrepo { '/opt/compute-video-demo-puppet':
   ensure   => present,
   provider => git,
   source   => 'https://github.com/GoogleCloudPlatform/compute-video-demo-puppet.git',
@@ -18,7 +16,17 @@ file { '/etc/puppetlabs/puppet/autosign.conf':
 
 file { '/etc/puppetlabs/puppet/manifests/site.pp':
   ensure => file,
-  source => "/home/${id}/compute-video-demo-puppet/manifests/site.pp",
+  content => "node /^puppet-agent-\\d+/ {
+    class { 'apache': }
+
+    include apache::mod::headers
+
+    file {'/var/www/index.html':
+      ensure	=> present,
+      content	=> template('/opt/compute-video-demo-puppet/index.html.erb'),
+      require	=> Class['apache'],
+    }
+  }"
 }
 
 firewall { '100 allow 443 and 8140':

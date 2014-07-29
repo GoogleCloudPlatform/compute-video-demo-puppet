@@ -14,7 +14,6 @@ gce_instance { "puppet-enterprise-master":
       'pe_consolepwd'    => 'puppetenterprise',
     },
     modules      => ['puppetlabs-apache', 'puppetlabs-firewall', 'puppetlabs-stdlib', 'puppetlabs-vcsrepo', 'puppetlabs-gce_compute'],
-    manifest     => $manifest,
 }
 
 gce_firewall { 'allow-puppet-master':
