@@ -2,7 +2,7 @@ compute-demo-puppet
 ========================
 
 This is the supporting documentation for **Using Puppet with Google
-Compute Engine** 
+Compute Engine**
 
 The goal of this repository is to provide the extra detail necessary for
 you to completely replicate the recorded demo. The video's main goal
@@ -39,7 +39,100 @@ before you can create any virtual machines with Compute Engine. Look for the
 [Cloud SDK](https://developers.google.com/cloud/sdk/) and make sure you've
 successfully authenticated and set your default project as instructed.
 
-## Create the Puppet Master Compute Engine Instance
+
+## Quick Start with Puppet Enterprise
+
+These instructions assume you have installed and configured the Google Cloud
+SDK from the previous step. They also assume you have installed
+a [Puppet](http://docs.puppetlabs.com/guides/install_puppet/pre_install.html) or
+[Puppet Enterprise](http://docs.puppetlabs.com/pe/latest/install_agents.html)
+Agent.
+
+Though Puppet Enterprise is free to use for this demo, you may skip this section
+to use instructions for an open-source Puppet Master.
+
+1. Install the Google Compute Engine Puppet module
+    ```
+    puppet module install puppetlabs-gce_compute
+    ```
+
+2. Bring up a GCE instance that will auto-install the PE Master
+    ```
+    puppet apply compute-video-demo-puppet/manifests/master_up.pp
+    ```
+
+The install may take up to ten minutes but the instance should be up within a
+minute or two. You can SSH into it...
+
+   ```
+   gcutil ssh puppet-enterprise-master
+   ```
+
+and tail the log until it's finished.
+
+   ```
+   sudo tail -f /var/log/messages
+   ```
+
+When finished, you'll see a line like this in your log.
+
+   ```
+   puppet-enterprise-master startupscript: Puppet installation finished!
+   ```
+
+3. Use Puppet to setup the demo
+
+    ```
+    sudo /opt/puppet/bin/puppet apply /path/to/compute-video-demo-puppet/manifests/master_setup.pp
+    ```
+
+This setup manifest will prepare your Puppet master for the demo and will clone
+the demo repository into /opt for convenience.
+
+
+4. Authenticate the root user on your puppet master with Compute Engine.
+
+    ```
+    gcutil auth
+    ```
+
+5. Set up `/etc/puppetlabs/puppet/device.conf` which the gce_compute module references
+for your Google Cloud project-id.
+
+    ```
+    CERTNAME=$(/usr/local/bin/puppet config print certname)
+    PROJECT=$(/usr/share/google/get_metadata_value project-id)
+    sudo bash -c "cat > /etc/puppetlabs/puppet/device.conf" <<EOF
+[$CERTNAME]
+  type gce
+  url [/dev/null]:$PROJECT
+EOF
+    ```
+
+    You can also create a link so that device.conf is available as root or as the
+    local user.
+
+       ```
+       mkdir ~/.puppet; ln -s /etc/puppetlabs/puppet/device.conf ~/.puppet/device.conf
+       ```
+
+
+6. Use Puppet to build the additional instances and agents.
+
+    ```
+    /opt/puppet/bin/puppet apply --modulepath=/etc/puppetlabs/puppet/modules /opt/compute-video-demo-puppet/manifests/puppet_up.pp
+    ```
+
+7. Now, you can put the public IP address of the load balancer into your
+browser and you should start to see a flicker of pages that will bounce across
+each of your instances. You can find your load-balancer IP in the Developers
+Console or with,
+    ```
+    gcutil getforwardingrule puppet-rule --region us-central1
+    ```
+
+
+## Create the Puppet Master (FOSS) Compute Engine Instance
 
 Next you will create a Virtual Machine for your Puppet master named `master`
 so that your managed nodes (or agents) will be able to automatcially find the
@@ -100,7 +193,7 @@ expected output from the commands listed below.
 
 1. Create a site manifest file to specify instance software and services. For
 this demo, a simple Apache site manifest is being defined.  The below contents
-should be used to create `/etc/puppet/manifests/site.pp`. 
+should be used to create `/etc/puppet/manifests/site.pp`.
     ```
     node /^puppet-agent-\d+/ { # Regex to match node names like puppet-agent-N
       class { 'apache': }      # Installs apache web server
@@ -124,20 +217,19 @@ should be used to create `/etc/puppet/manifests/site.pp`.
 
 1. Set up `/etc/puppet/device.conf` where the project ID can either be found
 on the Developer's Console or by using these commands,
+
     ```
+    CERTNAME=$(/usr/local/bin/puppet config print certname)
     PROJECT=$(/usr/share/google/get_metadata_value project-id)
     sudo bash -c "cat > /etc/puppet/device.conf" <<EOF
-    [my_project]
+    [$CERTNAME]
       type gce
       url [/dev/null]:$PROJECT
     EOF
     ```
-  * 'my_project' can be substituted with a name of your choice as long as it
-    is used consistently and matches the `--certname` flag used with the
-    puppet command.
 
 1. Create another manifest file (`/etc/puppet/manifests/puppet_up.pp`) used to
-create the 4 Compute Engine instatnces, firewall, and load balancer.
+create the 4 Compute Engine instances, firewall, and load balancer.
     ```
     $zonea = 'us-central1-a'
     $zoneb = 'us-central1-b'
@@ -308,7 +400,7 @@ To teardown your setup, apply the following manifest:
     ensure => absent,
     zone => "$zonea",
   }
-  
+
   gce_disk { 'puppet-agent-2':
     ensure => absent,
     zone => "$zonea",
@@ -357,7 +449,7 @@ To teardown your setup, apply the following manifest:
     ensure => absent,
     region => "$region",
   }
-  
+
   # Dependency chaining to make sure that resources are deleted in the correct order
   Gce_instance['puppet-agent-1', 'puppet-agent-2', 'puppet-agent-3', 'puppet-agent-4'] -> Gce_disk['puppet-agent-1', 'puppet-agent-2', 'puppet-agent-3', 'puppet-agent-4']
   Gce_forwardingrule['puppet-rule'] -> Gce_targetpool['puppet-pool']
@@ -367,8 +459,8 @@ To teardown your setup, apply the following manifest:
 ## Troubleshooting
 
 * Ensure the module path is correct with `sudo puppet config print modulepath`
-  Path should be: `/etc/puppet/modules`
-* Ensure that puppet modules are installed as root.
+  Path should be: `/etc/puppet/modules` on FOSS and `/etc/puppetlabs/puppet/modules` on PE
+* Ensure that puppet modules are installed as root with `sudo puppet module list`.
 * Ensure that you are running puppet apply as root by including `sudo` in the command
 
 ## Contributing
