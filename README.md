@@ -113,7 +113,7 @@ EOF
     local user.
 
        ```
-       ln -s /etc/puppetlabs/puppet/device.conf ~/.puppet/device.conf
+       mkdir ~/.puppet; ln -s /etc/puppetlabs/puppet/device.conf ~/.puppet/device.conf
        ```
 
 
