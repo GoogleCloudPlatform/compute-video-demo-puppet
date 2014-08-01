@@ -49,7 +49,7 @@ a [Puppet](http://docs.puppetlabs.com/guides/install_puppet/pre_install.html) or
 Agent.
 
 Though Puppet Enterprise is free to use for this demo, you may skip this section
-to use instructions for an [open-source Puppet Master](#create-the-puppet-master-(foss)-compute-engine-instance).
+to use instructions for an [open-source Puppet Master](#create-the-puppet-master-foss-compute-engine-instance).
 
 1. Install the Google Compute Engine Puppet module
     ```
