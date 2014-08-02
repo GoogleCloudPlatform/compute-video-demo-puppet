@@ -26,16 +26,16 @@ Make sure you are logged in to your Google Account (gmail, Google+, etc) and
 point your browser to https://console.developers.google.com/. You should see a
 page asking you to create your first Project.
 
-1. When creating a Project, you will see a pop-up dialog box. You can specify
+2. When creating a Project, you will see a pop-up dialog box. You can specify
 custom names but the *Project ID* is globally unique across all Google Cloud
 Platform customers.
 
-1. It's OK to create a Project first, but you will need to set up billing
+3. It's OK to create a Project first, but you will need to set up billing
 before you can create any virtual machines with Compute Engine. Look for the
 *Billing* link in the left-hand navigation bar.
 
 
-1. Next you will want to install the
+4. Next you will want to install the
 [Cloud SDK](https://developers.google.com/cloud/sdk/) and make sure you've
 successfully authenticated and set your default project as instructed.
 
@@ -61,20 +61,20 @@ to use instructions for an [open-source Puppet Master](#create-the-puppet-master
     puppet apply compute-video-demo-puppet/manifests/master_up.pp --certname myproject
     ```
 
-The install may take up to ten minutes but the instance should be up within a
-minute or two. You can SSH into it...
+   The install may take up to ten minutes but the instance should be up within a
+   minute or two. You can SSH into it...
 
    ```
    gcutil ssh puppet-enterprise-master
    ```
 
-and tail the log until it's finished.
+   and tail the log until it's finished.
 
    ```
    sudo tail -f /var/log/messages
    ```
 
-When finished, you'll see a line like this in your log.
+   When finished, you'll see a line like this in your log.
 
    ```
    puppet-enterprise-master startupscript: Puppet installation finished!
@@ -86,8 +86,8 @@ When finished, you'll see a line like this in your log.
     sudo /opt/puppet/bin/puppet apply /opt/compute-video-demo-puppet/manifests/master_setup.pp
     ```
 
-This setup manifest will prepare your Puppet master for the demo and will clone
-the demo repository into /opt for convenience.
+   This setup manifest will prepare your Puppet master for the demo and will clone
+   the demo repository into /opt for convenience.
 
 4. Export path so that sudo can use gcutil
 
