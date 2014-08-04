@@ -95,16 +95,10 @@ to use instructions for an [open-source Puppet Master](#create-the-puppet-master
    This setup manifest will prepare your Puppet master for the demo and will clone
    the demo repository into /opt for convenience.
 
-5. Export path so that sudo can use gcutil
-
-   ```
-   sudo export PATH=$PATH:/usr/local/bin
-   ```
-
 6. Authenticate the root user on your puppet master with Compute Engine.
 
     ```
-    sudo gcloud auth login
+    sudo env PATH=$PATH gcloud auth login
     ```
 
 7. Set up `/etc/puppetlabs/puppet/device.conf` which the gce_compute module references
