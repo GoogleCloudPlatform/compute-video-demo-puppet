@@ -79,29 +79,35 @@ to use instructions for an [open-source Puppet Master](#create-the-puppet-master
    ```
    puppet-enterprise-master startupscript: Puppet installation finished!
    ```
+   
+3. Fetch the setup manifest from the metadata server
+ 
+    ```
+    curl http://metadata/computeMetadata/v1/instance/attributes/setup -H 'Metadata-Flavor: Google' > master_setup.pp
+    ```
 
-3. Use Puppet to setup the demo
+4. Use Puppet to setup the demo
 
     ```
-    sudo /opt/puppet/bin/puppet apply /opt/compute-video-demo-puppet/manifests/master_setup.pp
+    sudo /opt/puppet/bin/puppet apply master_setup.pp
     ```
 
    This setup manifest will prepare your Puppet master for the demo and will clone
    the demo repository into /opt for convenience.
 
-4. Export path so that sudo can use gcutil
+5. Export path so that sudo can use gcutil
 
    ```
-   sudo $PATH=$PATH:/usr/local/bin
+   sudo export PATH=$PATH:/usr/local/bin
    ```
 
-5. Authenticate the root user on your puppet master with Compute Engine.
+6. Authenticate the root user on your puppet master with Compute Engine.
 
     ```
-    sudo gcutil auth
+    sudo gcloud auth login
     ```
 
-6. Set up `/etc/puppetlabs/puppet/device.conf` which the gce_compute module references
+7. Set up `/etc/puppetlabs/puppet/device.conf` which the gce_compute module references
 for your Google Cloud project-id.
 
     ```
@@ -122,13 +128,13 @@ EOF
        ```
 
 
-7. Use Puppet to build the additional instances and agents.
+8. Use Puppet to build the additional instances and agents.
 
     ```
     sudo /opt/puppet/bin/puppet apply --modulepath=/etc/puppetlabs/puppet/modules /opt/compute-video-demo-puppet/manifests/puppet_up.pp --certname myproject
     ```
 
-8. Now, you can put the public IP address of the load balancer into your
+9. Now, you can put the public IP address of the load balancer into your
 browser and you should start to see a flicker of pages that will bounce across
 each of your instances. You can find your load-balancer IP in the Developers
 Console or with,
