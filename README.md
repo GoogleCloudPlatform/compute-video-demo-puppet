@@ -125,7 +125,7 @@ EOF
 8. Use Puppet to build the additional instances and agents.
 
     ```
-    sudo env PATH=$PATH /opt/puppet/bin/puppet apply --modulepath=/etc/puppetlabs/puppet/modules /opt/compute-video-demo-puppet/manifests/puppet_up.pp --certname myproject
+    sudo env PATH=$PATH /opt/puppet/bin/puppet apply --modulepath=/etc/puppetlabs/puppet/modules /opt/compute-video-demo-puppet/manifests/puppet_up.pp --certname $CERTNAME
     ```
 
 9. Now, you can put the public IP address of the load balancer into your
