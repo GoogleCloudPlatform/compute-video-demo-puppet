@@ -135,7 +135,7 @@ Console or with,
     ```
     gcutil getforwardingrule puppet-rule --region us-central1
     ```
-    Note: you may have to authenticate your regular user with Compute Engine as well by using the ```gcloud compute auth login``` command.
+    Note: You may have to authenticate your regular user with Compute Engine as well by using the ```gcloud compute auth login``` command.
 
 
 ## Create the Puppet Master (FOSS) Compute Engine Instance
