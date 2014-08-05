@@ -225,7 +225,7 @@ should be used to create `/etc/puppet/manifests/site.pp`.
 on the Developer's Console or by using these commands,
 
     ```
-    CERTNAME=$(/usr/local/bin/puppet config print certname)
+    CERTNAME=$(puppet config print certname)
     PROJECT=$(/usr/share/google/get_metadata_value project-id)
     sudo bash -c "cat > /etc/puppet/device.conf" <<EOF
     [$CERTNAME]
@@ -373,7 +373,7 @@ module template directory,
 
 6. Apply the `puppet_up.pp` manifest file.
     ```
-    sudo puppet apply --certname $CERTNAME /etc/puppet/manifests/puppet_up.pp
+    sudo puppet apply /etc/puppet/manifests/puppet_up.pp --certname $CERTNAME
     ```
 
 7. Now, you can put the public IP address of the load balancer into your
