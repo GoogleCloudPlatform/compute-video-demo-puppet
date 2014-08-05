@@ -26,16 +26,16 @@ Make sure you are logged in to your Google Account (gmail, Google+, etc) and
 point your browser to https://console.developers.google.com/. You should see a
 page asking you to create your first Project.
 
-1. When creating a Project, you will see a pop-up dialog box. You can specify
+2. When creating a Project, you will see a pop-up dialog box. You can specify
 custom names but the *Project ID* is globally unique across all Google Cloud
 Platform customers.
 
-1. It's OK to create a Project first, but you will need to set up billing
+3. It's OK to create a Project first, but you will need to set up billing
 before you can create any virtual machines with Compute Engine. Look for the
 *Billing* link in the left-hand navigation bar.
 
 
-1. Next you will want to install the
+4. Next you will want to install the
 [Cloud SDK](https://developers.google.com/cloud/sdk/) and make sure you've
 successfully authenticated and set your default project as instructed.
 
@@ -49,7 +49,7 @@ a [Puppet](http://docs.puppetlabs.com/guides/install_puppet/pre_install.html) or
 Agent.
 
 Though Puppet Enterprise is free to use for this demo, you may skip this section
-to use instructions for an open-source Puppet Master.
+to use instructions for an [open-source Puppet Master](#create-the-puppet-master-foss-compute-engine-instance).
 
 1. Install the Google Compute Engine Puppet module
     ```
@@ -58,45 +58,50 @@ to use instructions for an open-source Puppet Master.
 
 2. Bring up a GCE instance that will auto-install the PE Master
     ```
-    puppet apply compute-video-demo-puppet/manifests/master_up.pp
+    puppet apply compute-video-demo-puppet/manifests/master_up.pp --certname myproject
     ```
 
-The install may take up to ten minutes but the instance should be up within a
-minute or two. You can SSH into it...
+   The install may take up to ten minutes but the instance should be up within a
+   minute or two. You can SSH into it...
 
    ```
    gcutil ssh puppet-enterprise-master
    ```
 
-and tail the log until it's finished.
+   and tail the log until it's finished.
 
    ```
    sudo tail -f /var/log/messages
    ```
 
-When finished, you'll see a line like this in your log.
+   When finished, you'll see a line like this in your log.
 
    ```
    puppet-enterprise-master startupscript: Puppet installation finished!
    ```
-
-3. Use Puppet to setup the demo
-
+   
+3. Fetch the setup manifest from the metadata server
+ 
     ```
-    sudo /opt/puppet/bin/puppet apply /path/to/compute-video-demo-puppet/manifests/master_setup.pp
-    ```
-
-This setup manifest will prepare your Puppet master for the demo and will clone
-the demo repository into /opt for convenience.
-
-
-4. Authenticate the root user on your puppet master with Compute Engine.
-
-    ```
-    gcutil auth
+    curl http://metadata/computeMetadata/v1/instance/attributes/setup -H 'Metadata-Flavor: Google' > master_setup.pp
     ```
 
-5. Set up `/etc/puppetlabs/puppet/device.conf` which the gce_compute module references
+4. Use Puppet to setup the demo
+
+    ```
+    sudo /opt/puppet/bin/puppet apply master_setup.pp
+    ```
+
+   This setup manifest will prepare your Puppet master for the demo and will clone
+   the demo repository into /opt for convenience.
+
+6. Authenticate the root user on your puppet master with Compute Engine.
+
+    ```
+    sudo env PATH=$PATH gcloud auth login
+    ```
+
+7. Set up `/etc/puppetlabs/puppet/device.conf` which the gce_compute module references
 for your Google Cloud project-id.
 
     ```
@@ -117,19 +122,20 @@ EOF
        ```
 
 
-6. Use Puppet to build the additional instances and agents.
+8. Use Puppet to build the additional instances and agents.
 
     ```
-    /opt/puppet/bin/puppet apply --modulepath=/etc/puppetlabs/puppet/modules /opt/compute-video-demo-puppet/manifests/puppet_up.pp
+    sudo env PATH=$PATH /opt/puppet/bin/puppet apply --modulepath=/etc/puppetlabs/puppet/modules /opt/compute-video-demo-puppet/manifests/puppet_up.pp --certname $CERTNAME
     ```
 
-7. Now, you can put the public IP address of the load balancer into your
+9. Now, you can put the public IP address of the load balancer into your
 browser and you should start to see a flicker of pages that will bounce across
 each of your instances. You can find your load-balancer IP in the Developers
 Console or with,
     ```
     gcutil getforwardingrule puppet-rule --region us-central1
     ```
+    Note: You may have to authenticate your regular user with Compute Engine as well by using the ```gcloud compute auth login``` command.
 
 
 ## Create the Puppet Master (FOSS) Compute Engine Instance
@@ -158,7 +164,7 @@ gcutil addinstance master --image=debian-7 --zone=us-central1-b --machine_type=n
     gcutil ssh master
     ```
 
-1. Update packages and install puppet, gce_compute, and apache. It is
+2. Update packages and install puppet, gce_compute, and apache. It is
 important to install these packages and modules as root.
     ```
     wget https://apt.puppetlabs.com/puppetlabs-release-wheezy.deb
@@ -168,12 +174,12 @@ important to install these packages and modules as root.
     sudo puppet module install puppetlabs-gce_compute
     sudo puppet module install puppetlabs-apache
     ```
-1. Authenticate the root user on your puppet master with Compute Engine,
+3. Authenticate the root user on your puppet master with Compute Engine,
     ```
     sudo gcloud auth login
     ```
 
-1. Check out this repository so that you can use pre-canned configuration
+4. Check out this repository so that you can use pre-canned configuration
 and demo files.
     ```
     cd $HOME
@@ -188,10 +194,10 @@ expected output from the commands listed below.
 
 1. Configure the Puppet Master service for autosigning,
     ```
-    echo "*.$(hostname --domain)" | sudo tee /etc/puppet/autosign.conf`
+    echo "*.$(hostname --domain)" | sudo tee /etc/puppet/autosign.conf
     ```
 
-1. Create a site manifest file to specify instance software and services. For
+2. Create a site manifest file to specify instance software and services. For
 this demo, a simple Apache site manifest is being defined.  The below contents
 should be used to create `/etc/puppet/manifests/site.pp`.
     ```
@@ -209,17 +215,17 @@ should be used to create `/etc/puppet/manifests/site.pp`.
     ```
   Or, you can use the site.pp included in the repo and copy it with,
     ```
-    sudo cp manifests/site.pp /etc/puppet/manifests/site.pp
+    sudo cp compute-video-demo-puppet/manifests/site.pp /etc/puppet/manifests/site.pp
     ```
   * This example uses the puppetlabs-apache module to install and manage the
     apache service. More information about this module can be found at
     https://github.com/puppetlabs/puppetlabs-apache.
 
-1. Set up `/etc/puppet/device.conf` where the project ID can either be found
+3. Set up `/etc/puppet/device.conf` where the project ID can either be found
 on the Developer's Console or by using these commands,
 
     ```
-    CERTNAME=$(/usr/local/bin/puppet config print certname)
+    CERTNAME=$(puppet config print certname)
     PROJECT=$(/usr/share/google/get_metadata_value project-id)
     sudo bash -c "cat > /etc/puppet/device.conf" <<EOF
     [$CERTNAME]
@@ -350,33 +356,34 @@ create the 4 Compute Engine instances, firewall, and load balancer.
     ```
   This file can also be copied from the included manifest file with,
     ```
-    sudo cp manifests/puppet_up.pp /etc/puppet/manifests/puppet_up.pp
+    sudo cp compute-video-demo-puppet/manifests/puppet_up.pp /etc/puppet/manifests/puppet_up.pp
     ```
-  * Firewall rule is created in this file with the `gce_firewall` block.
+  * The firewall rule is created in this file with the `gce_firewall` block.
   * Each of the four instances are created in the `gce_instance` blocks with
     the instance names as the key. A matching disk is created for each
     instance in `gce_disk` blocks.
   * The load balancer is created with the `gce_targetpool`,
     `gce_httphealthcheck`, and `gce_forwardingrule` blocks.
 
-1. Place the `index.html.erb` file included in this repository into the apache
+5. Place the `index.html.erb` file included in this repository into the apache
 module template directory,
     ```
-    sudo cp index.html.erb /etc/puppet/modules/apache/templates
+    sudo cp compute-video-demo-puppet/index.html.erb /etc/puppet/modules/apache/templates
     ```
 
-1. Apply the `puppet_up.pp` manifest file.
+6. Apply the `puppet_up.pp` manifest file.
     ```
-    sudo puppet apply --certname=my_project /etc/puppet/manifests/puppet_up.pp
+    sudo puppet apply /etc/puppet/manifests/puppet_up.pp --certname $CERTNAME
     ```
 
-1. Now, you can put the public IP address of the load balancer into your
+7. Now, you can put the public IP address of the load balancer into your
 browser and you should start to see a flicker of pages that will bounce across
 each of your instances. You can find your load-balancer IP in the Developers
 Console or with,
     ```
     gcutil getforwardingrule puppet-rule --region us-central1
     ```
+    Note: You may have to authenticate your regular user with Compute Engine as well by using the ```gcloud compute auth login``` command.
 
 ## Cleaning Up
 
@@ -459,20 +466,28 @@ To teardown your setup, apply the following manifest:
 ## Troubleshooting
 
 * Ensure the module path is correct with `sudo puppet config print modulepath`
-  Path should be: `/etc/puppet/modules` on FOSS and `/etc/puppetlabs/puppet/modules` on PE
+  Path should be: `/etc/puppet/modules` on FOSS and `/etc/puppetlabs/puppet/modules` on PE.
 * Ensure that puppet modules are installed as root with `sudo puppet module list`.
-* Ensure that you are running puppet apply as root by including `sudo` in the command
+* Ensure that you are running puppet apply as root by including `sudo` in the command.
+* Make sure that if you have created instances and then destroyed them and are now
+  trying to create new instances with the same name as the old ones you have cleaned
+  the certificates of the old instances off the puppet master. Use
+  `sudo puppet cert list --all` to see what certificates the master has and
+  `sudo puppet cert clean <certificate name>` to remove old certificates.
+* If you have waited several minutes and your isntances still aren't serving web
+  pages, check run `tail /var/log/daemon.log` on your puppet agents to see if
+  puppet had any issues while applying your manifest.
 
 ## Contributing
 
 Have a patch that will benefit this project? Awesome! Follow these steps to have it accepted.
 
 1. Please sign our [Contributor License Agreement](CONTRIB.md).
-1. Fork this Git repository and make your changes.
-1. Run the unit tests. (gcimagebundle only)
-1. Create a Pull Request
-1. Incorporate review feedback to your changes.
-1. Accepted!
+2. Fork this Git repository and make your changes.
+3. Run the unit tests. (gcimagebundle only)
+4. Create a Pull Request
+5. Incorporate review feedback to your changes.
+6. Accepted!
 
 ## License
 All files in this repository are under the
