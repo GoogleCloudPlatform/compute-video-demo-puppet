@@ -79,29 +79,29 @@ to use instructions for an [open-source Puppet Master](#create-the-puppet-master
    ```
    puppet-enterprise-master startupscript: Puppet installation finished!
    ```
+   
+3. Fetch the setup manifest from the metadata server
+ 
+    ```
+    curl http://metadata/computeMetadata/v1/instance/attributes/setup -H 'Metadata-Flavor: Google' > master_setup.pp
+    ```
 
-3. Use Puppet to setup the demo
+4. Use Puppet to setup the demo
 
     ```
-    sudo /opt/puppet/bin/puppet apply /opt/compute-video-demo-puppet/manifests/master_setup.pp
+    sudo /opt/puppet/bin/puppet apply master_setup.pp
     ```
 
    This setup manifest will prepare your Puppet master for the demo and will clone
    the demo repository into /opt for convenience.
 
-4. Export path so that sudo can use gcutil
-
-   ```
-   sudo $PATH=$PATH:/usr/local/bin
-   ```
-
-5. Authenticate the root user on your puppet master with Compute Engine.
+6. Authenticate the root user on your puppet master with Compute Engine.
 
     ```
-    sudo gcutil auth
+    sudo env PATH=$PATH gcloud auth login
     ```
 
-6. Set up `/etc/puppetlabs/puppet/device.conf` which the gce_compute module references
+7. Set up `/etc/puppetlabs/puppet/device.conf` which the gce_compute module references
 for your Google Cloud project-id.
 
     ```
@@ -122,19 +122,20 @@ EOF
        ```
 
 
-7. Use Puppet to build the additional instances and agents.
+8. Use Puppet to build the additional instances and agents.
 
     ```
-    sudo /opt/puppet/bin/puppet apply --modulepath=/etc/puppetlabs/puppet/modules /opt/compute-video-demo-puppet/manifests/puppet_up.pp --certname myproject
+    sudo env PATH=$PATH /opt/puppet/bin/puppet apply --modulepath=/etc/puppetlabs/puppet/modules /opt/compute-video-demo-puppet/manifests/puppet_up.pp --certname $CERTNAME
     ```
 
-8. Now, you can put the public IP address of the load balancer into your
+9. Now, you can put the public IP address of the load balancer into your
 browser and you should start to see a flicker of pages that will bounce across
 each of your instances. You can find your load-balancer IP in the Developers
 Console or with,
     ```
     gcutil getforwardingrule puppet-rule --region us-central1
     ```
+    Note: You may have to authenticate your regular user with Compute Engine as well by using the ```gcloud compute auth login``` command.
 
 
 ## Create the Puppet Master (FOSS) Compute Engine Instance
@@ -214,7 +215,7 @@ should be used to create `/etc/puppet/manifests/site.pp`.
     ```
   Or, you can use the site.pp included in the repo and copy it with,
     ```
-    sudo cp manifests/site.pp /etc/puppet/manifests/site.pp
+    sudo cp compute-video-demo-puppet/manifests/site.pp /etc/puppet/manifests/site.pp
     ```
   * This example uses the puppetlabs-apache module to install and manage the
     apache service. More information about this module can be found at
@@ -224,7 +225,7 @@ should be used to create `/etc/puppet/manifests/site.pp`.
 on the Developer's Console or by using these commands,
 
     ```
-    CERTNAME=$(/usr/local/bin/puppet config print certname)
+    CERTNAME=$(puppet config print certname)
     PROJECT=$(/usr/share/google/get_metadata_value project-id)
     sudo bash -c "cat > /etc/puppet/device.conf" <<EOF
     [$CERTNAME]
@@ -355,7 +356,7 @@ create the 4 Compute Engine instances, firewall, and load balancer.
     ```
   This file can also be copied from the included manifest file with,
     ```
-    sudo cp manifests/puppet_up.pp /etc/puppet/manifests/puppet_up.pp
+    sudo cp compute-video-demo-puppet/manifests/puppet_up.pp /etc/puppet/manifests/puppet_up.pp
     ```
   * The firewall rule is created in this file with the `gce_firewall` block.
   * Each of the four instances are created in the `gce_instance` blocks with
@@ -367,12 +368,12 @@ create the 4 Compute Engine instances, firewall, and load balancer.
 5. Place the `index.html.erb` file included in this repository into the apache
 module template directory,
     ```
-    sudo cp index.html.erb /etc/puppet/modules/apache/templates
+    sudo cp compute-video-demo-puppet/index.html.erb /etc/puppet/modules/apache/templates
     ```
 
 6. Apply the `puppet_up.pp` manifest file.
     ```
-    sudo puppet apply --certname=myproject /etc/puppet/manifests/puppet_up.pp
+    sudo puppet apply /etc/puppet/manifests/puppet_up.pp --certname $CERTNAME
     ```
 
 7. Now, you can put the public IP address of the load balancer into your
@@ -382,6 +383,7 @@ Console or with,
     ```
     gcutil getforwardingrule puppet-rule --region us-central1
     ```
+    Note: You may have to authenticate your regular user with Compute Engine as well by using the ```gcloud compute auth login``` command.
 
 ## Cleaning Up
 
