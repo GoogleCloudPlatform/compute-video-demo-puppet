@@ -215,7 +215,7 @@ should be used to create `/etc/puppet/manifests/site.pp`.
     ```
   Or, you can use the site.pp included in the repo and copy it with,
     ```
-    sudo cp manifests/site.pp /etc/puppet/manifests/site.pp
+    sudo cp compute-video-demo-puppet/manifests/site.pp /etc/puppet/manifests/site.pp
     ```
   * This example uses the puppetlabs-apache module to install and manage the
     apache service. More information about this module can be found at
@@ -356,7 +356,7 @@ create the 4 Compute Engine instances, firewall, and load balancer.
     ```
   This file can also be copied from the included manifest file with,
     ```
-    sudo cp manifests/puppet_up.pp /etc/puppet/manifests/puppet_up.pp
+    sudo cp compute-video-demo-puppet/manifests/puppet_up.pp /etc/puppet/manifests/puppet_up.pp
     ```
   * The firewall rule is created in this file with the `gce_firewall` block.
   * Each of the four instances are created in the `gce_instance` blocks with
@@ -368,12 +368,12 @@ create the 4 Compute Engine instances, firewall, and load balancer.
 5. Place the `index.html.erb` file included in this repository into the apache
 module template directory,
     ```
-    sudo cp index.html.erb /etc/puppet/modules/apache/templates
+    sudo cp compute-video-demo-puppet/index.html.erb /etc/puppet/modules/apache/templates
     ```
 
 6. Apply the `puppet_up.pp` manifest file.
     ```
-    sudo puppet apply --certname=myproject /etc/puppet/manifests/puppet_up.pp
+    sudo puppet apply --certname $CERTNAME /etc/puppet/manifests/puppet_up.pp
     ```
 
 7. Now, you can put the public IP address of the load balancer into your
@@ -383,6 +383,7 @@ Console or with,
     ```
     gcutil getforwardingrule puppet-rule --region us-central1
     ```
+    Note: You may have to authenticate your regular user with Compute Engine as well by using the ```gcloud compute auth login``` command.
 
 ## Cleaning Up
 
