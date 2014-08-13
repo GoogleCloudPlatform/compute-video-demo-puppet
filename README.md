@@ -58,7 +58,7 @@ to use instructions for an [open-source Puppet Master](#create-the-puppet-master
 
 2. Bring up a GCE instance that will auto-install the PE Master
     ```
-    puppet apply compute-video-demo-puppet/manifests/master_up.pp --certname myproject
+    puppet apply compute-video-demo-puppet/manifests/master_up.pp --certname=myproject
     ```
 
    The install may take up to ten minutes but the instance should be up within a
@@ -125,7 +125,7 @@ EOF
 8. Use Puppet to build the additional instances and agents.
 
     ```
-    sudo env PATH=$PATH /opt/puppet/bin/puppet apply --modulepath=/etc/puppetlabs/puppet/modules /opt/compute-video-demo-puppet/manifests/puppet_up.pp --certname $CERTNAME
+    sudo env PATH=$PATH /opt/puppet/bin/puppet apply --modulepath=/etc/puppetlabs/puppet/modules /opt/compute-video-demo-puppet/manifests/puppet_up.pp --certname=$CERTNAME
     ```
 
 9. Now, you can put the public IP address of the load balancer into your
@@ -373,7 +373,7 @@ module template directory,
 
 6. Apply the `puppet_up.pp` manifest file.
     ```
-    sudo puppet apply /etc/puppet/manifests/puppet_up.pp --certname $CERTNAME
+    sudo puppet apply /etc/puppet/manifests/puppet_up.pp --certname=$CERTNAME
     ```
 
 7. Now, you can put the public IP address of the load balancer into your
@@ -477,6 +477,9 @@ To teardown your setup, apply the following manifest:
 * If you have waited several minutes and your isntances still aren't serving web
   pages, check run `tail /var/log/daemon.log` on your puppet agents to see if
   puppet had any issues while applying your manifest.
+* If you are using fog as your provider with temporary tokens for authentication and see
+  an error stating you have insufficient permissions make sure your puppet master has
+  compute read / write permission. This can be checked at the [Developers Console](https://console.developers.google.com/).
 
 ## Contributing
 
