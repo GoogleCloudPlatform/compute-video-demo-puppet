@@ -1,4 +1,4 @@
-node /^puppet-agent-\d+/ {
+node /^pc-agent-\d+/ {
   class { 'apache': }
 
   include apache::mod::headers
